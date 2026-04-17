@@ -12,7 +12,7 @@ export function FormTextarea<T extends FieldValues>({
   control,
   rules,
   ...rest
-}: FormTextareaProps<T>): JSX.Element {
+}: FormTextareaProps<T>) {
   return (
     <Controller
       name={name}

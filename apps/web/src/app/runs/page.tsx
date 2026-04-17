@@ -4,7 +4,7 @@ import { formatDateTime, formatRelative } from '../../lib/format.js';
 
 export const dynamic = 'force-dynamic';
 
-export default async function RunsPage(): Promise<JSX.Element> {
+export default async function RunsPage() {
   const runs = await prisma.classificationRun.findMany({
     orderBy: { startedAt: 'desc' },
     take: 50,

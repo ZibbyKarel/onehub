@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Soute\u017ee z Instagramu na jednom m\u00edst\u011b.',
 };
 
-export default function RootLayout({ children }: { children: ReactNode }): JSX.Element {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="cs">
       <body>

@@ -13,7 +13,7 @@ export function FormSelect<T extends FieldValues>({
   rules,
   children,
   ...rest
-}: FormSelectProps<T>): JSX.Element {
+}: FormSelectProps<T>) {
   return (
     <Controller
       name={name}

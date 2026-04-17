@@ -4,7 +4,7 @@ import { ContestList } from '../../components/ContestList.js';
 
 export const dynamic = 'force-dynamic';
 
-export default async function HistoryPage(): Promise<JSX.Element> {
+export default async function HistoryPage() {
   const contests = await fetchContestsByStatus([
     'ENTERED',
     'WON',

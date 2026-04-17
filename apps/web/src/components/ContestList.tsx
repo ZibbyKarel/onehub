@@ -21,7 +21,7 @@ export interface ContestListProps {
   actionable?: boolean;
 }
 
-export function ContestList({ contests, actionable }: ContestListProps): JSX.Element {
+export function ContestList({ contests, actionable }: ContestListProps) {
   const qc = useQueryClient();
   const mutate = useMutation({
     mutationFn: ({ postId, status }: { postId: string; status: ContestStatus }) =>

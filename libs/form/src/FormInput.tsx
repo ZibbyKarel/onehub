@@ -26,7 +26,7 @@ export function FormInput<T extends FieldValues>({
   control,
   rules,
   ...inputProps
-}: FormInputProps<T>): JSX.Element {
+}: FormInputProps<T>) {
   return (
     <Controller
       name={name}

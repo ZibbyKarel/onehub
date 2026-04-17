@@ -15,7 +15,7 @@ export function FormCheckbox<T extends FieldValues>({
   control,
   rules,
   ...rest
-}: FormCheckboxProps<T>): JSX.Element {
+}: FormCheckboxProps<T>) {
   return (
     <Controller
       name={name}

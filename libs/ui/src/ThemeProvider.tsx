@@ -9,7 +9,7 @@ import { GlobalStyles } from './GlobalStyles.js';
  * App-level theme root. Wrap the Next.js `app/layout.tsx` children in this so
  * every styled-component can access `theme` and the global reset runs once.
  */
-export function ThemeProvider({ children }: { children: ReactNode }): JSX.Element {
+export function ThemeProvider({ children }: { children: ReactNode }) {
   return (
     <ScThemeProvider theme={theme}>
       <GlobalStyles />

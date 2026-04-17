@@ -22,7 +22,7 @@ export function FormSubmit({
   disableWhileBusy = true,
   disabled,
   ...rest
-}: FormSubmitProps): JSX.Element {
+}: FormSubmitProps) {
   const form = useFormContext();
   const { isSubmitting, isValidating } = useFormState({ control: form?.control });
   const busy = disableWhileBusy && (isSubmitting || isValidating);

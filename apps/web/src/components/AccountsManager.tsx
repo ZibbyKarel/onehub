@@ -76,7 +76,7 @@ export function AccountsManager({
   initialAccounts,
 }: {
   initialAccounts: AccountSummary[];
-}): JSX.Element {
+}) {
   const qc = useQueryClient();
   const { data: accounts = initialAccounts } = useQuery({
     queryKey: ['accounts'],

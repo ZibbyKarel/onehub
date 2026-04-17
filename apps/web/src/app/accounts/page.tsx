@@ -4,7 +4,7 @@ import { AccountsManager } from '../../components/AccountsManager.js';
 
 export const dynamic = 'force-dynamic';
 
-export default async function AccountsPage(): Promise<JSX.Element> {
+export default async function AccountsPage() {
   const accounts = await prisma.account.findMany({ orderBy: { createdAt: 'desc' } });
   return (
     <Stack gap={5}>

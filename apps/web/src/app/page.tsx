@@ -4,7 +4,7 @@ import { ContestList } from '../components/ContestList.js';
 
 export const dynamic = 'force-dynamic';
 
-export default async function CurrentContestsPage(): Promise<JSX.Element> {
+export default async function CurrentContestsPage() {
   const contests = await fetchContestsByStatus(['NEW']);
   return (
     <Stack gap={5}>

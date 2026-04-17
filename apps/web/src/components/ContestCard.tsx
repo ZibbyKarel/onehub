@@ -65,7 +65,7 @@ export interface ContestCardProps {
   onDismiss?: (postId: string) => void;
 }
 
-export function ContestCardView({ contest, onMarkEntered, onDismiss }: ContestCardProps): JSX.Element {
+export function ContestCardView({ contest, onMarkEntered, onDismiss }: ContestCardProps) {
   const [copied, setCopied] = useState(false);
 
   const copyComment = async () => {

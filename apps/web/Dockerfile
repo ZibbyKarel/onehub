@@ -32,11 +32,14 @@ RUN pnpm install --frozen-lockfile
 # ---------- build ----------
 FROM base AS build
 WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
-COPY --from=deps /app/apps/web/node_modules ./apps/web/node_modules
+# Copy the entire dependency tree from deps stage
+COPY --from=deps /app .
+# Overwrite with actual source files
 COPY . .
 RUN pnpm --filter @app/db exec prisma generate
 RUN pnpm --filter @app/web build
+# Create empty directories for optional assets if they don't exist
+RUN mkdir -p apps/web/public node_modules/.prisma node_modules/@prisma/client
 
 # ---------- runtime ----------
 FROM node:${NODE_VERSION} AS runtime
