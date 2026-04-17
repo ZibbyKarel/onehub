@@ -1,0 +1,17 @@
+{
+  "name": "@app/ai",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ai/src",
+  "projectType": "library",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": { "command": "tsc --noEmit -p libs/ai/tsconfig.json" }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": { "command": "pnpm --filter @app/ai test" }
+    }
+  },
+  "tags": ["type:lib", "scope:worker"]
+}

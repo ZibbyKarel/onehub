@@ -1,0 +1,84 @@
+// Prisma schema for the Instagram Giveaway Aggregator.
+// Source of truth for the DB shape shared between @app/worker and @app/web.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+/// A tracked Instagram account the worker should scrape.
+model Account {
+  id          String   @id @default(cuid())
+  handle      String   @unique
+  displayName String?
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  /// Last time the scraper successfully pulled posts for this handle.
+  lastScrapedAt DateTime?
+
+  posts Post[]
+}
+
+/// One Instagram post we've already seen. Dedup key is the IG shortcode.
+model Post {
+  /// IG shortcode (e.g. "C1a2b3d4") — primary dedup key.
+  id         String   @id
+  accountId  String
+  account    Account  @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  postedAt   DateTime
+  caption    String
+  mediaUrl   String?
+  permalink  String
+  scrapedAt  DateTime @default(now())
+
+  /// One-to-one: a post may have an associated Contest if it was classified as a giveaway.
+  contest    Contest?
+
+  @@index([accountId, postedAt])
+  @@index([scrapedAt])
+}
+
+/// A detected giveaway tied to a Post (1:1).
+model Contest {
+  postId           String         @id
+  post             Post           @relation(fields: [postId], references: [id], onDelete: Cascade)
+  summary          String         @db.Text
+  suggestedComment String?        @db.Text
+  /// JSON array of task codes, e.g. ["like_post","follow_account","comment","tag_friend"]
+  tasks            Json
+  status           ContestStatus  @default(NEW)
+  detectedAt       DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  deadline         DateTime?
+
+  @@index([status, detectedAt])
+}
+
+enum ContestStatus {
+  NEW
+  ENTERED
+  WON
+  LOST
+  EXPIRED
+  DISMISSED
+}
+
+/// Audit log of each classification run the worker performs.
+model ClassificationRun {
+  id            String    @id @default(cuid())
+  startedAt     DateTime  @default(now())
+  finishedAt    DateTime?
+  postsScanned  Int       @default(0)
+  contestsFound Int       @default(0)
+  /// JSON array of { handle, message } records for failed handles.
+  errors        Json?
+  /// Short human note for manual runs.
+  note          String?
+
+  @@index([startedAt])
+}
