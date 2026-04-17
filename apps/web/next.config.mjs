@@ -17,6 +17,14 @@ const nextConfig = {
   },
   // Transpile the workspace packages so Next handles their .ts/.tsx directly.
   transpilePackages: ['@app/ui', '@app/ui-tokens', '@app/form', '@app/shared-types'],
+  // Resolve .js/.jsx imports to .ts/.tsx files in the monorepo.
+  webpack(config) {
+    config.resolve.extensionAlias = {
+      '.js': ['.ts', '.tsx', '.js'],
+      '.jsx': ['.tsx', '.jsx'],
+    };
+    return config;
+  },
 };
 
 export default nextConfig;
