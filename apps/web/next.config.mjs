@@ -16,7 +16,7 @@ const nextConfig = {
     ],
   },
   // Transpile the workspace packages so Next handles their .ts/.tsx directly.
-  transpilePackages: ['@app/ui', '@app/ui-tokens', '@app/form', '@app/shared-types'],
+  transpilePackages: ['@app/ui', '@app/form', '@app/shared-types'],
 };
 
 export default nextConfig;
