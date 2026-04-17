@@ -24,12 +24,15 @@ import {
   type AccountFormValues,
 } from '@app/shared-types';
 import { formatDateTime, formatRelative } from '../lib/format.js';
-import { useFetchAccountsQuery } from '../lib/queries/fetchAccountsQuery.js';
+import {
+  useFetchAccountsQuery,
+  type AccountSummary,
+} from '../lib/queries/fetchAccountsQuery.js';
 import { useCreateAccountMutation } from '../lib/mutations/createAccountMutation.js';
 import { useUpdateAccountMutation } from '../lib/mutations/updateAccountMutation.js';
 import { useDeleteAccountMutation } from '../lib/mutations/deleteAccountMutation.js';
 
-export { AccountSummary } from '../lib/queries/fetchAccountsQuery.js';
+export type { AccountSummary } from '../lib/queries/fetchAccountsQuery.js';
 
 export function AccountsManager({
   initialAccounts,
