@@ -1,0 +1,13 @@
+{
+  "name": "@app/ui-tokens",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui-tokens/src",
+  "projectType": "library",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": { "command": "tsc --noEmit -p libs/ui-tokens/tsconfig.json" }
+    }
+  },
+  "tags": ["type:lib", "scope:web"]
+}

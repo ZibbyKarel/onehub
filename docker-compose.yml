@@ -1,0 +1,64 @@
+# Local-only dev compose. Three services: postgres, web (Next.js), worker
+# (cron + Playwright). Session cookies and Playwright downloads live on named
+# volumes so a container restart doesn't trigger a re-login.
+
+name: ig-giveaway-aggregator
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ig
+      POSTGRES_PASSWORD: ig
+      POSTGRES_DB: ig_giveaways
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ig -d ig_giveaways"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  worker:
+    build:
+      context: .
+      dockerfile: apps/worker/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://ig:ig@postgres:5432/ig_giveaways?schema=public
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-claude-opus-4-7}
+      IG_USERNAME: ${IG_USERNAME}
+      IG_PASSWORD: ${IG_PASSWORD}
+      IG_SESSION_DIR: /data/ig-session
+      WORKER_CRON: ${WORKER_CRON:-0 6 * * *}
+      WORKER_MAX_POSTS_PER_HANDLE: ${WORKER_MAX_POSTS_PER_HANDLE:-25}
+      WORKER_HANDLE_DELAY_SECONDS: ${WORKER_HANDLE_DELAY_SECONDS:-10}
+      NODE_ENV: production
+    volumes:
+      - ig-session:/data/ig-session
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://ig:ig@postgres:5432/ig_giveaways?schema=public
+      NEXT_PUBLIC_APP_URL: http://localhost:3000
+      NODE_ENV: production
+    ports:
+      - "3000:3000"
+
+volumes:
+  pgdata:
+  ig-session:

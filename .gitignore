@@ -1,0 +1,46 @@
+# OS
+.DS_Store
+
+# Node / pnpm
+node_modules/
+.pnpm-store/
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# Nx
+.nx/cache
+.nx/workspace-data
+
+# Env
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Prisma
+libs/db/prisma/migrations/dev.db*
+
+# Playwright persistent context (IG login session)
+.data/
+data/
+
+# Coverage
+coverage/
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Logs
+*.log
+logs/

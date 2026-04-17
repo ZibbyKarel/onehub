@@ -1,0 +1,30 @@
+'use client';
+
+import { useState, type ReactNode } from 'react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ThemeProvider } from '@app/ui';
+
+/**
+ * Client-side providers. Keep this file under "use client" but only what
+ * actually needs it — the theme provider, the query client.
+ */
+export function Providers({ children }: { children: ReactNode }): JSX.Element {
+  // `useState` ensures a single QueryClient instance per client render.
+  const [queryClient] = useState(
+    () =>
+      new QueryClient({
+        defaultOptions: {
+          queries: {
+            staleTime: 30_000,
+            refetchOnWindowFocus: false,
+          },
+        },
+      }),
+  );
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider>{children}</ThemeProvider>
+    </QueryClientProvider>
+  );
+}

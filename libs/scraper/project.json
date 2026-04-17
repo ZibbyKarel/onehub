@@ -1,0 +1,17 @@
+{
+  "name": "@app/scraper",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/scraper/src",
+  "projectType": "library",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": { "command": "tsc --noEmit -p libs/scraper/tsconfig.json" }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": { "command": "pnpm --filter @app/scraper test" }
+    }
+  },
+  "tags": ["type:lib", "scope:worker"]
+}

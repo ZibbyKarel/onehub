@@ -1,0 +1,29 @@
+{
+  "name": "@app/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "dev:run-once": "tsx src/run-once.ts",
+    "dev": "tsx watch src/main.ts",
+    "start": "node dist/main.js",
+    "build": "tsc",
+    "seed:accounts": "tsx src/seed-accounts.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@app/ai": "workspace:*",
+    "@app/db": "workspace:*",
+    "@app/scraper": "workspace:*",
+    "@app/shared-types": "workspace:*",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}

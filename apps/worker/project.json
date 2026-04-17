@@ -1,0 +1,21 @@
+{
+  "name": "@app/worker",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/worker/src",
+  "projectType": "application",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": { "command": "tsc --noEmit -p apps/worker/tsconfig.json" }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": { "command": "pnpm --filter @app/worker build" }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": { "command": "pnpm --filter @app/worker test" }
+    }
+  },
+  "tags": ["type:app", "scope:worker"]
+}
