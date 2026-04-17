@@ -1,5 +1,5 @@
 import 'styled-components';
-import type { AppTheme } from '@app/ui-tokens';
+import type { AppTheme } from './tokens/theme.js';
 
 /**
  * Declaration merging so `styled(Button)<{ ... }>` and `${({theme}) => ...}`
