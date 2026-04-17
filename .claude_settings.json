@@ -1,0 +1,39 @@
+{
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
+  },
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Read(./**)",
+      "Write(./**)",
+      "Edit(./**)",
+      "Glob(./**)",
+      "Grep(./**)",
+      "Read(/Users/zibby/Workspace/onehub/.auto-claude/worktrees/tasks/003-ui-tokens/**)",
+      "Write(/Users/zibby/Workspace/onehub/.auto-claude/worktrees/tasks/003-ui-tokens/**)",
+      "Edit(/Users/zibby/Workspace/onehub/.auto-claude/worktrees/tasks/003-ui-tokens/**)",
+      "Glob(/Users/zibby/Workspace/onehub/.auto-claude/worktrees/tasks/003-ui-tokens/**)",
+      "Grep(/Users/zibby/Workspace/onehub/.auto-claude/worktrees/tasks/003-ui-tokens/**)",
+      "Read(/Users/zibby/Workspace/onehub/.auto-claude/worktrees/tasks/003-ui-tokens/.auto-claude/specs/003-ui-tokens/**)",
+      "Write(/Users/zibby/Workspace/onehub/.auto-claude/worktrees/tasks/003-ui-tokens/.auto-claude/specs/003-ui-tokens/**)",
+      "Edit(/Users/zibby/Workspace/onehub/.auto-claude/worktrees/tasks/003-ui-tokens/.auto-claude/specs/003-ui-tokens/**)",
+      "Read(/Users/zibby/Workspace/onehub/.auto-claude/**)",
+      "Write(/Users/zibby/Workspace/onehub/.auto-claude/**)",
+      "Edit(/Users/zibby/Workspace/onehub/.auto-claude/**)",
+      "Glob(/Users/zibby/Workspace/onehub/.auto-claude/**)",
+      "Grep(/Users/zibby/Workspace/onehub/.auto-claude/**)",
+      "Bash(*)",
+      "WebFetch(*)",
+      "WebSearch(*)",
+      "mcp__context7__resolve-library-id(*)",
+      "mcp__context7__query-docs(*)",
+      "mcp__graphiti-memory__search_nodes(*)",
+      "mcp__graphiti-memory__search_facts(*)",
+      "mcp__graphiti-memory__add_episode(*)",
+      "mcp__graphiti-memory__get_episodes(*)",
+      "mcp__graphiti-memory__get_entity_edge(*)"
+    ]
+  }
+}

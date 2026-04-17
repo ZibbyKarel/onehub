@@ -44,3 +44,6 @@ coverage/
 # Logs
 *.log
 logs/
+
+# Auto Claude data directory
+.auto-claude/
