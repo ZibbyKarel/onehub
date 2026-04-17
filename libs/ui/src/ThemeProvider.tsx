@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react';
 import { ThemeProvider as ScThemeProvider } from 'styled-components';
-import { theme } from '@app/ui-tokens';
+import { theme } from './tokens/theme.js';
 import { GlobalStyles } from './GlobalStyles.js';
 
 /**
