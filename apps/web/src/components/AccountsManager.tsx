@@ -2,7 +2,7 @@
 
 import { useForm, FormProvider } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
+import { useQueryClient } from '@tanstack/react-query';
 import {
   Badge,
   Button,
@@ -24,53 +24,15 @@ import {
   type AccountFormValues,
 } from '@app/shared-types';
 import { formatDateTime, formatRelative } from '../lib/format.js';
+import {
+  useFetchAccountsQuery,
+  type AccountSummary,
+} from '../lib/queries/fetchAccountsQuery.js';
+import { useCreateAccountMutation } from '../lib/mutations/createAccountMutation.js';
+import { useUpdateAccountMutation } from '../lib/mutations/updateAccountMutation.js';
+import { useDeleteAccountMutation } from '../lib/mutations/deleteAccountMutation.js';
 
-export interface AccountSummary {
-  id: string;
-  handle: string;
-  displayName: string | null;
-  active: boolean;
-  createdAt: string;
-  lastScrapedAt: string | null;
-}
-
-async function fetchAccounts(): Promise<AccountSummary[]> {
-  const res = await fetch('/api/accounts');
-  if (!res.ok) throw new Error(`Failed ${res.status}`);
-  const data = (await res.json()) as {
-    accounts: Array<Omit<AccountSummary, 'createdAt' | 'lastScrapedAt'> & {
-      createdAt: string;
-      lastScrapedAt: string | null;
-    }>;
-  };
-  return data.accounts;
-}
-
-async function createAccount(values: AccountFormValues): Promise<void> {
-  const res = await fetch('/api/accounts', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(values),
-  });
-  if (!res.ok) {
-    const body = (await res.json().catch(() => ({}))) as { error?: string };
-    throw new Error(body.error ?? `Failed ${res.status}`);
-  }
-}
-
-async function updateAccount(id: string, patch: Partial<AccountFormValues>): Promise<void> {
-  const res = await fetch(`/api/accounts/${id}`, {
-    method: 'PATCH',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(patch),
-  });
-  if (!res.ok) throw new Error(`Failed ${res.status}`);
-}
-
-async function deleteAccount(id: string): Promise<void> {
-  const res = await fetch(`/api/accounts/${id}`, { method: 'DELETE' });
-  if (!res.ok) throw new Error(`Failed ${res.status}`);
-}
+export type { AccountSummary } from '../lib/queries/fetchAccountsQuery.js';
 
 export function AccountsManager({
   initialAccounts,
@@ -78,9 +40,7 @@ export function AccountsManager({
   initialAccounts: AccountSummary[];
 }): JSX.Element {
   const qc = useQueryClient();
-  const { data: accounts = initialAccounts } = useQuery({
-    queryKey: ['accounts'],
-    queryFn: fetchAccounts,
+  const { data: accounts = initialAccounts } = useFetchAccountsQuery({
     initialData: initialAccounts,
   });
 
@@ -89,8 +49,7 @@ export function AccountsManager({
     defaultValues: { handle: '', displayName: '', active: true },
   });
 
-  const createMut = useMutation({
-    mutationFn: createAccount,
+  const createMut = useCreateAccountMutation({
     onSuccess: () => {
       form.reset({ handle: '', displayName: '', active: true });
       void qc.invalidateQueries({ queryKey: ['accounts'] });
@@ -103,16 +62,9 @@ export function AccountsManager({
     },
   });
 
-  const toggleMut = useMutation({
-    mutationFn: ({ id, active }: { id: string; active: boolean }) =>
-      updateAccount(id, { active }),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ['accounts'] }),
-  });
+  const toggleMut = useUpdateAccountMutation();
 
-  const deleteMut = useMutation({
-    mutationFn: deleteAccount,
-    onSuccess: () => qc.invalidateQueries({ queryKey: ['accounts'] }),
-  });
+  const deleteMut = useDeleteAccountMutation();
 
   const onSubmit = form.handleSubmit((values) => createMut.mutate(values));
 
@@ -173,7 +125,7 @@ export function AccountsManager({
             <CardFooter>
               <Button
                 variant="secondary"
-                onClick={() => toggleMut.mutate({ id: a.id, active: !a.active })}
+                onClick={() => toggleMut.mutate({ id: a.id, patch: { active: !a.active } })}
               >
                 {a.active ? 'Pozastavit' : 'Obnovit'}
               </Button>
