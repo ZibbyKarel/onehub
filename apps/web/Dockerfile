@@ -7,12 +7,13 @@
 # The context is the monorepo root because we need @app/db (+ its generated
 # Prisma client) and the other workspace libs.
 
-ARG NODE_VERSION=20-alpine
+ARG NODE_VERSION=20-bullseye-slim
 ARG PNPM_VERSION=9.12.0
 
 FROM node:${NODE_VERSION} AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
+RUN apt-get update && apt-get install -y --no-install-recommends openssl ca-certificates && rm -rf /var/lib/apt/lists/*
 RUN npm install -g pnpm@${PNPM_VERSION}
 
 # ---------- deps ----------
@@ -42,9 +43,11 @@ FROM node:${NODE_VERSION} AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
-# Next standalone output copies only what's needed; we add the prisma client
-# generated server bundle and static assets explicitly.
+# Next standalone output copies the traced app files, but Prisma's engine can
+# still be missed in monorepo Docker builds. Copying `node_modules` from the
+# build stage keeps the generated client + engine available at runtime.
 COPY --from=build /app/apps/web/.next/standalone ./
 COPY --from=build /app/apps/web/.next/static ./apps/web/.next/static
+COPY --from=build /app/node_modules ./node_modules
 EXPOSE 3000
 CMD ["node", "apps/web/server.js"]
