@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
-import { StyledComponentsRegistry } from './registry';
-import { Providers } from './providers';
+import { StyledComponentsRegistry } from './StyledComponentsRegistry';
+import { Providers } from './Providers';
 import { AppShell } from '../components/AppShell';
 
 export const metadata: Metadata = {

@@ -7,7 +7,7 @@ const root = fileURLToPath(new URL('.', import.meta.url));
 export default defineConfig({
   resolve: {
     alias: {
-      '@app/shared-types': resolve(root, '../shared-types/src/index.ts'),
+      '@app/shared-types': resolve(root, '../sharedTypes/src/index.ts'),
     },
   },
   test: {

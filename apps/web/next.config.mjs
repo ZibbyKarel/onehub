@@ -4,7 +4,7 @@ const nextConfig = {
   // Emit a minimal server bundle for docker; see apps/web/Dockerfile.
   output: 'standalone',
   // Styled-Components needs the SWC transform enabled for consistent display
-  // names across the monorepo. See app/registry.tsx for the SSR bridge.
+  // names across the monorepo. See app/StyledComponentsRegistry.tsx for the SSR bridge.
   compiler: {
     styledComponents: true,
   },

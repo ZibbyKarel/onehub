@@ -1,5 +1,5 @@
 import { getTranslator } from './translator';
-import { TranslationKeys } from './translation-keys';
+import { TranslationKeys } from './translationKeys';
 
 describe('getTranslator', () => {
   const missingKey = 'NonExistentMissingKey' as TranslationKeys;

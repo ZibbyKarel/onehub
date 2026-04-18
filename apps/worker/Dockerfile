@@ -21,7 +21,7 @@ COPY libs/db/package.json libs/db/
 COPY libs/db/prisma libs/db/prisma
 COPY libs/ai/package.json libs/ai/
 COPY libs/scraper/package.json libs/scraper/
-COPY libs/shared-types/package.json libs/shared-types/
+COPY libs/sharedTypes/package.json libs/sharedTypes/
 RUN pnpm install --frozen-lockfile
 
 # ---------- build ----------

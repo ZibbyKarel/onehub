@@ -23,10 +23,10 @@ libs/
   db/           Prisma schema + client singleton
   ai/           Classifier přes Anthropic SDK
   scraper/      Playwright helpers + IG flow
-  ui-tokens/    design tokeny (colors/typography/…)
+  uiTokens/     design tokeny (colors/typography/…)
   ui/           Styled-Components DS (Button, Input, Card, …)
   form/         FormInput / FormSelect / FormCheckbox / FormSubmit
-  shared-types/ Zod schémata sdílená napříč balíčky
+  sharedTypes/ Zod schémata sdílená napříč balíčky
 ```
 
 ## Rychlý start (lokálně)
@@ -97,13 +97,13 @@ Bundled `claude-api` skill se aktivuje automaticky při práci na `libs/ai`.
 
 ## Internationalization (i18n) quick guide
 
-- Translation keys live in `libs/internationalization/src/lib/translation-keys.ts` (`TranslationKeys` enum).
+- Translation keys live in `libs/internationalization/src/lib/translationKeys.ts` (`TranslationKeys` enum).
 - Locale source files live in `libs/internationalization/src/lib/locales/*.json`.
 - Typed dictionaries are assembled in `libs/internationalization/src/lib/dictionaries.ts` and must satisfy `Record<TranslationKeys, string>` for each locale.
 
 ### Add a new translation key
 
-1. Add a new `TranslationKeys` enum entry in `translation-keys.ts` using the `<Domain><Element><Intent>` naming convention.
+1. Add a new `TranslationKeys` enum entry in `translationKeys.ts` using the `<Domain><Element><Intent>` naming convention.
 2. Add the key/value to each locale JSON file under `locales/`.
 3. Ensure the key is mapped in `dictionaries.ts` for every locale.
 4. Use it in UI code via `useLocalizedText()`:

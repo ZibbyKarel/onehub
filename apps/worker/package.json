@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "dev:run-once": "tsx src/run-once.ts",
+    "dev:run-once": "tsx src/runOnce.ts",
     "dev": "tsx watch src/main.ts",
     "start": "node dist/main.js",
     "build": "tsc",
-    "seed:accounts": "tsx src/seed-accounts.ts",
+    "seed:accounts": "tsx src/seedAccounts.ts",
     "test": "vitest run"
   },
   "dependencies": {

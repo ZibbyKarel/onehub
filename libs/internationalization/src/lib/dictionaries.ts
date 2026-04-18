@@ -1,7 +1,7 @@
 import enDictionary from './en.json';
 import plDictionary from './pl.json';
 import { LocaleCode } from './types';
-import { TranslationKeys } from './translation-keys';
+import { TranslationKeys } from './translationKeys';
 
 export type TranslationDictionary = Record<TranslationKeys, string>;
 

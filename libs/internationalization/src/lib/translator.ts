@@ -1,6 +1,6 @@
 import { dictionaries } from './dictionaries';
 import { formatMessage } from './format';
-import { TranslationKeys } from './translation-keys';
+import { TranslationKeys } from './translationKeys';
 import { LocaleCode, TranslationFunction, TranslationParams } from './types';
 
 const isDevelopment = process.env.NODE_ENV !== 'production';

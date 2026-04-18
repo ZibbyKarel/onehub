@@ -30,10 +30,10 @@ libs/
   db/            Prisma client + schema re-exports
   ai/            Claude classifier
   scraper/       Playwright Instagram helpers
-  ui-tokens/     design tokens
+  uiTokens/      design tokens
   ui/            Styled-Components design system
   form/          react-hook-form wrappers (FormInput, FormSelect, …)
-  shared-types/  Zod schemas shared between apps
+  sharedTypes/  Zod schemas shared between apps
 prisma/          schema.prisma (source of truth for libs/db)
 ```
 
@@ -55,7 +55,7 @@ Use this matrix to decide which skill to activate before making changes.
 | Skill | Target paths | Trigger scenarios |
 | --- | --- | --- |
 | `react-best-practices` | `apps/web`, `libs/ui` | Building or refactoring Next.js pages, hooks, data-fetching boundaries, rendering patterns, or component performance-sensitive UIs. **Invariant reminders:** keep TypeScript strict (no unjustified `any`), use `libs/form` wrappers instead of raw inputs in app code, and keep styling token-based via `@app/ui` (no hardcoded hex/px). |
-| `composition-patterns` | `libs/form`, `libs/ui`, `apps/web` | Designing/reworking component APIs, especially when props are growing; prefer compound components and slots over boolean-prop expansion. **Invariant reminders:** preserve form-wrapper usage in `apps/web`, and ensure public cross-boundary APIs still map to Zod schemas in `libs/shared-types`. |
+| `composition-patterns` | `libs/form`, `libs/ui`, `apps/web` | Designing/reworking component APIs, especially when props are growing; prefer compound components and slots over boolean-prop expansion. **Invariant reminders:** preserve form-wrapper usage in `apps/web`, and ensure public cross-boundary APIs still map to Zod schemas in `libs/sharedTypes`. |
 | `web-design-guidelines` | `apps/web`, `libs/ui` | Final pass on dashboard screens for accessibility, hierarchy, interaction clarity, and visual consistency before merge. **Invariant reminders:** maintain design-token usage and avoid introducing UX shortcuts that bypass established form/UI conventions. |
 | `claude-api` | `libs/ai` | Any Anthropic client/prompt/model/cache-control changes; must preserve ephemeral prompt caching behavior and model configuration discipline. **Invariant reminders:** always keep `cache_control: { type: "ephemeral" }` on system prompts, keep secrets in `process.env` only, and do not hardcode keys/model credentials. |
 | `superpowers:test-driven-development` | `libs/ai`, `libs/form`, `libs/scraper`, related app consumers | New behavior or bug fixes where tests can be written first; required for classifier logic, form wrapper behavior, and scraper parsing/fixtures. **Invariant reminders:** include tests for scraper pacing limits (10s between handles, 25 posts max), Claude cache-control behavior, and schema/form constraints when behavior changes. |
@@ -103,7 +103,7 @@ Built-in skills to use:
 ## Coding conventions
 
 - TypeScript `strict: true`, no `any` without a `// TODO` justifying it.
-- Every public API exported from a `libs/*` package must have a Zod schema in `libs/shared-types` if it crosses a process/HTTP boundary.
+- Every public API exported from a `libs/*` package must have a Zod schema in `libs/sharedTypes` if it crosses a process/HTTP boundary.
 - Styled-components: use theme tokens from `@app/ui`; never hardcode hex/px.
 - Form components: always render through `libs/form` wrappers in `apps/web`; raw `<input>` is forbidden in app code.
 - Secrets: only via `process.env`, typed through a central `env.ts` per app.

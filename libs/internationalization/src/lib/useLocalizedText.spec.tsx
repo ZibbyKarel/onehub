@@ -1,9 +1,9 @@
 import { renderHook } from '@testing-library/react';
 import { PropsWithChildren } from 'react';
 
-import { InternationalizationProvider } from './provider';
-import { TranslationKeys } from './translation-keys';
-import { useLocalizedText } from './use-localized-text';
+import { InternationalizationProvider } from './InternationalizationProvider';
+import { TranslationKeys } from './translationKeys';
+import { useLocalizedText } from './useLocalizedText';
 
 const ProviderWrapper = ({ children }: PropsWithChildren): JSX.Element => (
   <InternationalizationProvider locale="pl" defaultLocale="en">
