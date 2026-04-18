@@ -36,6 +36,7 @@ FROM base AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/apps/worker/node_modules ./apps/worker/node_modules
 COPY --from=build /app/apps/worker/src ./apps/worker/src
 COPY --from=build /app/libs ./libs
 COPY --from=build /app/apps/worker/package.json ./apps/worker/package.json
