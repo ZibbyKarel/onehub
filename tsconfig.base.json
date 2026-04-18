@@ -32,7 +32,9 @@
       "@app/form": ["libs/form/src/index.ts"],
       "@app/form/*": ["libs/form/src/*"],
       "@app/shared-types": ["libs/shared-types/src/index.ts"],
-      "@app/shared-types/*": ["libs/shared-types/src/*"]
+      "@app/shared-types/*": ["libs/shared-types/src/*"],
+      "@app/internationalization": ["libs/internationalization/src/index.ts"],
+      "@app/internationalization/*": ["libs/internationalization/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp", "dist", ".next"]
