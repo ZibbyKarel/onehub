@@ -1,0 +1,17 @@
+{
+  "name": "@app/internationalization",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/internationalization/src",
+  "projectType": "library",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": { "command": "tsc --noEmit -p libs/internationalization/tsconfig.json" }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": { "command": "pnpm --filter @app/internationalization test" }
+    }
+  },
+  "tags": ["type:lib", "scope:web"]
+}

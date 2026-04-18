@@ -95,6 +95,42 @@ Viz `AGENTS.md`. V `.claude/skills/` leží:
 
 Bundled `claude-api` skill se aktivuje automaticky při práci na `libs/ai`.
 
+## Internationalization (i18n) quick guide
+
+- Translation keys live in `libs/internationalization/src/lib/translation-keys.ts` (`TranslationKeys` enum).
+- Locale source files live in `libs/internationalization/src/lib/locales/*.json`.
+- Typed dictionaries are assembled in `libs/internationalization/src/lib/dictionaries.ts` and must satisfy `Record<TranslationKeys, string>` for each locale.
+
+### Add a new translation key
+
+1. Add a new `TranslationKeys` enum entry in `translation-keys.ts` using the `<Domain><Element><Intent>` naming convention.
+2. Add the key/value to each locale JSON file under `locales/`.
+3. Ensure the key is mapped in `dictionaries.ts` for every locale.
+4. Use it in UI code via `useLocalizedText()`:
+
+```tsx
+import { TranslationKeys, useLocalizedText } from '@app/internationalization';
+
+const { t } = useLocalizedText();
+return <h1>{t(TranslationKeys.DashboardHeaderTitle)}</h1>;
+```
+
+5. For dynamic values, use interpolation params (no string concatenation):
+
+```tsx
+t(TranslationKeys.ContestCardMetaPostedBy, { handle: '@example' });
+```
+
+### Add a new locale
+
+1. Create `libs/internationalization/src/lib/locales/<locale>.json` (for example `de.json`) with the same set of keys as `en.json`.
+2. Import the locale JSON in `dictionaries.ts` and add it to the `dictionaries` object under the locale code.
+3. Keep strict completeness checks by making sure the locale dictionary satisfies `Record<TranslationKeys, string>` (missing keys should fail at compile time).
+4. Add the locale code to `LocaleCode` in `types.ts` so provider and translator inputs remain type-safe.
+5. (If needed) pass the new locale to `InternationalizationProvider` at app root.
+
+Tip: start by copying `en.json`, then replace values. This preserves key parity and prevents runtime fallback gaps.
+
 ## Known limitations (v0)
 
 - Žádná autentizace — pouze localhost

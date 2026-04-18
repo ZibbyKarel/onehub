@@ -1,0 +1,5 @@
+export type LocaleCode = string;
+
+export type TranslationParams = Record<string, string | number>;
+
+export type Translator = (key: string, params?: TranslationParams) => string;
