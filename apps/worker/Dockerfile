@@ -9,7 +9,7 @@ ARG PLAYWRIGHT_VERSION=v1.47.0-jammy
 FROM mcr.microsoft.com/playwright:${PLAYWRIGHT_VERSION} AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
+RUN npm install -g pnpm@9.12.0
 
 # ---------- deps ----------
 FROM base AS deps

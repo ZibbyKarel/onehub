@@ -12,7 +12,7 @@ ARG NODE_VERSION=20-alpine
 FROM node:${NODE_VERSION} AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
+RUN npm install -g pnpm@9.12.0
 
 # ---------- deps ----------
 FROM base AS deps
@@ -24,7 +24,6 @@ COPY libs/db/prisma libs/db/prisma
 COPY libs/ai/package.json libs/ai/
 COPY libs/scraper/package.json libs/scraper/
 COPY libs/ui/package.json libs/ui/
-COPY libs/ui-tokens/package.json libs/ui-tokens/
 COPY libs/form/package.json libs/form/
 COPY libs/shared-types/package.json libs/shared-types/
 RUN pnpm install --frozen-lockfile
