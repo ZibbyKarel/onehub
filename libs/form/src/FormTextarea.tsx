@@ -2,7 +2,7 @@
 
 import { Controller, type FieldValues } from 'react-hook-form';
 import { Textarea, type TextareaProps } from '@app/ui';
-import type { FormControllerProps } from './types.js';
+import type { FormControllerProps } from './types';
 
 type FormTextareaProps<T extends FieldValues> = FormControllerProps<T> &
   Omit<TextareaProps, 'name' | 'value' | 'onChange' | 'onBlur' | 'ref' | 'error'>;
@@ -12,7 +12,7 @@ export function FormTextarea<T extends FieldValues>({
   control,
   rules,
   ...rest
-}: FormTextareaProps<T>): JSX.Element {
+}: FormTextareaProps<T>) {
   return (
     <Controller
       name={name}

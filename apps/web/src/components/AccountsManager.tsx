@@ -23,22 +23,22 @@ import {
   accountFormSchema,
   type AccountFormValues,
 } from '@app/shared-types';
-import { formatDateTime, formatRelative } from '../lib/format.js';
+import { formatDateTime, formatRelative } from '../lib/format';
 import {
   useFetchAccountsQuery,
   type AccountSummary,
-} from '../lib/queries/fetchAccountsQuery.js';
-import { useCreateAccountMutation } from '../lib/mutations/createAccountMutation.js';
-import { useUpdateAccountMutation } from '../lib/mutations/updateAccountMutation.js';
-import { useDeleteAccountMutation } from '../lib/mutations/deleteAccountMutation.js';
+} from '../lib/queries/fetchAccountsQuery';
+import { useCreateAccountMutation } from '../lib/mutations/createAccountMutation';
+import { useUpdateAccountMutation } from '../lib/mutations/updateAccountMutation';
+import { useDeleteAccountMutation } from '../lib/mutations/deleteAccountMutation';
 
-export type { AccountSummary } from '../lib/queries/fetchAccountsQuery.js';
+export type { AccountSummary } from '../lib/queries/fetchAccountsQuery';
 
 export function AccountsManager({
   initialAccounts,
 }: {
   initialAccounts: AccountSummary[];
-}): JSX.Element {
+}) {
   const qc = useQueryClient();
   const { data: accounts = initialAccounts } = useFetchAccountsQuery({
     initialData: initialAccounts,

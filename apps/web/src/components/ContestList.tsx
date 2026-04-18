@@ -1,9 +1,9 @@
 'use client';
 
 import { Stack } from '@app/ui';
-import { ContestCardView } from './ContestCard.js';
-import type { ContestCard } from '../lib/contests.js';
-import { useUpdateStatusMutation } from '../lib/mutations/updateStatusMutation.js';
+import { ContestCardView } from './ContestCard';
+import type { ContestCard } from '../lib/contests';
+import { useUpdateStatusMutation } from '../lib/mutations/updateStatusMutation';
 
 export interface ContestListProps {
   contests: ContestCard[];
@@ -11,7 +11,7 @@ export interface ContestListProps {
   actionable?: boolean;
 }
 
-export function ContestList({ contests, actionable }: ContestListProps): JSX.Element {
+export function ContestList({ contests, actionable }: ContestListProps) {
   const mutate = useUpdateStatusMutation();
 
   if (contests.length === 0) {

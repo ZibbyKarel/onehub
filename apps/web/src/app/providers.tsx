@@ -8,7 +8,7 @@ import { ThemeProvider } from '@app/ui';
  * Client-side providers. Keep this file under "use client" but only what
  * actually needs it — the theme provider, the query client.
  */
-export function Providers({ children }: { children: ReactNode }): JSX.Element {
+export function Providers({ children }: { children: ReactNode }) {
   // `useState` ensures a single QueryClient instance per client render.
   const [queryClient] = useState(
     () =>

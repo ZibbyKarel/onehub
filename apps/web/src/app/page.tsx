@@ -1,10 +1,10 @@
 import { Stack } from '@app/ui';
-import { fetchContestsByStatus } from '../lib/contests.js';
-import { ContestList } from '../components/ContestList.js';
+import { fetchContestsByStatus } from '../lib/contests';
+import { ContestList } from '../components/ContestList';
 
 export const dynamic = 'force-dynamic';
 
-export default async function CurrentContestsPage(): Promise<JSX.Element> {
+export default async function CurrentContestsPage() {
   const contests = await fetchContestsByStatus(['NEW']);
   return (
     <Stack gap={5}>

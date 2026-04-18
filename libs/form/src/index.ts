@@ -1,6 +1,6 @@
-export { FormInput } from './FormInput.js';
-export { FormTextarea } from './FormTextarea.js';
-export { FormSelect } from './FormSelect.js';
-export { FormCheckbox } from './FormCheckbox.js';
-export { FormSubmit, type FormSubmitProps } from './FormSubmit.js';
-export type { FormControllerProps } from './types.js';
+export { FormInput } from './FormInput';
+export { FormTextarea } from './FormTextarea';
+export { FormSelect } from './FormSelect';
+export { FormCheckbox } from './FormCheckbox';
+export { FormSubmit, type FormSubmitProps } from './FormSubmit';
+export type { FormControllerProps } from './types';

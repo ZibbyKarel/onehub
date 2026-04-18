@@ -2,7 +2,7 @@
 
 import { Controller, type FieldValues } from 'react-hook-form';
 import { Input, type InputProps } from '@app/ui';
-import type { FormControllerProps } from './types.js';
+import type { FormControllerProps } from './types';
 
 type FormInputProps<T extends FieldValues> = FormControllerProps<T> &
   Omit<InputProps, 'name' | 'value' | 'onChange' | 'onBlur' | 'ref' | 'error'>;
@@ -26,7 +26,7 @@ export function FormInput<T extends FieldValues>({
   control,
   rules,
   ...inputProps
-}: FormInputProps<T>): JSX.Element {
+}: FormInputProps<T>) {
   return (
     <Controller
       name={name}

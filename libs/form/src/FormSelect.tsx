@@ -2,7 +2,7 @@
 
 import { Controller, type FieldValues } from 'react-hook-form';
 import { Select, type SelectProps } from '@app/ui';
-import type { FormControllerProps } from './types.js';
+import type { FormControllerProps } from './types';
 
 type FormSelectProps<T extends FieldValues> = FormControllerProps<T> &
   Omit<SelectProps, 'name' | 'value' | 'onChange' | 'onBlur' | 'ref' | 'error'>;
@@ -13,7 +13,7 @@ export function FormSelect<T extends FieldValues>({
   rules,
   children,
   ...rest
-}: FormSelectProps<T>): JSX.Element {
+}: FormSelectProps<T>) {
   return (
     <Controller
       name={name}

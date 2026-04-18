@@ -1,6 +1,6 @@
 import { useMutation, UseMutationOptions, useQueryClient } from '@tanstack/react-query';
 import { type AccountFormValues } from '@app/shared-types';
-import { accountsQueryKeys } from '../queries/fetchAccountsQuery.js';
+import { accountsQueryKeys } from '../queries/fetchAccountsQuery';
 
 /**
  * Update an account via the API

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { prisma, Prisma } from '@app/db';
 import { accountFormSchema } from '@app/shared-types';
-import { handleRouteError } from '../../../lib/api-errors.js';
+import { handleRouteError } from '../../../lib/api-errors';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';

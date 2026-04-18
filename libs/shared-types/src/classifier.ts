@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { contestTaskSchema } from './contest.js';
+import { contestTaskSchema } from './contest';
 
 /**
  * Input to the classifier for a single post.

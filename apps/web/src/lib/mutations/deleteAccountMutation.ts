@@ -1,5 +1,5 @@
 import { useMutation, UseMutationOptions, useQueryClient } from '@tanstack/react-query';
-import { accountsQueryKeys } from '../queries/fetchAccountsQuery.js';
+import { accountsQueryKeys } from '../queries/fetchAccountsQuery';
 
 /**
  * Delete an account via the API

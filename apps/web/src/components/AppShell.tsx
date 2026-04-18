@@ -59,7 +59,7 @@ const links: Array<{ href: string; label: string }> = [
   { href: '/runs', label: 'B\u011bhy' },
 ];
 
-export function AppShell({ children }: { children: ReactNode }): JSX.Element {
+export function AppShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   return (
     <Shell>

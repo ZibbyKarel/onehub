@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { contestStatusSchema } from './contest.js';
+import { contestStatusSchema } from './contest';
 
 /** Handle validation matching Instagram's rules (1-30 chars, alnum/_/.). */
 const igHandleSchema = z

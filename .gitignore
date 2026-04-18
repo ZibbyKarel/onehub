@@ -55,3 +55,7 @@ logs/
 .worktrees/
 .security-key
 logs/security/
+
+.nx/polygraph
+.claude/worktrees
+.claude/settings.local.json

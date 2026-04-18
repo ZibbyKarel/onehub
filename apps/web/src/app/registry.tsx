@@ -12,7 +12,7 @@ import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
  * This is the standard Next 13+ app-router pattern — see
  * https://styled-components.com/docs/advanced#nextjs
  */
-export function StyledComponentsRegistry({ children }: { children: ReactNode }): JSX.Element {
+export function StyledComponentsRegistry({ children }: { children: ReactNode }) {
   const [sheet] = useState(() => new ServerStyleSheet());
 
   useServerInsertedHTML(() => {

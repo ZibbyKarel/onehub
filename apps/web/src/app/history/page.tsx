@@ -1,10 +1,10 @@
 import { Stack } from '@app/ui';
-import { fetchContestsByStatus } from '../../lib/contests.js';
-import { ContestList } from '../../components/ContestList.js';
+import { fetchContestsByStatus } from '../../lib/contests';
+import { ContestList } from '../../components/ContestList';
 
 export const dynamic = 'force-dynamic';
 
-export default async function HistoryPage(): Promise<JSX.Element> {
+export default async function HistoryPage() {
   const contests = await fetchContestsByStatus([
     'ENTERED',
     'WON',

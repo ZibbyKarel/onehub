@@ -2,7 +2,7 @@
 
 import { Controller, type FieldValues } from 'react-hook-form';
 import { Checkbox, type CheckboxProps } from '@app/ui';
-import type { FormControllerProps } from './types.js';
+import type { FormControllerProps } from './types';
 
 type FormCheckboxProps<T extends FieldValues> = FormControllerProps<T> &
   Omit<
@@ -15,7 +15,7 @@ export function FormCheckbox<T extends FieldValues>({
   control,
   rules,
   ...rest
-}: FormCheckboxProps<T>): JSX.Element {
+}: FormCheckboxProps<T>) {
   return (
     <Controller
       name={name}

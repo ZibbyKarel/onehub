@@ -1,10 +1,10 @@
 import { prisma } from '@app/db';
 import { Card, CardBody, CardHeader, CardTitle, Row, Stack } from '@app/ui';
-import { formatDateTime, formatRelative } from '../../lib/format.js';
+import { formatDateTime, formatRelative } from '../../lib/format';
 
 export const dynamic = 'force-dynamic';
 
-export default async function RunsPage(): Promise<JSX.Element> {
+export default async function RunsPage() {
   const runs = await prisma.classificationRun.findMany({
     orderBy: { startedAt: 'desc' },
     take: 50,

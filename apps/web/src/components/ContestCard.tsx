@@ -16,8 +16,8 @@ import {
   type BadgeStatusKey,
 } from '@app/ui';
 import type { ContestTask } from '@app/shared-types';
-import { formatDateTime, formatRelative } from '../lib/format.js';
-import type { ContestCard as ContestCardData } from '../lib/contests.js';
+import { formatDateTime, formatRelative } from '../lib/format';
+import type { ContestCard as ContestCardData } from '../lib/contests';
 
 const TASK_LABELS: Record<ContestTask, string> = {
   like_post: 'Like',
@@ -65,7 +65,7 @@ export interface ContestCardProps {
   onDismiss?: (postId: string) => void;
 }
 
-export function ContestCardView({ contest, onMarkEntered, onDismiss }: ContestCardProps): JSX.Element {
+export function ContestCardView({ contest, onMarkEntered, onDismiss }: ContestCardProps) {
   const [copied, setCopied] = useState(false);
 
   const copyComment = async () => {

@@ -8,11 +8,12 @@
 # Prisma client) and the other workspace libs.
 
 ARG NODE_VERSION=20-alpine
+ARG PNPM_VERSION=9.12.0
 
 FROM node:${NODE_VERSION} AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
+RUN npm install -g pnpm@${PNPM_VERSION}
 
 # ---------- deps ----------
 FROM base AS deps
@@ -24,7 +25,6 @@ COPY libs/db/prisma libs/db/prisma
 COPY libs/ai/package.json libs/ai/
 COPY libs/scraper/package.json libs/scraper/
 COPY libs/ui/package.json libs/ui/
-COPY libs/ui-tokens/package.json libs/ui-tokens/
 COPY libs/form/package.json libs/form/
 COPY libs/shared-types/package.json libs/shared-types/
 RUN pnpm install --frozen-lockfile
@@ -32,10 +32,9 @@ RUN pnpm install --frozen-lockfile
 # ---------- build ----------
 FROM base AS build
 WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
-COPY --from=deps /app/apps/web/node_modules ./apps/web/node_modules
+COPY --from=deps /app ./
 COPY . .
-RUN pnpm --filter @app/db exec prisma generate
+RUN pnpm prisma:generate
 RUN pnpm --filter @app/web build
 
 # ---------- runtime ----------
@@ -44,11 +43,8 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 # Next standalone output copies only what's needed; we add the prisma client
-# generated binaries explicitly.
+# generated server bundle and static assets explicitly.
 COPY --from=build /app/apps/web/.next/standalone ./
 COPY --from=build /app/apps/web/.next/static ./apps/web/.next/static
-COPY --from=build /app/apps/web/public ./apps/web/public
-COPY --from=build /app/node_modules/.prisma ./node_modules/.prisma
-COPY --from=build /app/node_modules/@prisma/client ./node_modules/@prisma/client
 EXPOSE 3000
 CMD ["node", "apps/web/server.js"]

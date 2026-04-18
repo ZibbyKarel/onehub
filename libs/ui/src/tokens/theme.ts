@@ -1,8 +1,8 @@
-import { colors } from './colors.js';
-import { radius } from './radius.js';
-import { shadows } from './shadows.js';
-import { spacing, type SpacingKey } from './spacing.js';
-import { typography } from './typography.js';
+import { colors } from './colors';
+import { radius } from './radius';
+import { shadows } from './shadows';
+import { spacing, type SpacingKey } from './spacing';
+import { typography } from './typography';
 
 /**
  * The single theme object consumed by Styled-Components. Keep this type
