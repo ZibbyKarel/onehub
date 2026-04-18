@@ -56,7 +56,7 @@ Built-in skills to use:
 
 - TypeScript `strict: true`, no `any` without a `// TODO` justifying it.
 - Every public API exported from a `libs/*` package must have a Zod schema in `libs/shared-types` if it crosses a process/HTTP boundary.
-- Styled-components: use theme tokens from `@app/ui-tokens`; never hardcode hex/px.
+- Styled-components: use theme tokens from `@app/ui`; never hardcode hex/px.
 - Form components: always render through `libs/form` wrappers in `apps/web`; raw `<input>` is forbidden in app code.
 - Secrets: only via `process.env`, typed through a central `env.ts` per app.
 

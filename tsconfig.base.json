@@ -27,8 +27,6 @@
       "@app/ai/*": ["libs/ai/src/*"],
       "@app/scraper": ["libs/scraper/src/index.ts"],
       "@app/scraper/*": ["libs/scraper/src/*"],
-      "@app/ui-tokens": ["libs/ui-tokens/src/index.ts"],
-      "@app/ui-tokens/*": ["libs/ui-tokens/src/*"],
       "@app/ui": ["libs/ui/src/index.ts"],
       "@app/ui/*": ["libs/ui/src/*"],
       "@app/form": ["libs/form/src/index.ts"],

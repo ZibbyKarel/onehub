@@ -13,7 +13,6 @@
       "@app/ai": ["../../libs/ai/src/index.ts"],
       "@app/ui": ["../../libs/ui/src/index.ts"],
       "@app/ui/*": ["../../libs/ui/src/*"],
-      "@app/ui-tokens": ["../../libs/ui-tokens/src/index.ts"],
       "@app/form": ["../../libs/form/src/index.ts"],
       "@app/shared-types": ["../../libs/shared-types/src/index.ts"]
     }

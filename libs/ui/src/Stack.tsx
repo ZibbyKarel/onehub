@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import type { SpacingKey } from '@app/ui-tokens';
+import type { SpacingKey } from './tokens/spacing';
 
 /** Vertical flex stack — the go-to layout primitive. */
 export const Stack = styled.div<{ gap?: SpacingKey; align?: 'stretch' | 'center' | 'start' | 'end' }>`

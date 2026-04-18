@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import type { Colors } from '@app/ui-tokens';
+import type { Colors } from './tokens/colors.js';
 
 export type BadgeVariant =
   | 'neutral'
