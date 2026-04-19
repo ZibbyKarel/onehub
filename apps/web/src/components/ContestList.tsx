@@ -1,6 +1,7 @@
 'use client';
 
 import { Stack } from '@app/ui';
+import { useLocalizedText, Translations } from '@app/internationalization';
 import { ContestCardView } from './ContestCard';
 import type { ContestCard } from '../lib/contests';
 import { useUpdateStatusMutation } from '../lib/mutations/updateStatusMutation';
@@ -13,9 +14,10 @@ export interface ContestListProps {
 
 export function ContestList({ contests, actionable }: ContestListProps) {
   const mutate = useUpdateStatusMutation();
+  const t = useLocalizedText();
 
   if (contests.length === 0) {
-    return <Stack gap={3}><p>Zat\u00edm tu nic nen\u00ed. Worker mus\u00ed nejd\u0159\u00edv doj\u00edt.</p></Stack>;
+    return <Stack gap={3}><p>{t(Translations.ContestListEmpty)}</p></Stack>;
   }
 
   return (

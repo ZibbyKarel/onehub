@@ -1,25 +1,26 @@
-# Graph Report - .  (2026-04-19)
+# Graph Report - /Users/zibby/Workspace/onehub  (2026-04-19)
 
 ## Corpus Check
-- Corpus is ~35,011 words - fits in a single context window. You may not need a graph.
+- 97 files · ~54,268 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 245 nodes · 227 edges · 75 communities detected
-- Extraction: 71% EXTRACTED · 29% INFERRED · 0% AMBIGUOUS · INFERRED: 65 edges (avg confidence: 0.77)
+- 206 nodes · 195 edges · 73 communities detected
+- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 40 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Classification Pipeline|Classification Pipeline]]
-- [[_COMMUNITY_Accounts Management UI|Accounts Management UI]]
-- [[_COMMUNITY_Instagram Scraper Core|Instagram Scraper Core]]
-- [[_COMMUNITY_Worker Configuration|Worker Configuration]]
-- [[_COMMUNITY_AI Classifier|AI Classifier]]
-- [[_COMMUNITY_Agent Governance|Agent Governance]]
-- [[_COMMUNITY_Component Refactoring|Component Refactoring]]
-- [[_COMMUNITY_Error Handling|Error Handling]]
-- [[_COMMUNITY_Instagram Parsing|Instagram Parsing]]
-- [[_COMMUNITY_Contest Pages|Contest Pages]]
-- [[_COMMUNITY_Form Components|Form Components]]
+- [[_COMMUNITY_Community 0|Community 0]]
+- [[_COMMUNITY_Community 1|Community 1]]
+- [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
+- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 7|Community 7]]
+- [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
 - [[_COMMUNITY_Community 11|Community 11]]
 - [[_COMMUNITY_Community 12|Community 12]]
 - [[_COMMUNITY_Community 13|Community 13]]
@@ -82,32 +83,30 @@
 - [[_COMMUNITY_Community 70|Community 70]]
 - [[_COMMUNITY_Community 71|Community 71]]
 - [[_COMMUNITY_Community 72|Community 72]]
-- [[_COMMUNITY_Community 73|Community 73]]
-- [[_COMMUNITY_Community 74|Community 74]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `InstagramScraper` - 12 edges
-2. `InstagramScraper` - 11 edges
-3. `runPipeline()` - 9 edges
-4. `classifyBatch()` - 7 edges
-5. `jitter()` - 6 edges
-6. `AccountsManager()` - 6 edges
-7. `handleRouteError()` - 6 edges
-8. `TanStack Query & Mutation Refactoring` - 6 edges
-9. `loadWorkerEnv()` - 5 edges
-10. `Instagram Giveaway Aggregator Project Summary` - 5 edges
+2. `runPipeline()` - 9 edges
+3. `jitter()` - 7 edges
+4. `classifyBatch()` - 6 edges
+5. `handleRouteError()` - 6 edges
+6. `TanStack Query & Mutation Refactoring` - 6 edges
+7. `extractTimelineNodesFromHtml()` - 5 edges
+8. `isTimelineNode()` - 5 edges
+9. `getServerTranslator()` - 5 edges
+10. `useLocalizedText()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `loadWorkerEnv()` --calls--> `loadScraperConfigFromEnv()`  [INFERRED]
-  apps/worker/src/config.ts → libs/scraper/src/config.ts
+- `FormTextarea()` --semantically_similar_to--> `useLocalizedText()`  [INFERRED] [semantically similar]
+  libs/form/src/FormTextarea.tsx → /Users/zibby/Workspace/onehub/libs/internationalization/src/lib/hooks/useLocalizedText.ts
+- `FormInput()` --semantically_similar_to--> `useLocalizedText()`  [INFERRED] [semantically similar]
+  libs/form/src/FormInput.tsx → /Users/zibby/Workspace/onehub/libs/internationalization/src/lib/hooks/useLocalizedText.ts
 - `IG Giveaway Aggregator Project` --semantically_similar_to--> `Instagram Giveaway Aggregator Project Summary`  [INFERRED] [semantically similar]
   README.md → AGENTS.md
 - `Technology Stack` --semantically_similar_to--> `Technology Stack Definition`  [INFERRED] [semantically similar]
   README.md → AGENTS.md
 - `Monorepo Layout` --semantically_similar_to--> `Repository Layout`  [INFERRED] [semantically similar]
   README.md → AGENTS.md
-- `loadWorkerEnv()` --calls--> `loadClassifierConfigFromEnv()`  [INFERRED]
-  apps/worker/src/config.ts → libs/ai/src/config.ts
 
 ## Hyperedges (group relationships)
 - **Extracted TanStack Query Hooks Set** — refactoring_summary_fetchaccountsquery, refactoring_summary_createaccountmutation, refactoring_summary_updateaccountmutation, refactoring_summary_deleteaccountmutation, refactoring_summary_updatestatusmutation [EXTRACTED 1.00]
@@ -121,76 +120,76 @@
 
 ## Communities
 
-### Community 0 - "Classification Pipeline"
-Cohesion: 0.1
-Nodes (5): classifyAndStore(), InstagramScraper, jitter(), runPipeline(), scrapeAndStore()
+### Community 0 - "Community 0"
+Cohesion: 0.16
+Nodes (8): loadScraperConfigFromEnv(), loadWorkerEnv(), main(), classifyAndStore(), finishRun(), runPipeline(), scrapeAndStore(), main()
 
-### Community 1 - "Accounts Management UI"
-Cohesion: 0.11
-Nodes (7): AccountsManager(), useCreateAccountMutation(), useDeleteAccountMutation(), useFetchAccountsQuery(), formatRelative(), formatDateTime(), useUpdateAccountMutation()
+### Community 1 - "Community 1"
+Cohesion: 0.23
+Nodes (4): InstagramScraper, jitter(), randomJitter(), sleep()
 
-### Community 2 - "Instagram Scraper Core"
-Cohesion: 0.22
-Nodes (5): loadScraperConfigFromEnv(), InstagramScraper, jitter(), randomJitter(), sleep()
+### Community 2 - "Community 2"
+Cohesion: 0.24
+Nodes (6): classify(), classifyBatch(), extractText(), parseJsonFromText(), renderBatchUserMessage(), loadClassifierConfigFromEnv()
 
-### Community 3 - "Worker Configuration"
-Cohesion: 0.21
-Nodes (7): loadWorkerEnv(), main(), classifyAndStore(), finishRun(), runPipeline(), scrapeAndStore(), main()
+### Community 3 - "Community 3"
+Cohesion: 0.15
+Nodes (6): fetchContestsByStatus(), generateMetadata(), AccountsPage(), CurrentContestsPage(), HistoryPage(), getServerTranslator()
 
-### Community 4 - "AI Classifier"
-Cohesion: 0.21
-Nodes (8): classify(), classifyBatch(), extractText(), parseJsonFromText() Function, parseJsonFromText(), renderBatchUserMessage(), classify() Function, loadClassifierConfigFromEnv()
+### Community 4 - "Community 4"
+Cohesion: 0.15
+Nodes (6): AppShell(), ContestList(), FormInput(), FormTextarea(), useUpdateStatusMutation(), useLocalizedText()
 
-### Community 5 - "Agent Governance"
+### Community 5 - "Community 5"
 Cohesion: 0.18
 Nodes (13): Claude API Skill Requirement Rationale, Coding Conventions, Critical Invariants, NX Workflow Guidelines, Instagram Giveaway Aggregator Project Summary, Repository Layout, Technology Stack Definition, Tier 1 Required Skills Matrix (+5 more)
 
-### Community 6 - "Component Refactoring"
+### Community 6 - "Community 6"
 Cohesion: 0.24
 Nodes (11): AccountsManager Component Refactoring, ContestList Component Refactoring, createAccountMutation Hook, deleteAccountMutation Hook, fetchAccountsQuery Hook, Mutation Hook Extraction Pattern, Query Hook Extraction Pattern, Refactoring Benefits Rationale (+3 more)
 
-### Community 7 - "Error Handling"
+### Community 7 - "Community 7"
 Cohesion: 0.27
 Nodes (6): handleRouteError(), zodErrorResponse(), DELETE(), GET(), PATCH(), POST()
 
-### Community 8 - "Instagram Parsing"
-Cohesion: 0.39
-Nodes (5): extractPostsFromNodes(), extractTimelineNodesFromHtml() Function, extractTimelineNodesFromHtml(), findTimelineEdges(), isTimelineNode()
+### Community 8 - "Community 8"
+Cohesion: 0.5
+Nodes (4): extractPostsFromNodes(), extractTimelineNodesFromHtml(), findTimelineEdges(), isTimelineNode()
 
-### Community 9 - "Contest Pages"
-Cohesion: 0.29
-Nodes (3): fetchContestsByStatus(), CurrentContestsPage(), HistoryPage()
-
-### Community 10 - "Form Components"
-Cohesion: 0.43
-Nodes (6): AccountsManager(), AccountsManager Component Refactoring, createAccountMutation Hook, deleteAccountMutation Hook, fetchAccountsQuery Hook, updateAccountMutation Hook
-
-### Community 11 - "Community 11"
-Cohesion: 0.33
-Nodes (3): FormInput(), FormTextarea(), useLocalizedText()
-
-### Community 12 - "Community 12"
-Cohesion: 0.33
-Nodes (1): handleRouteError()
-
-### Community 13 - "Community 13"
+### Community 9 - "Community 9"
 Cohesion: 0.4
-Nodes (2): ContestList(), useUpdateStatusMutation()
+Nodes (2): formatRelative(), formatDateTime()
 
-### Community 14 - "Community 14"
-Cohesion: 0.4
-Nodes (5): InstagramScraper.ensureLoggedIn() Method, InstagramScraper.fetchRecentPosts() Method, InstagramScraper.hasChallenge() Method, InstagramScraper.isLoggedIn() Method, InstagramScraper.performLogin() Method
-
-### Community 15 - "Community 15"
+### Community 10 - "Community 10"
 Cohesion: 0.5
 Nodes (4): Critical Invariants, Instagram Giveaway Aggregator Project Summary, Repository Layout, Technology Stack Definition
 
+### Community 11 - "Community 11"
+Cohesion: 0.67
+Nodes (0): 
+
+### Community 12 - "Community 12"
+Cohesion: 0.67
+Nodes (0): 
+
+### Community 13 - "Community 13"
+Cohesion: 0.67
+Nodes (0): 
+
+### Community 14 - "Community 14"
+Cohesion: 0.67
+Nodes (0): 
+
+### Community 15 - "Community 15"
+Cohesion: 1.0
+Nodes (1): InstagramScraper
+
 ### Community 16 - "Community 16"
-Cohesion: 0.5
+Cohesion: 1.0
 Nodes (0): 
 
 ### Community 17 - "Community 17"
-Cohesion: 0.67
+Cohesion: 1.0
 Nodes (0): 
 
 ### Community 18 - "Community 18"
@@ -379,31 +378,31 @@ Nodes (0):
 
 ### Community 64 - "Community 64"
 Cohesion: 1.0
-Nodes (1): Internationalization (i18n) Quick Guide
+Nodes (0): 
 
 ### Community 65 - "Community 65"
 Cohesion: 1.0
-Nodes (1): Known Limitations (v0)
+Nodes (0): 
 
 ### Community 66 - "Community 66"
 Cohesion: 1.0
-Nodes (1): InstagramScraper.close() Method
+Nodes (0): 
 
 ### Community 67 - "Community 67"
 Cohesion: 1.0
-Nodes (1): InstagramScraper.waitBetweenHandles() Method
+Nodes (0): 
 
 ### Community 68 - "Community 68"
 Cohesion: 1.0
-Nodes (1): InstagramScraper.newPage() Method
+Nodes (0): 
 
 ### Community 69 - "Community 69"
 Cohesion: 1.0
-Nodes (1): InstagramScraper.open() Method
+Nodes (1): Internationalization (i18n) Quick Guide
 
 ### Community 70 - "Community 70"
 Cohesion: 1.0
-Nodes (1): InstagramScraper.constructor() Method
+Nodes (1): Known Limitations (v0)
 
 ### Community 71 - "Community 71"
 Cohesion: 1.0
@@ -411,148 +410,142 @@ Nodes (1): Claude API Skill Requirement Rationale
 
 ### Community 72 - "Community 72"
 Cohesion: 1.0
-Nodes (0): 
-
-### Community 73 - "Community 73"
-Cohesion: 1.0
-Nodes (0): 
-
-### Community 74 - "Community 74"
-Cohesion: 1.0
-Nodes (0): 
+Nodes (1): AccountsManager Component Refactoring
 
 ## Knowledge Gaps
-- **23 isolated node(s):** `ContestList Component Refactoring`, `Query Hook Extraction Pattern`, `Mutation Hook Extraction Pattern`, `Refactoring Benefits Rationale`, `Internationalization (i18n) Quick Guide` (+18 more)
+- **16 isolated node(s):** `InstagramScraper`, `ContestList Component Refactoring`, `Query Hook Extraction Pattern`, `Mutation Hook Extraction Pattern`, `Refactoring Benefits Rationale` (+11 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 18`** (2 nodes): `ThemeProvider.tsx`, `ThemeProvider()`
+- **Thin community `Community 15`** (2 nodes): `InstagramScraper`, `instagram.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 19`** (2 nodes): `FormSubmit()`, `FormSubmit.tsx`
+- **Thin community `Community 16`** (2 nodes): `ThemeProvider.tsx`, `ThemeProvider()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 20`** (2 nodes): `InternationalizationProvider()`, `InternationalizationProvider.tsx`
+- **Thin community `Community 17`** (2 nodes): `FormSubmit()`, `FormSubmit.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 21`** (2 nodes): `formatMessage()`, `format.ts`
+- **Thin community `Community 18`** (2 nodes): `seed.ts`, `main()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 22`** (2 nodes): `useLocalizedText.spec.tsx`, `ProviderWrapper()`
+- **Thin community `Community 19`** (2 nodes): `StyledComponentsRegistry.tsx`, `StyledComponentsRegistry()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 23`** (2 nodes): `seed.ts`, `main()`
+- **Thin community `Community 20`** (2 nodes): `Providers()`, `Providers.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 24`** (2 nodes): `StyledComponentsRegistry.tsx`, `StyledComponentsRegistry()`
+- **Thin community `Community 21`** (2 nodes): `copyComment()`, `ContestCard.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 25`** (2 nodes): `layout.tsx`, `RootLayout()`
+- **Thin community `Community 22`** (2 nodes): `getErrorMessage()`, `AccountsManager.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 26`** (2 nodes): `Providers.tsx`, `Providers()`
+- **Thin community `Community 23`** (1 nodes): `vitest.config.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 27`** (2 nodes): `page.tsx`, `AccountsPage()`
+- **Thin community `Community 24`** (1 nodes): `parse.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 28`** (2 nodes): `ContestCard.tsx`, `copyComment()`
+- **Thin community `Community 25`** (1 nodes): `config.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 29`** (2 nodes): `AppShell.tsx`, `AppShell()`
+- **Thin community `Community 26`** (1 nodes): `index.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 30`** (1 nodes): `vitest.config.ts`
+- **Thin community `Community 27`** (1 nodes): `jitter.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 31`** (1 nodes): `index.ts`
+- **Thin community `Community 28`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 32`** (1 nodes): `Card.tsx`
+- **Thin community `Community 29`** (1 nodes): `index.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 33`** (1 nodes): `styled.d.ts`
+- **Thin community `Community 30`** (1 nodes): `Card.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 34`** (1 nodes): `Stack.tsx`
+- **Thin community `Community 31`** (1 nodes): `styled.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 35`** (1 nodes): `Badge.tsx`
+- **Thin community `Community 32`** (1 nodes): `Stack.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 36`** (1 nodes): `GlobalStyles.tsx`
+- **Thin community `Community 33`** (1 nodes): `Badge.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 37`** (1 nodes): `index.ts`
+- **Thin community `Community 34`** (1 nodes): `GlobalStyles.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 38`** (1 nodes): `Button.tsx`
+- **Thin community `Community 35`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 39`** (1 nodes): `Checkbox.tsx`
+- **Thin community `Community 36`** (1 nodes): `Button.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 40`** (1 nodes): `Select.tsx`
+- **Thin community `Community 37`** (1 nodes): `Checkbox.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 41`** (1 nodes): `Textarea.tsx`
+- **Thin community `Community 38`** (1 nodes): `Select.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 42`** (1 nodes): `Input.tsx`
+- **Thin community `Community 39`** (1 nodes): `Textarea.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 43`** (1 nodes): `FormCheckbox.tsx`
+- **Thin community `Community 40`** (1 nodes): `Input.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 44`** (1 nodes): `FormSelect.tsx`
+- **Thin community `Community 41`** (1 nodes): `FormCheckbox.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 45`** (1 nodes): `types.ts`
+- **Thin community `Community 42`** (1 nodes): `FormSelect.tsx`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 46`** (1 nodes): `index.ts`
+- **Thin community `Community 43`** (1 nodes): `types.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 47`** (1 nodes): `index.ts`
+- **Thin community `Community 44`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 48`** (1 nodes): `translationKeys.ts`
+- **Thin community `Community 45`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 49`** (1 nodes): `translator.spec.ts`
+- **Thin community `Community 46`** (1 nodes): `types.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 50`** (1 nodes): `format.spec.ts`
+- **Thin community `Community 47`** (1 nodes): `translations.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 51`** (1 nodes): `dictionaries.ts`
+- **Thin community `Community 48`** (1 nodes): `vitest.config.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 52`** (1 nodes): `types.ts`
+- **Thin community `Community 49`** (1 nodes): `classifier.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 53`** (1 nodes): `context.tsx`
+- **Thin community `Community 50`** (1 nodes): `config.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 54`** (1 nodes): `vitest.config.ts`
+- **Thin community `Community 51`** (1 nodes): `index.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 55`** (1 nodes): `index.ts`
+- **Thin community `Community 52`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 56`** (1 nodes): `forms.ts`
+- **Thin community `Community 53`** (1 nodes): `index.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 57`** (1 nodes): `contest.ts`
+- **Thin community `Community 54`** (1 nodes): `classify.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 58`** (1 nodes): `index.ts`
+- **Thin community `Community 55`** (1 nodes): `classify.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 59`** (1 nodes): `classifier.ts`
+- **Thin community `Community 56`** (1 nodes): `index.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 60`** (1 nodes): `scraper.ts`
+- **Thin community `Community 57`** (1 nodes): `forms.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 61`** (1 nodes): `index.ts`
+- **Thin community `Community 58`** (1 nodes): `contest.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 62`** (1 nodes): `next.config.mjs`
+- **Thin community `Community 59`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 63`** (1 nodes): `next-env.d.ts`
+- **Thin community `Community 60`** (1 nodes): `index.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 64`** (1 nodes): `Internationalization (i18n) Quick Guide`
+- **Thin community `Community 61`** (1 nodes): `classifier.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 65`** (1 nodes): `Known Limitations (v0)`
+- **Thin community `Community 62`** (1 nodes): `scraper.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 66`** (1 nodes): `InstagramScraper.close() Method`
+- **Thin community `Community 63`** (1 nodes): `index.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 67`** (1 nodes): `InstagramScraper.waitBetweenHandles() Method`
+- **Thin community `Community 64`** (1 nodes): `index.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 68`** (1 nodes): `InstagramScraper.newPage() Method`
+- **Thin community `Community 65`** (1 nodes): `index.d.ts`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 69`** (1 nodes): `InstagramScraper.open() Method`
+- **Thin community `Community 66`** (1 nodes): `next.config.mjs`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 70`** (1 nodes): `InstagramScraper.constructor() Method`
+- **Thin community `Community 67`** (1 nodes): `next-env.d.ts`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 68`** (1 nodes): `request.ts`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 69`** (1 nodes): `Internationalization (i18n) Quick Guide`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 70`** (1 nodes): `Known Limitations (v0)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 71`** (1 nodes): `Claude API Skill Requirement Rationale`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 72`** (1 nodes): `ThemeProvider()`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 73`** (1 nodes): `formatMessage()`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 74`** (1 nodes): `AppShell()`
+- **Thin community `Community 72`** (1 nodes): `AccountsManager Component Refactoring`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `runPipeline()` connect `Worker Configuration` to `Instagram Scraper Core`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **Why does `classifyAndStore()` connect `Worker Configuration` to `AI Classifier`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `classify()` connect `AI Classifier` to `Worker Configuration`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Are the 2 inferred relationships involving `InstagramScraper` (e.g. with `loadScraperConfigFromEnv()` and `scrapeAndStore()`) actually correct?**
-  _`InstagramScraper` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `runPipeline()` connect `Community 0` to `Community 1`?**
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+- **Why does `classifyAndStore()` connect `Community 0` to `Community 2`?**
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
+- **Why does `classify()` connect `Community 2` to `Community 0`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Are the 5 inferred relationships involving `runPipeline()` (e.g. with `main()` and `.open()`) actually correct?**
   _`runPipeline()` has 5 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `jitter()` (e.g. with `.ensureLoggedIn()` and `.fetchRecentPosts()`) actually correct?**
   _`jitter()` has 3 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `ContestList Component Refactoring`, `Query Hook Extraction Pattern`, `Mutation Hook Extraction Pattern` to the rest of the system?**
-  _23 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Are the 4 inferred relationships involving `handleRouteError()` (e.g. with `GET()` and `POST()`) actually correct?**
+  _`handleRouteError()` has 4 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `InstagramScraper`, `ContestList Component Refactoring`, `Query Hook Extraction Pattern` to the rest of the system?**
+  _16 weakly-connected nodes found - possible documentation gaps or missing edges._

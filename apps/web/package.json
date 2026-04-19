@@ -13,11 +13,12 @@
   "dependencies": {
     "@app/db": "workspace:*",
     "@app/form": "workspace:*",
-    "@app/shared-types": "workspace:*",
+"@app/shared-types": "workspace:*",
     "@app/ui": "workspace:*",
     "@hookform/resolvers": "^3.9.0",
     "@tanstack/react-query": "^5.56.2",
     "next": "^15.0.0",
+    "next-intl": "^3.26.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.53.0",

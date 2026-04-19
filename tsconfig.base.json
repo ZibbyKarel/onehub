@@ -34,8 +34,8 @@
       "@app/form/*": ["libs/form/src/*"],
       "@app/shared-types": ["libs/sharedTypes/src/index.ts"],
       "@app/shared-types/*": ["libs/sharedTypes/src/*"],
-      "@app/internationalization": ["libs/internationalization/src/index.ts"],
-      "@app/internationalization/*": ["libs/internationalization/src/*"]
+      "@app/internationalization": ["apps/web/src/i18n/index.ts"],
+      "@app/internationalization/*": ["apps/web/src/i18n/*"]
     }
   },
   "exclude": [

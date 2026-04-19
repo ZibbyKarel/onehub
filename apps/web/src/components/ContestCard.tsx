@@ -16,18 +16,28 @@ import {
   type BadgeStatusKey,
 } from '@app/ui';
 import type { ContestTask } from '@app/shared-types';
+import { useLocalizedText, Translations } from '@app/internationalization';
 import { formatDateTime, formatRelative } from '../lib/format';
 import type { ContestCard as ContestCardData } from '../lib/contests';
 
-const TASK_LABELS: Record<ContestTask, string> = {
-  like_post: 'Like',
-  follow_account: 'Follow',
-  comment: 'Koment\u00e1\u0159',
-  tag_friend: 'Ozna\u010dit kamar\u00e1da',
-  share_story: 'Sd\u00edlet do story',
-  save_post: 'Ulo\u017eit post',
-  visit_link: 'Nav\u0161t\u00edvit odkaz',
-  other: 'Jin\u00e9',
+const TASK_KEYS: Record<ContestTask, Translations> = {
+  like_post: Translations.ContestTaskLike,
+  follow_account: Translations.ContestTaskFollow,
+  comment: Translations.ContestTaskComment,
+  tag_friend: Translations.ContestTaskTagFriend,
+  share_story: Translations.ContestTaskShareStory,
+  save_post: Translations.ContestTaskSavePost,
+  visit_link: Translations.ContestTaskVisitLink,
+  other: Translations.ContestTaskOther,
+};
+
+const STATUS_KEYS: Record<string, Translations> = {
+  NEW: Translations.ContestStatusNew,
+  ENTERED: Translations.ContestStatusEntered,
+  WON: Translations.ContestStatusWon,
+  LOST: Translations.ContestStatusLost,
+  EXPIRED: Translations.ContestStatusExpired,
+  DISMISSED: Translations.ContestStatusDismissed,
 };
 
 const Thumb = styled.a`
@@ -67,6 +77,7 @@ export interface ContestCardProps {
 
 export function ContestCardView({ contest, onMarkEntered, onDismiss }: ContestCardProps) {
   const [copied, setCopied] = useState(false);
+  const t = useLocalizedText();
 
   const copyComment = async () => {
     if (!contest.suggestedComment) return;
@@ -83,7 +94,7 @@ export function ContestCardView({ contest, onMarkEntered, onDismiss }: ContestCa
             href={contest.post.permalink}
             target="_blank"
             rel="noreferrer"
-            aria-label="Otev\u0159\u00edt post na Instagramu"
+            aria-label={t(Translations.ContestOpenOnInstagramAria)}
             style={{
               backgroundImage: contest.post.mediaUrl
                 ? `url(${contest.post.mediaUrl})`
@@ -93,11 +104,16 @@ export function ContestCardView({ contest, onMarkEntered, onDismiss }: ContestCa
           <Stack gap={1}>
             <CardTitle>@{contest.post.accountHandle}</CardTitle>
             <Handle>
-              Post z {formatDateTime(contest.post.postedAt)} — zachyceno {formatRelative(contest.detectedAt)}
+              {t(Translations.ContestPostedAt, {
+                postedAt: formatDateTime(contest.post.postedAt),
+                detectedAt: formatRelative(contest.detectedAt),
+              })}
             </Handle>
           </Stack>
         </Row>
-        <StatusBadge status={contest.status as BadgeStatusKey}>{contest.status}</StatusBadge>
+        <StatusBadge status={contest.status as BadgeStatusKey}>
+          {t(STATUS_KEYS[contest.status] ?? Translations.ContestStatusNew)}
+        </StatusBadge>
       </CardHeader>
 
       <CardBody>
@@ -105,19 +121,21 @@ export function ContestCardView({ contest, onMarkEntered, onDismiss }: ContestCa
           <div>{contest.summary}</div>
 
           <Row gap={2} wrap>
-            {contest.tasks.map((t) => (
-              <Badge key={t} variant="accent">
-                {TASK_LABELS[t]}
+            {contest.tasks.map((task) => (
+              <Badge key={task} variant="accent">
+                {t(TASK_KEYS[task])}
               </Badge>
             ))}
             {contest.deadline && (
-              <Badge variant="warning">Deadline: {formatDateTime(contest.deadline)}</Badge>
+              <Badge variant="warning">
+                {t(Translations.ContestDeadline, { date: formatDateTime(contest.deadline) })}
+              </Badge>
             )}
           </Row>
 
           {contest.suggestedComment && (
             <Stack gap={2}>
-              <Handle>Navr\u017een\u00fd koment\u00e1\u0159:</Handle>
+              <Handle>{t(Translations.ContestSuggestedCommentTitle)}</Handle>
               <CommentBlock>{contest.suggestedComment}</CommentBlock>
             </Stack>
           )}
@@ -127,7 +145,7 @@ export function ContestCardView({ contest, onMarkEntered, onDismiss }: ContestCa
       <CardFooter>
         {contest.suggestedComment && (
           <Button variant="primary" onClick={copyComment}>
-            {copied ? 'Zkop\u00edrov\u00e1no!' : 'Zkop\u00edrovat koment\u00e1\u0159'}
+            {copied ? t(Translations.ContestCopyCommentDone) : t(Translations.ContestCopyComment)}
           </Button>
         )}
         <Button
@@ -137,16 +155,16 @@ export function ContestCardView({ contest, onMarkEntered, onDismiss }: ContestCa
           target="_blank"
           rel="noreferrer"
         >
-          Otev\u0159\u00edt na IG
+          {t(Translations.ContestOpenOnInstagram)}
         </Button>
         {onMarkEntered && contest.status === 'NEW' && (
           <Button variant="ghost" onClick={() => onMarkEntered(contest.postId)}>
-            Zapsat jako zadan\u00e9
+            {t(Translations.ContestMarkEntered)}
           </Button>
         )}
         {onDismiss && contest.status === 'NEW' && (
           <Button variant="ghost" onClick={() => onDismiss(contest.postId)}>
-            Zahodit
+            {t(Translations.ContestDismiss)}
           </Button>
         )}
       </CardFooter>

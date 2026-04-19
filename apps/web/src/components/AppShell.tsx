@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import type { ReactNode } from 'react';
 import styled from 'styled-components';
+import { useLocalizedText, Translations } from '@app/internationalization';
 
 const Shell = styled.div`
   min-height: 100vh;
@@ -52,19 +53,21 @@ const Main = styled.main`
   margin: 0 auto;
 `;
 
-const links: Array<{ href: string; label: string }> = [
-  { href: '/', label: 'Aktu\u00e1ln\u00ed' },
-  { href: '/history', label: 'Historie' },
-  { href: '/accounts', label: '\u00da\u010dty' },
-  { href: '/runs', label: 'B\u011bhy' },
-];
-
 export function AppShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
+  const t = useLocalizedText();
+
+  const links = [
+    { href: '/', label: t(Translations.NavCurrent) },
+    { href: '/history', label: t(Translations.NavHistory) },
+    { href: '/accounts', label: t(Translations.NavAccounts) },
+    { href: '/runs', label: t(Translations.NavRuns) },
+  ];
+
   return (
     <Shell>
       <TopBar>
-        <Brand>IG Giveaway</Brand>
+        <Brand>{t(Translations.BrandName)}</Brand>
         <Nav>
           {links.map((l) => (
             <NavLink key={l.href} href={l.href} $active={pathname === l.href}>

@@ -126,8 +126,17 @@
       "source_file": "libs/scraper/vitest.config.ts",
       "source_location": "L1",
       "id": "libs_scraper_vitest_config_ts",
-      "community": 30,
+      "community": 23,
       "norm_label": "vitest.config.ts"
+    },
+    {
+      "label": "parse.d.ts",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/parse.d.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_scraper_src_parse_d_ts",
+      "community": 24,
+      "norm_label": "parse.d.ts"
     },
     {
       "label": "parse.ts",
@@ -141,8 +150,8 @@
     {
       "label": "extractPostsFromNodes()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/parse.ts",
-      "source_location": "L37",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/parse.js",
+      "source_location": "L9",
       "id": "parse_extractpostsfromnodes",
       "community": 8,
       "norm_label": "extractpostsfromnodes()"
@@ -150,8 +159,8 @@
     {
       "label": "extractTimelineNodesFromHtml()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/parse.ts",
-      "source_location": "L78",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/parse.js",
+      "source_location": "L44",
       "id": "parse_extracttimelinenodesfromhtml",
       "community": 8,
       "norm_label": "extracttimelinenodesfromhtml()"
@@ -159,8 +168,8 @@
     {
       "label": "findTimelineEdges()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/parse.ts",
-      "source_location": "L113",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/parse.js",
+      "source_location": "L81",
       "id": "parse_findtimelineedges",
       "community": 8,
       "norm_label": "findtimelineedges()"
@@ -168,11 +177,65 @@
     {
       "label": "isTimelineNode()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/parse.ts",
-      "source_location": "L146",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/parse.js",
+      "source_location": "L115",
       "id": "parse_istimelinenode",
       "community": 8,
       "norm_label": "istimelinenode()"
+    },
+    {
+      "label": "instagram.d.ts",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.d.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_scraper_src_instagram_d_ts",
+      "community": 15,
+      "norm_label": "instagram.d.ts"
+    },
+    {
+      "label": "InstagramScraper",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.d.ts",
+      "source_location": "L19",
+      "id": "instagram_d_instagramscraper",
+      "community": 15,
+      "norm_label": "instagramscraper"
+    },
+    {
+      "label": "jitter.js",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/jitter.js",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_scraper_src_jitter_js",
+      "community": 1,
+      "norm_label": "jitter.js"
+    },
+    {
+      "label": "sleep()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/jitter.ts",
+      "source_location": "L6",
+      "id": "jitter_sleep",
+      "community": 1,
+      "norm_label": "sleep()"
+    },
+    {
+      "label": "randomJitter()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/jitter.ts",
+      "source_location": "L9",
+      "id": "jitter_randomjitter",
+      "community": 1,
+      "norm_label": "randomjitter()"
+    },
+    {
+      "label": "jitter()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/jitter.ts",
+      "source_location": "L14",
+      "id": "jitter_jitter",
+      "community": 1,
+      "norm_label": "jitter()"
     },
     {
       "label": "instagram.ts",
@@ -180,107 +243,116 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L1",
       "id": "libs_scraper_src_instagram_ts",
-      "community": 2,
+      "community": 1,
       "norm_label": "instagram.ts"
     },
     {
       "label": "InstagramScraper",
       "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L27",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L22",
       "id": "instagram_instagramscraper",
-      "community": 2,
+      "community": 1,
       "norm_label": "instagramscraper"
     },
     {
       "label": ".constructor()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L28",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L25",
       "id": "instagram_instagramscraper_constructor",
-      "community": 2,
+      "community": 1,
       "norm_label": ".constructor()"
     },
     {
       "label": ".open()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L33",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L29",
       "id": "instagram_instagramscraper_open",
-      "community": 3,
+      "community": 0,
       "norm_label": ".open()"
     },
     {
       "label": ".close()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L44",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L39",
       "id": "instagram_instagramscraper_close",
-      "community": 2,
+      "community": 1,
       "norm_label": ".close()"
     },
     {
       "label": ".ensureLoggedIn()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L52",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L46",
       "id": "instagram_instagramscraper_ensureloggedin",
-      "community": 2,
+      "community": 1,
       "norm_label": ".ensureloggedin()"
     },
     {
       "label": ".fetchRecentPosts()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L72",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L66",
       "id": "instagram_instagramscraper_fetchrecentposts",
-      "community": 2,
+      "community": 1,
       "norm_label": ".fetchrecentposts()"
     },
     {
       "label": ".waitBetweenHandles()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L102",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L91",
       "id": "instagram_instagramscraper_waitbetweenhandles",
-      "community": 2,
+      "community": 0,
       "norm_label": ".waitbetweenhandles()"
     },
     {
       "label": ".newPage()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L106",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L94",
       "id": "instagram_instagramscraper_newpage",
-      "community": 2,
+      "community": 1,
       "norm_label": ".newpage()"
     },
     {
       "label": ".isLoggedIn()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L115",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L102",
       "id": "instagram_instagramscraper_isloggedin",
-      "community": 2,
+      "community": 1,
       "norm_label": ".isloggedin()"
     },
     {
       "label": ".hasChallenge()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L123",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L109",
       "id": "instagram_instagramscraper_haschallenge",
-      "community": 2,
+      "community": 1,
       "norm_label": ".haschallenge()"
     },
     {
       "label": ".performLogin()",
       "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L128",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L113",
       "id": "instagram_instagramscraper_performlogin",
-      "community": 2,
+      "community": 1,
       "norm_label": ".performlogin()"
+    },
+    {
+      "label": "config.d.ts",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/config.d.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_scraper_src_config_d_ts",
+      "community": 25,
+      "norm_label": "config.d.ts"
     },
     {
       "label": "parse.test.ts",
@@ -301,12 +373,57 @@
       "norm_label": "node()"
     },
     {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/index.js",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_scraper_src_index_js",
+      "community": 26,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "config.js",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/config.js",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_scraper_src_config_js",
+      "community": 0,
+      "norm_label": "config.js"
+    },
+    {
+      "label": "loadScraperConfigFromEnv()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/config.ts",
+      "source_location": "L36",
+      "id": "config_loadscraperconfigfromenv",
+      "community": 0,
+      "norm_label": "loadscraperconfigfromenv()"
+    },
+    {
+      "label": "jitter.d.ts",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/jitter.d.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_scraper_src_jitter_d_ts",
+      "community": 27,
+      "norm_label": "jitter.d.ts"
+    },
+    {
+      "label": "parse.js",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/parse.js",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_scraper_src_parse_js",
+      "community": 8,
+      "norm_label": "parse.js"
+    },
+    {
       "label": "index.ts",
       "file_type": "code",
       "source_file": "libs/scraper/src/index.ts",
       "source_location": "L1",
       "id": "libs_scraper_src_index_ts",
-      "community": 31,
+      "community": 28,
       "norm_label": "index.ts"
     },
     {
@@ -315,17 +432,26 @@
       "source_file": "libs/scraper/src/config.ts",
       "source_location": "L1",
       "id": "libs_scraper_src_config_ts",
-      "community": 2,
+      "community": 1,
       "norm_label": "config.ts"
     },
     {
-      "label": "loadScraperConfigFromEnv()",
+      "label": "index.d.ts",
       "file_type": "code",
-      "source_file": "libs/scraper/src/config.ts",
-      "source_location": "L36",
-      "id": "config_loadscraperconfigfromenv",
-      "community": 2,
-      "norm_label": "loadscraperconfigfromenv()"
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/index.d.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_scraper_src_index_d_ts",
+      "community": 29,
+      "norm_label": "index.d.ts"
+    },
+    {
+      "label": "instagram.js",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_scraper_src_instagram_js",
+      "community": 1,
+      "norm_label": "instagram.js"
     },
     {
       "label": "jitter.ts",
@@ -333,35 +459,8 @@
       "source_file": "libs/scraper/src/jitter.ts",
       "source_location": "L1",
       "id": "libs_scraper_src_jitter_ts",
-      "community": 2,
+      "community": 1,
       "norm_label": "jitter.ts"
-    },
-    {
-      "label": "sleep()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/jitter.ts",
-      "source_location": "L6",
-      "id": "jitter_sleep",
-      "community": 2,
-      "norm_label": "sleep()"
-    },
-    {
-      "label": "randomJitter()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/jitter.ts",
-      "source_location": "L9",
-      "id": "jitter_randomjitter",
-      "community": 2,
-      "norm_label": "randomjitter()"
-    },
-    {
-      "label": "jitter()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/jitter.ts",
-      "source_location": "L14",
-      "id": "jitter_jitter",
-      "community": 2,
-      "norm_label": "jitter()"
     },
     {
       "label": "Card.tsx",
@@ -369,7 +468,7 @@
       "source_file": "libs/ui/src/Card.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_card_tsx",
-      "community": 32,
+      "community": 30,
       "norm_label": "card.tsx"
     },
     {
@@ -378,7 +477,7 @@
       "source_file": "libs/ui/src/styled.d.ts",
       "source_location": "L1",
       "id": "libs_ui_src_styled_d_ts",
-      "community": 33,
+      "community": 31,
       "norm_label": "styled.d.ts"
     },
     {
@@ -387,7 +486,7 @@
       "source_file": "libs/ui/src/Stack.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_stack_tsx",
-      "community": 34,
+      "community": 32,
       "norm_label": "stack.tsx"
     },
     {
@@ -396,7 +495,7 @@
       "source_file": "libs/ui/src/ThemeProvider.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_themeprovider_tsx",
-      "community": 18,
+      "community": 16,
       "norm_label": "themeprovider.tsx"
     },
     {
@@ -405,7 +504,7 @@
       "source_file": "libs/ui/src/ThemeProvider.tsx",
       "source_location": "L12",
       "id": "themeprovider_themeprovider",
-      "community": 18,
+      "community": 16,
       "norm_label": "themeprovider()"
     },
     {
@@ -414,7 +513,7 @@
       "source_file": "libs/ui/src/Badge.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_badge_tsx",
-      "community": 35,
+      "community": 33,
       "norm_label": "badge.tsx"
     },
     {
@@ -423,7 +522,7 @@
       "source_file": "libs/ui/src/GlobalStyles.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_globalstyles_tsx",
-      "community": 36,
+      "community": 34,
       "norm_label": "globalstyles.tsx"
     },
     {
@@ -432,7 +531,7 @@
       "source_file": "libs/ui/src/index.ts",
       "source_location": "L1",
       "id": "libs_ui_src_index_ts",
-      "community": 37,
+      "community": 35,
       "norm_label": "index.ts"
     },
     {
@@ -441,7 +540,7 @@
       "source_file": "libs/ui/src/Button.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_button_tsx",
-      "community": 38,
+      "community": 36,
       "norm_label": "button.tsx"
     },
     {
@@ -450,7 +549,7 @@
       "source_file": "libs/ui/src/Checkbox.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_checkbox_tsx",
-      "community": 39,
+      "community": 37,
       "norm_label": "checkbox.tsx"
     },
     {
@@ -459,7 +558,7 @@
       "source_file": "libs/ui/src/Select.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_select_tsx",
-      "community": 40,
+      "community": 38,
       "norm_label": "select.tsx"
     },
     {
@@ -468,7 +567,7 @@
       "source_file": "libs/ui/src/Textarea.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_textarea_tsx",
-      "community": 41,
+      "community": 39,
       "norm_label": "textarea.tsx"
     },
     {
@@ -477,7 +576,7 @@
       "source_file": "libs/ui/src/Input.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_input_tsx",
-      "community": 42,
+      "community": 40,
       "norm_label": "input.tsx"
     },
     {
@@ -486,7 +585,7 @@
       "source_file": "libs/form/src/FormSubmit.tsx",
       "source_location": "L1",
       "id": "libs_form_src_formsubmit_tsx",
-      "community": 19,
+      "community": 17,
       "norm_label": "formsubmit.tsx"
     },
     {
@@ -495,7 +594,7 @@
       "source_file": "libs/form/src/FormSubmit.tsx",
       "source_location": "L20",
       "id": "formsubmit_formsubmit",
-      "community": 19,
+      "community": 17,
       "norm_label": "formsubmit()"
     },
     {
@@ -504,7 +603,7 @@
       "source_file": "libs/form/src/FormTextarea.tsx",
       "source_location": "L1",
       "id": "libs_form_src_formtextarea_tsx",
-      "community": 11,
+      "community": 4,
       "norm_label": "formtextarea.tsx"
     },
     {
@@ -513,7 +612,7 @@
       "source_file": "libs/form/src/FormTextarea.tsx",
       "source_location": "L10",
       "id": "formtextarea_formtextarea",
-      "community": 11,
+      "community": 4,
       "norm_label": "formtextarea()"
     },
     {
@@ -522,7 +621,7 @@
       "source_file": "libs/form/src/FormCheckbox.tsx",
       "source_location": "L1",
       "id": "libs_form_src_formcheckbox_tsx",
-      "community": 43,
+      "community": 41,
       "norm_label": "formcheckbox.tsx"
     },
     {
@@ -531,7 +630,7 @@
       "source_file": "libs/form/src/FormSelect.tsx",
       "source_location": "L1",
       "id": "libs_form_src_formselect_tsx",
-      "community": 44,
+      "community": 42,
       "norm_label": "formselect.tsx"
     },
     {
@@ -540,7 +639,7 @@
       "source_file": "libs/form/src/types.ts",
       "source_location": "L1",
       "id": "libs_form_src_types_ts",
-      "community": 45,
+      "community": 43,
       "norm_label": "types.ts"
     },
     {
@@ -549,7 +648,7 @@
       "source_file": "libs/form/src/index.ts",
       "source_location": "L1",
       "id": "libs_form_src_index_ts",
-      "community": 46,
+      "community": 44,
       "norm_label": "index.ts"
     },
     {
@@ -558,7 +657,7 @@
       "source_file": "libs/form/src/FormInput.tsx",
       "source_location": "L1",
       "id": "libs_form_src_forminput_tsx",
-      "community": 11,
+      "community": 4,
       "norm_label": "forminput.tsx"
     },
     {
@@ -567,169 +666,70 @@
       "source_file": "libs/form/src/FormInput.tsx",
       "source_location": "L24",
       "id": "forminput_forminput",
-      "community": 11,
+      "community": 4,
       "norm_label": "forminput()"
     },
     {
       "label": "index.ts",
       "file_type": "code",
-      "source_file": "libs/internationalization/src/index.ts",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/internationalization/src/index.ts",
       "source_location": "L1",
-      "id": "libs_internationalization_src_index_ts",
-      "community": 47,
+      "id": "users_zibby_workspace_onehub_libs_internationalization_src_index_ts",
+      "community": 45,
       "norm_label": "index.ts"
-    },
-    {
-      "label": "translator.ts",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/translator.ts",
-      "source_location": "L1",
-      "id": "libs_internationalization_src_lib_translator_ts",
-      "community": 17,
-      "norm_label": "translator.ts"
-    },
-    {
-      "label": "warnMissingTranslation()",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/translator.ts",
-      "source_location": "L8",
-      "id": "translator_warnmissingtranslation",
-      "community": 17,
-      "norm_label": "warnmissingtranslation()"
-    },
-    {
-      "label": "getTranslator()",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/translator.ts",
-      "source_location": "L28",
-      "id": "translator_gettranslator",
-      "community": 17,
-      "norm_label": "gettranslator()"
-    },
-    {
-      "label": "translationKeys.ts",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/translationKeys.ts",
-      "source_location": "L1",
-      "id": "libs_internationalization_src_lib_translationkeys_ts",
-      "community": 48,
-      "norm_label": "translationkeys.ts"
-    },
-    {
-      "label": "translator.spec.ts",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/translator.spec.ts",
-      "source_location": "L1",
-      "id": "libs_internationalization_src_lib_translator_spec_ts",
-      "community": 49,
-      "norm_label": "translator.spec.ts"
-    },
-    {
-      "label": "format.spec.ts",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/format.spec.ts",
-      "source_location": "L1",
-      "id": "libs_internationalization_src_lib_format_spec_ts",
-      "community": 50,
-      "norm_label": "format.spec.ts"
-    },
-    {
-      "label": "dictionaries.ts",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/dictionaries.ts",
-      "source_location": "L1",
-      "id": "libs_internationalization_src_lib_dictionaries_ts",
-      "community": 51,
-      "norm_label": "dictionaries.ts"
-    },
-    {
-      "label": "InternationalizationProvider.tsx",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/InternationalizationProvider.tsx",
-      "source_location": "L1",
-      "id": "libs_internationalization_src_lib_internationalizationprovider_tsx",
-      "community": 20,
-      "norm_label": "internationalizationprovider.tsx"
-    },
-    {
-      "label": "InternationalizationProvider()",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/InternationalizationProvider.tsx",
-      "source_location": "L25",
-      "id": "internationalizationprovider_internationalizationprovider",
-      "community": 20,
-      "norm_label": "internationalizationprovider()"
     },
     {
       "label": "types.ts",
       "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/types.ts",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/internationalization/src/lib/types.ts",
       "source_location": "L1",
-      "id": "libs_internationalization_src_lib_types_ts",
-      "community": 52,
+      "id": "users_zibby_workspace_onehub_libs_internationalization_src_lib_types_ts",
+      "community": 46,
       "norm_label": "types.ts"
     },
     {
-      "label": "format.ts",
+      "label": "translations.ts",
       "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/format.ts",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/internationalization/src/lib/translations.ts",
       "source_location": "L1",
-      "id": "libs_internationalization_src_lib_format_ts",
-      "community": 21,
-      "norm_label": "format.ts"
+      "id": "users_zibby_workspace_onehub_libs_internationalization_src_lib_translations_ts",
+      "community": 47,
+      "norm_label": "translations.ts"
     },
     {
-      "label": "formatMessage()",
+      "label": "serverTranslator.ts",
       "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/format.ts",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/internationalization/src/lib/serverTranslator.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_internationalization_src_lib_servertranslator_ts",
+      "community": 3,
+      "norm_label": "servertranslator.ts"
+    },
+    {
+      "label": "getServerTranslator()",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/internationalization/src/lib/serverTranslator.ts",
       "source_location": "L5",
-      "id": "format_formatmessage",
-      "community": 21,
-      "norm_label": "formatmessage()"
-    },
-    {
-      "label": "context.tsx",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/context.tsx",
-      "source_location": "L1",
-      "id": "libs_internationalization_src_lib_context_tsx",
-      "community": 53,
-      "norm_label": "context.tsx"
-    },
-    {
-      "label": "useLocalizedText.spec.tsx",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/useLocalizedText.spec.tsx",
-      "source_location": "L1",
-      "id": "libs_internationalization_src_lib_uselocalizedtext_spec_tsx",
-      "community": 22,
-      "norm_label": "uselocalizedtext.spec.tsx"
-    },
-    {
-      "label": "ProviderWrapper()",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/useLocalizedText.spec.tsx",
-      "source_location": "L8",
-      "id": "uselocalizedtext_spec_providerwrapper",
-      "community": 22,
-      "norm_label": "providerwrapper()"
+      "id": "servertranslator_getservertranslator",
+      "community": 3,
+      "norm_label": "getservertranslator()"
     },
     {
       "label": "useLocalizedText.ts",
       "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/useLocalizedText.ts",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/internationalization/src/lib/hooks/useLocalizedText.ts",
       "source_location": "L1",
-      "id": "libs_internationalization_src_lib_uselocalizedtext_ts",
-      "community": 11,
+      "id": "users_zibby_workspace_onehub_libs_internationalization_src_lib_hooks_uselocalizedtext_ts",
+      "community": 4,
       "norm_label": "uselocalizedtext.ts"
     },
     {
       "label": "useLocalizedText()",
       "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/useLocalizedText.ts",
-      "source_location": "L18",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/internationalization/src/lib/hooks/useLocalizedText.ts",
+      "source_location": "L7",
       "id": "uselocalizedtext_uselocalizedtext",
-      "community": 11,
+      "community": 4,
       "norm_label": "uselocalizedtext()"
     },
     {
@@ -738,8 +738,17 @@
       "source_file": "libs/ai/vitest.config.ts",
       "source_location": "L1",
       "id": "libs_ai_vitest_config_ts",
-      "community": 54,
+      "community": 48,
       "norm_label": "vitest.config.ts"
+    },
+    {
+      "label": "classifier.d.ts",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/classifier.d.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_ai_src_classifier_d_ts",
+      "community": 49,
+      "norm_label": "classifier.d.ts"
     },
     {
       "label": "classifier.test.ts",
@@ -747,7 +756,7 @@
       "source_file": "libs/ai/src/classifier.test.ts",
       "source_location": "L1",
       "id": "libs_ai_src_classifier_test_ts",
-      "community": 4,
+      "community": 2,
       "norm_label": "classifier.test.ts"
     },
     {
@@ -756,7 +765,7 @@
       "source_file": "libs/ai/src/classifier.test.ts",
       "source_location": "L13",
       "id": "classifier_test_makepost",
-      "community": 4,
+      "community": 2,
       "norm_label": "makepost()"
     },
     {
@@ -765,26 +774,35 @@
       "source_file": "libs/ai/src/classifier.test.ts",
       "source_location": "L24",
       "id": "classifier_test_makeclient",
-      "community": 4,
+      "community": 2,
       "norm_label": "makeclient()"
     },
     {
-      "label": "index.ts",
+      "label": "config.d.ts",
       "file_type": "code",
-      "source_file": "libs/ai/src/index.ts",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/config.d.ts",
       "source_location": "L1",
-      "id": "libs_ai_src_index_ts",
-      "community": 55,
-      "norm_label": "index.ts"
+      "id": "users_zibby_workspace_onehub_libs_ai_src_config_d_ts",
+      "community": 50,
+      "norm_label": "config.d.ts"
     },
     {
-      "label": "config.ts",
+      "label": "index.js",
       "file_type": "code",
-      "source_file": "libs/ai/src/config.ts",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/index.js",
       "source_location": "L1",
-      "id": "libs_ai_src_config_ts",
-      "community": 4,
-      "norm_label": "config.ts"
+      "id": "users_zibby_workspace_onehub_libs_ai_src_index_js",
+      "community": 51,
+      "norm_label": "index.js"
+    },
+    {
+      "label": "config.js",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/config.js",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_ai_src_config_js",
+      "community": 2,
+      "norm_label": "config.js"
     },
     {
       "label": "loadClassifierConfigFromEnv()",
@@ -792,17 +810,17 @@
       "source_file": "libs/ai/src/config.ts",
       "source_location": "L37",
       "id": "config_loadclassifierconfigfromenv",
-      "community": 4,
+      "community": 2,
       "norm_label": "loadclassifierconfigfromenv()"
     },
     {
-      "label": "classifier.ts",
+      "label": "classifier.js",
       "file_type": "code",
-      "source_file": "libs/ai/src/classifier.ts",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/classifier.js",
       "source_location": "L1",
-      "id": "libs_ai_src_classifier_ts",
-      "community": 4,
-      "norm_label": "classifier.ts"
+      "id": "users_zibby_workspace_onehub_libs_ai_src_classifier_js",
+      "community": 2,
+      "norm_label": "classifier.js"
     },
     {
       "label": "classify()",
@@ -810,7 +828,7 @@
       "source_file": "libs/ai/src/classifier.ts",
       "source_location": "L39",
       "id": "classifier_classify",
-      "community": 4,
+      "community": 2,
       "norm_label": "classify()"
     },
     {
@@ -819,7 +837,7 @@
       "source_file": "libs/ai/src/classifier.ts",
       "source_location": "L60",
       "id": "classifier_classifybatch",
-      "community": 4,
+      "community": 2,
       "norm_label": "classifybatch()"
     },
     {
@@ -828,7 +846,7 @@
       "source_file": "libs/ai/src/classifier.ts",
       "source_location": "L89",
       "id": "classifier_renderbatchusermessage",
-      "community": 4,
+      "community": 2,
       "norm_label": "renderbatchusermessage()"
     },
     {
@@ -837,7 +855,7 @@
       "source_file": "libs/ai/src/classifier.ts",
       "source_location": "L107",
       "id": "classifier_extracttext",
-      "community": 4,
+      "community": 2,
       "norm_label": "extracttext()"
     },
     {
@@ -846,8 +864,53 @@
       "source_file": "libs/ai/src/classifier.ts",
       "source_location": "L118",
       "id": "classifier_parsejsonfromtext",
-      "community": 4,
+      "community": 2,
       "norm_label": "parsejsonfromtext()"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "libs/ai/src/index.ts",
+      "source_location": "L1",
+      "id": "libs_ai_src_index_ts",
+      "community": 52,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "config.ts",
+      "file_type": "code",
+      "source_file": "libs/ai/src/config.ts",
+      "source_location": "L1",
+      "id": "libs_ai_src_config_ts",
+      "community": 2,
+      "norm_label": "config.ts"
+    },
+    {
+      "label": "index.d.ts",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/index.d.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_ai_src_index_d_ts",
+      "community": 53,
+      "norm_label": "index.d.ts"
+    },
+    {
+      "label": "classifier.ts",
+      "file_type": "code",
+      "source_file": "libs/ai/src/classifier.ts",
+      "source_location": "L1",
+      "id": "libs_ai_src_classifier_ts",
+      "community": 2,
+      "norm_label": "classifier.ts"
+    },
+    {
+      "label": "classify.js",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/prompts/classify.js",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_ai_src_prompts_classify_js",
+      "community": 54,
+      "norm_label": "classify.js"
     },
     {
       "label": "classify.ts",
@@ -855,8 +918,26 @@
       "source_file": "libs/ai/src/prompts/classify.ts",
       "source_location": "L1",
       "id": "libs_ai_src_prompts_classify_ts",
-      "community": 4,
+      "community": 2,
       "norm_label": "classify.ts"
+    },
+    {
+      "label": "classify.d.ts",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/prompts/classify.d.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_ai_src_prompts_classify_d_ts",
+      "community": 55,
+      "norm_label": "classify.d.ts"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/sharedTypes/src/index.js",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_sharedtypes_src_index_js",
+      "community": 56,
+      "norm_label": "index.js"
     },
     {
       "label": "forms.ts",
@@ -864,7 +945,7 @@
       "source_file": "libs/sharedTypes/src/forms.ts",
       "source_location": "L1",
       "id": "libs_sharedtypes_src_forms_ts",
-      "community": 56,
+      "community": 57,
       "norm_label": "forms.ts"
     },
     {
@@ -873,7 +954,7 @@
       "source_file": "libs/sharedTypes/src/contest.ts",
       "source_location": "L1",
       "id": "libs_sharedtypes_src_contest_ts",
-      "community": 57,
+      "community": 58,
       "norm_label": "contest.ts"
     },
     {
@@ -882,8 +963,17 @@
       "source_file": "libs/sharedTypes/src/index.ts",
       "source_location": "L1",
       "id": "libs_sharedtypes_src_index_ts",
-      "community": 58,
+      "community": 59,
       "norm_label": "index.ts"
+    },
+    {
+      "label": "index.d.ts",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/sharedTypes/src/index.d.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_sharedtypes_src_index_d_ts",
+      "community": 60,
+      "norm_label": "index.d.ts"
     },
     {
       "label": "classifier.ts",
@@ -891,7 +981,7 @@
       "source_file": "libs/sharedTypes/src/classifier.ts",
       "source_location": "L1",
       "id": "libs_sharedtypes_src_classifier_ts",
-      "community": 59,
+      "community": 61,
       "norm_label": "classifier.ts"
     },
     {
@@ -900,7 +990,7 @@
       "source_file": "libs/sharedTypes/src/scraper.ts",
       "source_location": "L1",
       "id": "libs_sharedtypes_src_scraper_ts",
-      "community": 60,
+      "community": 62,
       "norm_label": "scraper.ts"
     },
     {
@@ -909,7 +999,7 @@
       "source_file": "libs/db/prisma/seed.ts",
       "source_location": "L1",
       "id": "libs_db_prisma_seed_ts",
-      "community": 23,
+      "community": 18,
       "norm_label": "seed.ts"
     },
     {
@@ -918,8 +1008,17 @@
       "source_file": "libs/db/prisma/seed.ts",
       "source_location": "L16",
       "id": "seed_main",
-      "community": 23,
+      "community": 18,
       "norm_label": "main()"
+    },
+    {
+      "label": "index.js",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/db/src/index.js",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_db_src_index_js",
+      "community": 63,
+      "norm_label": "index.js"
     },
     {
       "label": "index.ts",
@@ -927,16 +1026,25 @@
       "source_file": "libs/db/src/index.ts",
       "source_location": "L1",
       "id": "libs_db_src_index_ts",
-      "community": 61,
+      "community": 64,
       "norm_label": "index.ts"
+    },
+    {
+      "label": "index.d.ts",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/db/src/index.d.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_libs_db_src_index_d_ts",
+      "community": 65,
+      "norm_label": "index.d.ts"
     },
     {
       "label": "next.config.mjs",
       "file_type": "code",
-      "source_file": "apps/web/next.config.mjs",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/next.config.mjs",
       "source_location": "L1",
-      "id": "apps_web_next_config_mjs",
-      "community": 62,
+      "id": "users_zibby_workspace_onehub_apps_web_next_config_mjs",
+      "community": 66,
       "norm_label": "next.config.mjs"
     },
     {
@@ -945,7 +1053,7 @@
       "source_file": "apps/web/next-env.d.ts",
       "source_location": "L1",
       "id": "apps_web_next_env_d_ts",
-      "community": 63,
+      "community": 67,
       "norm_label": "next-env.d.ts"
     },
     {
@@ -954,7 +1062,7 @@
       "source_file": "apps/web/src/app/StyledComponentsRegistry.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_styledcomponentsregistry_tsx",
-      "community": 24,
+      "community": 19,
       "norm_label": "styledcomponentsregistry.tsx"
     },
     {
@@ -963,97 +1071,106 @@
       "source_file": "apps/web/src/app/StyledComponentsRegistry.tsx",
       "source_location": "L15",
       "id": "styledcomponentsregistry_styledcomponentsregistry",
-      "community": 24,
+      "community": 19,
       "norm_label": "styledcomponentsregistry()"
     },
     {
       "label": "layout.tsx",
       "file_type": "code",
-      "source_file": "apps/web/src/app/layout.tsx",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/layout.tsx",
       "source_location": "L1",
-      "id": "apps_web_src_app_layout_tsx",
-      "community": 25,
+      "id": "users_zibby_workspace_onehub_apps_web_src_app_layout_tsx",
+      "community": 3,
       "norm_label": "layout.tsx"
+    },
+    {
+      "label": "generateMetadata()",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/layout.tsx",
+      "source_location": "L10",
+      "id": "layout_generatemetadata",
+      "community": 3,
+      "norm_label": "generatemetadata()"
     },
     {
       "label": "RootLayout()",
       "file_type": "code",
-      "source_file": "apps/web/src/app/layout.tsx",
-      "source_location": "L12",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/layout.tsx",
+      "source_location": "L18",
       "id": "layout_rootlayout",
-      "community": 25,
+      "community": 3,
       "norm_label": "rootlayout()"
     },
     {
       "label": "page.tsx",
       "file_type": "code",
-      "source_file": "apps/web/src/app/page.tsx",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/page.tsx",
       "source_location": "L1",
-      "id": "apps_web_src_app_page_tsx",
-      "community": 9,
+      "id": "users_zibby_workspace_onehub_apps_web_src_app_page_tsx",
+      "community": 3,
       "norm_label": "page.tsx"
     },
     {
       "label": "CurrentContestsPage()",
       "file_type": "code",
-      "source_file": "apps/web/src/app/page.tsx",
-      "source_location": "L7",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/page.tsx",
+      "source_location": "L8",
       "id": "page_currentcontestspage",
-      "community": 9,
+      "community": 3,
       "norm_label": "currentcontestspage()"
     },
     {
       "label": "Providers.tsx",
       "file_type": "code",
-      "source_file": "apps/web/src/app/Providers.tsx",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/Providers.tsx",
       "source_location": "L1",
-      "id": "apps_web_src_app_providers_tsx",
-      "community": 26,
+      "id": "users_zibby_workspace_onehub_apps_web_src_app_providers_tsx",
+      "community": 20,
       "norm_label": "providers.tsx"
     },
     {
       "label": "Providers()",
       "file_type": "code",
-      "source_file": "apps/web/src/app/Providers.tsx",
-      "source_location": "L14",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/Providers.tsx",
+      "source_location": "L7",
       "id": "providers_providers",
-      "community": 26,
+      "community": 20,
       "norm_label": "providers()"
     },
     {
       "label": "page.tsx",
       "file_type": "code",
-      "source_file": "apps/web/src/app/accounts/page.tsx",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/accounts/page.tsx",
       "source_location": "L1",
-      "id": "apps_web_src_app_accounts_page_tsx",
-      "community": 27,
+      "id": "users_zibby_workspace_onehub_apps_web_src_app_accounts_page_tsx",
+      "community": 3,
       "norm_label": "page.tsx"
     },
     {
       "label": "AccountsPage()",
       "file_type": "code",
-      "source_file": "apps/web/src/app/accounts/page.tsx",
-      "source_location": "L7",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/accounts/page.tsx",
+      "source_location": "L8",
       "id": "page_accountspage",
-      "community": 27,
+      "community": 3,
       "norm_label": "accountspage()"
     },
     {
       "label": "page.tsx",
       "file_type": "code",
-      "source_file": "apps/web/src/app/history/page.tsx",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/history/page.tsx",
       "source_location": "L1",
-      "id": "apps_web_src_app_history_page_tsx",
-      "community": 9,
+      "id": "users_zibby_workspace_onehub_apps_web_src_app_history_page_tsx",
+      "community": 3,
       "norm_label": "page.tsx"
     },
     {
       "label": "HistoryPage()",
       "file_type": "code",
-      "source_file": "apps/web/src/app/history/page.tsx",
-      "source_location": "L7",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/history/page.tsx",
+      "source_location": "L8",
       "id": "page_historypage",
-      "community": 9,
+      "community": 3,
       "norm_label": "historypage()"
     },
     {
@@ -1122,92 +1239,92 @@
     {
       "label": "page.tsx",
       "file_type": "code",
-      "source_file": "apps/web/src/app/runs/page.tsx",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/runs/page.tsx",
       "source_location": "L1",
-      "id": "apps_web_src_app_runs_page_tsx",
-      "community": 1,
+      "id": "users_zibby_workspace_onehub_apps_web_src_app_runs_page_tsx",
+      "community": 9,
       "norm_label": "page.tsx"
     },
     {
       "label": "formatDateTime()",
       "file_type": "code",
-      "source_file": "apps/web/src/app/runs/page.tsx",
-      "source_location": "L30",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/runs/page.tsx",
+      "source_location": "L37",
       "id": "page_formatdatetime",
-      "community": 1,
+      "community": 9,
       "norm_label": "formatdatetime()"
     },
     {
       "label": "ContestCard.tsx",
       "file_type": "code",
-      "source_file": "apps/web/src/components/ContestCard.tsx",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/ContestCard.tsx",
       "source_location": "L1",
-      "id": "apps_web_src_components_contestcard_tsx",
-      "community": 28,
+      "id": "users_zibby_workspace_onehub_apps_web_src_components_contestcard_tsx",
+      "community": 21,
       "norm_label": "contestcard.tsx"
     },
     {
       "label": "copyComment()",
       "file_type": "code",
-      "source_file": "apps/web/src/components/ContestCard.tsx",
-      "source_location": "L71",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/ContestCard.tsx",
+      "source_location": "L82",
       "id": "contestcard_copycomment",
-      "community": 28,
+      "community": 21,
       "norm_label": "copycomment()"
     },
     {
       "label": "AppShell.tsx",
       "file_type": "code",
-      "source_file": "apps/web/src/components/AppShell.tsx",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/AppShell.tsx",
       "source_location": "L1",
-      "id": "apps_web_src_components_appshell_tsx",
-      "community": 29,
+      "id": "users_zibby_workspace_onehub_apps_web_src_components_appshell_tsx",
+      "community": 4,
       "norm_label": "appshell.tsx"
     },
     {
       "label": "AppShell()",
       "file_type": "code",
-      "source_file": "apps/web/src/components/AppShell.tsx",
-      "source_location": "L62",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/AppShell.tsx",
+      "source_location": "L56",
       "id": "appshell_appshell",
-      "community": 29,
+      "community": 4,
       "norm_label": "appshell()"
     },
     {
       "label": "ContestList.tsx",
       "file_type": "code",
-      "source_file": "apps/web/src/components/ContestList.tsx",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/ContestList.tsx",
       "source_location": "L1",
-      "id": "apps_web_src_components_contestlist_tsx",
-      "community": 13,
+      "id": "users_zibby_workspace_onehub_apps_web_src_components_contestlist_tsx",
+      "community": 4,
       "norm_label": "contestlist.tsx"
     },
     {
       "label": "ContestList()",
       "file_type": "code",
-      "source_file": "apps/web/src/components/ContestList.tsx",
-      "source_location": "L14",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/ContestList.tsx",
+      "source_location": "L15",
       "id": "contestlist_contestlist",
-      "community": 13,
+      "community": 4,
       "norm_label": "contestlist()"
     },
     {
       "label": "AccountsManager.tsx",
       "file_type": "code",
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/AccountsManager.tsx",
       "source_location": "L1",
-      "id": "apps_web_src_components_accountsmanager_tsx",
-      "community": 1,
+      "id": "users_zibby_workspace_onehub_apps_web_src_components_accountsmanager_tsx",
+      "community": 22,
       "norm_label": "accountsmanager.tsx"
     },
     {
-      "label": "AccountsManager()",
+      "label": "getErrorMessage()",
       "file_type": "code",
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": "L37",
-      "id": "accountsmanager_accountsmanager",
-      "community": 1,
-      "norm_label": "accountsmanager()"
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/AccountsManager.tsx",
+      "source_location": "L38",
+      "id": "accountsmanager_geterrormessage",
+      "community": 22,
+      "norm_label": "geterrormessage()"
     },
     {
       "label": "apiErrors.ts",
@@ -1242,7 +1359,7 @@
       "source_file": "apps/web/src/lib/contests.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_contests_ts",
-      "community": 9,
+      "community": 3,
       "norm_label": "contests.ts"
     },
     {
@@ -1251,7 +1368,7 @@
       "source_file": "apps/web/src/lib/contests.ts",
       "source_location": "L23",
       "id": "contests_tocard",
-      "community": 9,
+      "community": 3,
       "norm_label": "tocard()"
     },
     {
@@ -1260,7 +1377,7 @@
       "source_file": "apps/web/src/lib/contests.ts",
       "source_location": "L43",
       "id": "contests_fetchcontestsbystatus",
-      "community": 9,
+      "community": 3,
       "norm_label": "fetchcontestsbystatus()"
     },
     {
@@ -1269,7 +1386,7 @@
       "source_file": "apps/web/src/lib/format.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_format_ts",
-      "community": 1,
+      "community": 9,
       "norm_label": "format.ts"
     },
     {
@@ -1278,7 +1395,7 @@
       "source_file": "apps/web/src/lib/format.ts",
       "source_location": "L3",
       "id": "format_formatdatetime",
-      "community": 1,
+      "community": 9,
       "norm_label": "formatdatetime()"
     },
     {
@@ -1287,7 +1404,7 @@
       "source_file": "apps/web/src/lib/format.ts",
       "source_location": "L15",
       "id": "format_formatrelative",
-      "community": 1,
+      "community": 9,
       "norm_label": "formatrelative()"
     },
     {
@@ -1296,7 +1413,7 @@
       "source_file": "apps/web/src/lib/mutations/createAccountMutation.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_mutations_createaccountmutation_ts",
-      "community": 1,
+      "community": 11,
       "norm_label": "createaccountmutation.ts"
     },
     {
@@ -1305,7 +1422,7 @@
       "source_file": "apps/web/src/lib/mutations/createAccountMutation.ts",
       "source_location": "L10",
       "id": "createaccountmutation_createaccount",
-      "community": 1,
+      "community": 11,
       "norm_label": "createaccount()"
     },
     {
@@ -1314,7 +1431,7 @@
       "source_file": "apps/web/src/lib/mutations/createAccountMutation.ts",
       "source_location": "L27",
       "id": "createaccountmutation_usecreateaccountmutation",
-      "community": 1,
+      "community": 11,
       "norm_label": "usecreateaccountmutation()"
     },
     {
@@ -1323,7 +1440,7 @@
       "source_file": "apps/web/src/lib/mutations/deleteAccountMutation.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_mutations_deleteaccountmutation_ts",
-      "community": 1,
+      "community": 12,
       "norm_label": "deleteaccountmutation.ts"
     },
     {
@@ -1332,7 +1449,7 @@
       "source_file": "apps/web/src/lib/mutations/deleteAccountMutation.ts",
       "source_location": "L9",
       "id": "deleteaccountmutation_deleteaccount",
-      "community": 1,
+      "community": 12,
       "norm_label": "deleteaccount()"
     },
     {
@@ -1341,7 +1458,7 @@
       "source_file": "apps/web/src/lib/mutations/deleteAccountMutation.ts",
       "source_location": "L19",
       "id": "deleteaccountmutation_usedeleteaccountmutation",
-      "community": 1,
+      "community": 12,
       "norm_label": "usedeleteaccountmutation()"
     },
     {
@@ -1350,7 +1467,7 @@
       "source_file": "apps/web/src/lib/mutations/updateAccountMutation.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_mutations_updateaccountmutation_ts",
-      "community": 1,
+      "community": 13,
       "norm_label": "updateaccountmutation.ts"
     },
     {
@@ -1359,7 +1476,7 @@
       "source_file": "apps/web/src/lib/mutations/updateAccountMutation.ts",
       "source_location": "L11",
       "id": "updateaccountmutation_updateaccount",
-      "community": 1,
+      "community": 13,
       "norm_label": "updateaccount()"
     },
     {
@@ -1368,7 +1485,7 @@
       "source_file": "apps/web/src/lib/mutations/updateAccountMutation.ts",
       "source_location": "L28",
       "id": "updateaccountmutation_useupdateaccountmutation",
-      "community": 1,
+      "community": 13,
       "norm_label": "useupdateaccountmutation()"
     },
     {
@@ -1377,7 +1494,7 @@
       "source_file": "apps/web/src/lib/mutations/updateStatusMutation.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_mutations_updatestatusmutation_ts",
-      "community": 13,
+      "community": 4,
       "norm_label": "updatestatusmutation.ts"
     },
     {
@@ -1386,7 +1503,7 @@
       "source_file": "apps/web/src/lib/mutations/updateStatusMutation.ts",
       "source_location": "L14",
       "id": "updatestatusmutation_updatestatus",
-      "community": 13,
+      "community": 4,
       "norm_label": "updatestatus()"
     },
     {
@@ -1395,7 +1512,7 @@
       "source_file": "apps/web/src/lib/mutations/updateStatusMutation.ts",
       "source_location": "L27",
       "id": "updatestatusmutation_useupdatestatusmutation",
-      "community": 13,
+      "community": 4,
       "norm_label": "useupdatestatusmutation()"
     },
     {
@@ -1404,7 +1521,7 @@
       "source_file": "apps/web/src/lib/queries/fetchAccountsQuery.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_queries_fetchaccountsquery_ts",
-      "community": 1,
+      "community": 14,
       "norm_label": "fetchaccountsquery.ts"
     },
     {
@@ -1413,7 +1530,7 @@
       "source_file": "apps/web/src/lib/queries/fetchAccountsQuery.ts",
       "source_location": "L26",
       "id": "fetchaccountsquery_fetchaccounts",
-      "community": 1,
+      "community": 14,
       "norm_label": "fetchaccounts()"
     },
     {
@@ -1422,8 +1539,17 @@
       "source_file": "apps/web/src/lib/queries/fetchAccountsQuery.ts",
       "source_location": "L43",
       "id": "fetchaccountsquery_usefetchaccountsquery",
-      "community": 1,
+      "community": 14,
       "norm_label": "usefetchaccountsquery()"
+    },
+    {
+      "label": "request.ts",
+      "file_type": "code",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/i18n/request.ts",
+      "source_location": "L1",
+      "id": "users_zibby_workspace_onehub_apps_web_src_i18n_request_ts",
+      "community": 68,
+      "norm_label": "request.ts"
     },
     {
       "label": "runOnce.ts",
@@ -1431,7 +1557,7 @@
       "source_file": "apps/worker/src/runOnce.ts",
       "source_location": "L1",
       "id": "apps_worker_src_runonce_ts",
-      "community": 3,
+      "community": 0,
       "norm_label": "runonce.ts"
     },
     {
@@ -1440,7 +1566,7 @@
       "source_file": "apps/worker/src/runOnce.ts",
       "source_location": "L10",
       "id": "runonce_main",
-      "community": 3,
+      "community": 0,
       "norm_label": "main()"
     },
     {
@@ -1449,7 +1575,7 @@
       "source_file": "apps/worker/src/seedAccounts.ts",
       "source_location": "L1",
       "id": "apps_worker_src_seedaccounts_ts",
-      "community": 3,
+      "community": 0,
       "norm_label": "seedaccounts.ts"
     },
     {
@@ -1458,7 +1584,7 @@
       "source_file": "apps/worker/src/seedAccounts.ts",
       "source_location": "L16",
       "id": "seedaccounts_main",
-      "community": 3,
+      "community": 0,
       "norm_label": "main()"
     },
     {
@@ -1467,7 +1593,7 @@
       "source_file": "apps/worker/src/main.ts",
       "source_location": "L1",
       "id": "apps_worker_src_main_ts",
-      "community": 3,
+      "community": 0,
       "norm_label": "main.ts"
     },
     {
@@ -1476,7 +1602,7 @@
       "source_file": "apps/worker/src/main.ts",
       "source_location": "L11",
       "id": "main_main",
-      "community": 3,
+      "community": 0,
       "norm_label": "main()"
     },
     {
@@ -1485,7 +1611,7 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L1",
       "id": "apps_worker_src_pipeline_ts",
-      "community": 3,
+      "community": 0,
       "norm_label": "pipeline.ts"
     },
     {
@@ -1494,7 +1620,7 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L31",
       "id": "pipeline_runpipeline",
-      "community": 3,
+      "community": 0,
       "norm_label": "runpipeline()"
     },
     {
@@ -1503,7 +1629,7 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L83",
       "id": "pipeline_scrapeandstore",
-      "community": 3,
+      "community": 0,
       "norm_label": "scrapeandstore()"
     },
     {
@@ -1512,7 +1638,7 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L112",
       "id": "pipeline_classifyandstore",
-      "community": 3,
+      "community": 0,
       "norm_label": "classifyandstore()"
     },
     {
@@ -1521,7 +1647,7 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L150",
       "id": "pipeline_finishrun",
-      "community": 3,
+      "community": 0,
       "norm_label": "finishrun()"
     },
     {
@@ -1530,7 +1656,7 @@
       "source_file": "apps/worker/src/logger.ts",
       "source_location": "L1",
       "id": "apps_worker_src_logger_ts",
-      "community": 3,
+      "community": 0,
       "norm_label": "logger.ts"
     },
     {
@@ -1539,7 +1665,7 @@
       "source_file": "apps/worker/src/logger.ts",
       "source_location": "L7",
       "id": "logger_emit",
-      "community": 3,
+      "community": 0,
       "norm_label": "emit()"
     },
     {
@@ -1548,7 +1674,7 @@
       "source_file": "apps/worker/src/config.ts",
       "source_location": "L1",
       "id": "apps_worker_src_config_ts",
-      "community": 3,
+      "community": 0,
       "norm_label": "config.ts"
     },
     {
@@ -1557,7 +1683,7 @@
       "source_file": "apps/worker/src/config.ts",
       "source_location": "L13",
       "id": "config_loadworkerenv",
-      "community": 3,
+      "community": 0,
       "norm_label": "loadworkerenv()"
     },
     {
@@ -1569,9 +1695,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_tanstack_query_refactoring",
       "community": 6,
-      "norm_label": "tanstack query & mutation refactoring"
+      "norm_label": "tanstack query & mutation refactoring",
+      "id": "refactoring_summary_tanstack_query_refactoring"
     },
     {
       "label": "fetchAccountsQuery Hook",
@@ -1582,9 +1708,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_fetchaccountsquery",
       "community": 6,
-      "norm_label": "fetchaccountsquery hook"
+      "norm_label": "fetchaccountsquery hook",
+      "id": "refactoring_summary_fetchaccountsquery"
     },
     {
       "label": "createAccountMutation Hook",
@@ -1595,9 +1721,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_createaccountmutation",
       "community": 6,
-      "norm_label": "createaccountmutation hook"
+      "norm_label": "createaccountmutation hook",
+      "id": "refactoring_summary_createaccountmutation"
     },
     {
       "label": "updateAccountMutation Hook",
@@ -1608,9 +1734,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_updateaccountmutation",
       "community": 6,
-      "norm_label": "updateaccountmutation hook"
+      "norm_label": "updateaccountmutation hook",
+      "id": "refactoring_summary_updateaccountmutation"
     },
     {
       "label": "deleteAccountMutation Hook",
@@ -1621,9 +1747,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_deleteaccountmutation",
       "community": 6,
-      "norm_label": "deleteaccountmutation hook"
+      "norm_label": "deleteaccountmutation hook",
+      "id": "refactoring_summary_deleteaccountmutation"
     },
     {
       "label": "updateStatusMutation Hook",
@@ -1634,9 +1760,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_updatestatusmutation",
       "community": 6,
-      "norm_label": "updatestatusmutation hook"
+      "norm_label": "updatestatusmutation hook",
+      "id": "refactoring_summary_updatestatusmutation"
     },
     {
       "label": "AccountsManager Component Refactoring",
@@ -1647,9 +1773,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_accountsmanager_refactoring",
       "community": 6,
-      "norm_label": "accountsmanager component refactoring"
+      "norm_label": "accountsmanager component refactoring",
+      "id": "refactoring_summary_accountsmanager_refactoring"
     },
     {
       "label": "ContestList Component Refactoring",
@@ -1660,9 +1786,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_contestlist_refactoring",
       "community": 6,
-      "norm_label": "contestlist component refactoring"
+      "norm_label": "contestlist component refactoring",
+      "id": "refactoring_summary_contestlist_refactoring"
     },
     {
       "label": "Query Hook Extraction Pattern",
@@ -1673,9 +1799,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_query_hook_extraction_pattern",
       "community": 6,
-      "norm_label": "query hook extraction pattern"
+      "norm_label": "query hook extraction pattern",
+      "id": "refactoring_summary_query_hook_extraction_pattern"
     },
     {
       "label": "Mutation Hook Extraction Pattern",
@@ -1686,9 +1812,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_mutation_hook_extraction_pattern",
       "community": 6,
-      "norm_label": "mutation hook extraction pattern"
+      "norm_label": "mutation hook extraction pattern",
+      "id": "refactoring_summary_mutation_hook_extraction_pattern"
     },
     {
       "label": "Refactoring Benefits Rationale",
@@ -1699,9 +1825,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_refactoring_benefits",
       "community": 6,
-      "norm_label": "refactoring benefits rationale"
+      "norm_label": "refactoring benefits rationale",
+      "id": "refactoring_summary_refactoring_benefits"
     },
     {
       "label": "IG Giveaway Aggregator Project",
@@ -1712,9 +1838,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_ig_giveaway_aggregator",
       "community": 5,
-      "norm_label": "ig giveaway aggregator project"
+      "norm_label": "ig giveaway aggregator project",
+      "id": "readme_ig_giveaway_aggregator"
     },
     {
       "label": "Technology Stack",
@@ -1725,9 +1851,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_tech_stack",
       "community": 5,
-      "norm_label": "technology stack"
+      "norm_label": "technology stack",
+      "id": "readme_tech_stack"
     },
     {
       "label": "Monorepo Layout",
@@ -1738,9 +1864,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_monorepo_layout",
       "community": 5,
-      "norm_label": "monorepo layout"
+      "norm_label": "monorepo layout",
+      "id": "readme_monorepo_layout"
     },
     {
       "label": "Internationalization (i18n) Quick Guide",
@@ -1751,9 +1877,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_i18n_quick_guide",
-      "community": 64,
-      "norm_label": "internationalization (i18n) quick guide"
+      "community": 69,
+      "norm_label": "internationalization (i18n) quick guide",
+      "id": "readme_i18n_quick_guide"
     },
     {
       "label": "Known Limitations (v0)",
@@ -1764,9 +1890,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_known_limitations",
-      "community": 65,
-      "norm_label": "known limitations (v0)"
+      "community": 70,
+      "norm_label": "known limitations (v0)",
+      "id": "readme_known_limitations"
     },
     {
       "label": "Instagram Giveaway Aggregator Project Summary",
@@ -1777,9 +1903,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_project_summary",
       "community": 5,
-      "norm_label": "instagram giveaway aggregator project summary"
+      "norm_label": "instagram giveaway aggregator project summary",
+      "id": "agents_project_summary"
     },
     {
       "label": "Technology Stack Definition",
@@ -1790,9 +1916,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_stack",
       "community": 5,
-      "norm_label": "technology stack definition"
+      "norm_label": "technology stack definition",
+      "id": "agents_stack"
     },
     {
       "label": "Repository Layout",
@@ -1803,9 +1929,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_repository_layout",
       "community": 5,
-      "norm_label": "repository layout"
+      "norm_label": "repository layout",
+      "id": "agents_repository_layout"
     },
     {
       "label": "Tier 1 Required Skills Matrix",
@@ -1816,9 +1942,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_tier1_skills",
       "community": 5,
-      "norm_label": "tier 1 required skills matrix"
+      "norm_label": "tier 1 required skills matrix",
+      "id": "agents_tier1_skills"
     },
     {
       "label": "Tier 2 Optional Skills Matrix",
@@ -1829,9 +1955,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_tier2_skills",
       "community": 5,
-      "norm_label": "tier 2 optional skills matrix"
+      "norm_label": "tier 2 optional skills matrix",
+      "id": "agents_tier2_skills"
     },
     {
       "label": "Coding Conventions",
@@ -1842,9 +1968,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_coding_conventions",
       "community": 5,
-      "norm_label": "coding conventions"
+      "norm_label": "coding conventions",
+      "id": "agents_coding_conventions"
     },
     {
       "label": "Critical Invariants",
@@ -1855,9 +1981,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_critical_invariants",
       "community": 5,
-      "norm_label": "critical invariants"
+      "norm_label": "critical invariants",
+      "id": "agents_critical_invariants"
     },
     {
       "label": "Claude API Skill Requirement Rationale",
@@ -1868,9 +1994,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_claude_api_skill_requirement",
       "community": 5,
-      "norm_label": "claude api skill requirement rationale"
+      "norm_label": "claude api skill requirement rationale",
+      "id": "agents_claude_api_skill_requirement"
     },
     {
       "label": "NX Workflow Guidelines",
@@ -1881,9 +2007,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_nx_workflow_guidelines",
       "community": 5,
-      "norm_label": "nx workflow guidelines"
+      "norm_label": "nx workflow guidelines",
+      "id": "agents_nx_workflow_guidelines"
     },
     {
       "label": "Graphify Integration Configuration",
@@ -1894,178 +2020,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_graphify",
       "community": 5,
-      "norm_label": "graphify integration configuration"
-    },
-    {
-      "label": "classify() Function",
-      "file_type": "code",
-      "source_file": "libs/ai/src/classifier.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "classify_classify",
-      "community": 4,
-      "norm_label": "classify() function"
-    },
-    {
-      "label": "parseJsonFromText() Function",
-      "file_type": "code",
-      "source_file": "libs/ai/src/classifier.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "classifier_parseJsonFromText",
-      "community": 4,
-      "norm_label": "parsejsonfromtext() function"
-    },
-    {
-      "label": "extractTimelineNodesFromHtml() Function",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/parse.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "parse_extracttimelinenodesFromhtml",
-      "community": 8,
-      "norm_label": "extracttimelinenodesfromhtml() function"
-    },
-    {
-      "label": "InstagramScraper.fetchRecentPosts() Method",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "instagram_fetchrecentposts",
-      "community": 14,
-      "norm_label": "instagramscraper.fetchrecentposts() method"
-    },
-    {
-      "label": "InstagramScraper.ensureLoggedIn() Method",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "instagram_ensureloggedin",
-      "community": 14,
-      "norm_label": "instagramscraper.ensureloggedin() method"
-    },
-    {
-      "label": "InstagramScraper.close() Method",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "instagram_close",
-      "community": 66,
-      "norm_label": "instagramscraper.close() method"
-    },
-    {
-      "label": "InstagramScraper.performLogin() Method",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "instagram_performlogin",
-      "community": 14,
-      "norm_label": "instagramscraper.performlogin() method"
-    },
-    {
-      "label": "InstagramScraper.waitBetweenHandles() Method",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "instagram_waitbetweenhandles",
-      "community": 67,
-      "norm_label": "instagramscraper.waitbetweenhandles() method"
-    },
-    {
-      "label": "InstagramScraper.newPage() Method",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "instagram_newpage",
-      "community": 68,
-      "norm_label": "instagramscraper.newpage() method"
-    },
-    {
-      "label": "InstagramScraper.hasChallenge() Method",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "instagram_haschallenge",
-      "community": 14,
-      "norm_label": "instagramscraper.haschallenge() method"
-    },
-    {
-      "label": "InstagramScraper.open() Method",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "instagram_open",
-      "community": 69,
-      "norm_label": "instagramscraper.open() method"
-    },
-    {
-      "label": "InstagramScraper.isLoggedIn() Method",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "instagram_isloggedin",
-      "community": 14,
-      "norm_label": "instagramscraper.isloggedin() method"
-    },
-    {
-      "label": "InstagramScraper.constructor() Method",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "instagram_constructor",
-      "community": 70,
-      "norm_label": "instagramscraper.constructor() method"
+      "norm_label": "graphify integration configuration",
+      "id": "claude_md_graphify"
     },
     {
       "label": "Instagram Giveaway Aggregator Project Summary",
@@ -2076,9 +2033,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "instagram_giveaway_aggregator_project_summary",
-      "community": 15,
-      "norm_label": "instagram giveaway aggregator project summary"
+      "community": 10,
+      "norm_label": "instagram giveaway aggregator project summary",
+      "id": "instagram_giveaway_aggregator_project_summary"
     },
     {
       "label": "Critical Invariants",
@@ -2089,9 +2046,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "critical_invariants",
-      "community": 15,
-      "norm_label": "critical invariants"
+      "community": 10,
+      "norm_label": "critical invariants",
+      "id": "critical_invariants"
     },
     {
       "label": "Repository Layout",
@@ -2102,9 +2059,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "repository_layout",
-      "community": 15,
-      "norm_label": "repository layout"
+      "community": 10,
+      "norm_label": "repository layout",
+      "id": "repository_layout"
     },
     {
       "label": "Technology Stack Definition",
@@ -2115,9 +2072,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "technology_stack_definition",
-      "community": 15,
-      "norm_label": "technology stack definition"
+      "community": 10,
+      "norm_label": "technology stack definition",
+      "id": "technology_stack_definition"
     },
     {
       "label": "Claude API Skill Requirement Rationale",
@@ -2128,9 +2085,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_api_skill_requirement_rationale",
       "community": 71,
-      "norm_label": "claude api skill requirement rationale"
+      "norm_label": "claude api skill requirement rationale",
+      "id": "claude_api_skill_requirement_rationale"
     },
     {
       "label": "AccountsManager Component Refactoring",
@@ -2141,529 +2098,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "accountsmanager_component_refactoring",
-      "community": 10,
-      "norm_label": "accountsmanager component refactoring"
-    },
-    {
-      "label": "AccountsManager()",
-      "file_type": "code",
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "accountsmanager",
-      "community": 10,
-      "norm_label": "accountsmanager()"
-    },
-    {
-      "label": "fetchAccountsQuery Hook",
-      "file_type": "code",
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "fetch_accounts_query_hook",
-      "community": 10,
-      "norm_label": "fetchaccountsquery hook"
-    },
-    {
-      "label": "createAccountMutation Hook",
-      "file_type": "code",
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "create_account_mutation_hook",
-      "community": 10,
-      "norm_label": "createaccountmutation hook"
-    },
-    {
-      "label": "updateAccountMutation Hook",
-      "file_type": "code",
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "update_account_mutation_hook",
-      "community": 10,
-      "norm_label": "updateaccountmutation hook"
-    },
-    {
-      "label": "deleteAccountMutation Hook",
-      "file_type": "code",
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "delete_account_mutation_hook",
-      "community": 10,
-      "norm_label": "deleteaccountmutation hook"
-    },
-    {
-      "label": "formatRelative()",
-      "file_type": "code",
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "format_relative_function",
-      "community": 10,
-      "norm_label": "formatrelative()"
-    },
-    {
-      "label": "handleRouteError()",
-      "file_type": "code",
-      "source_file": "apps/web/src/lib/apiErrors.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "handleroute_error",
-      "community": 12,
-      "norm_label": "handlerouteerror()"
-    },
-    {
-      "label": "zodErrorResponse()",
-      "file_type": "code",
-      "source_file": "apps/web/src/lib/apiErrors.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "zod_error_response",
-      "community": 12,
-      "norm_label": "zoderrorresponse()"
-    },
-    {
-      "label": "PATCH()",
-      "file_type": "code",
-      "source_file": "apps/web/src/lib/apiErrors.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "patch_http_handler",
-      "community": 12,
-      "norm_label": "patch()"
-    },
-    {
-      "label": "GET()",
-      "file_type": "code",
-      "source_file": "apps/web/src/lib/apiErrors.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "get_http_handler",
-      "community": 12,
-      "norm_label": "get()"
-    },
-    {
-      "label": "POST()",
-      "file_type": "code",
-      "source_file": "apps/web/src/lib/apiErrors.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "post_http_handler",
-      "community": 12,
-      "norm_label": "post()"
-    },
-    {
-      "label": "DELETE()",
-      "file_type": "code",
-      "source_file": "apps/web/src/lib/apiErrors.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "delete_http_handler",
-      "community": 12,
-      "norm_label": "delete()"
-    },
-    {
-      "label": "InstagramScraper",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "instagram_scraper",
-      "community": 0,
-      "norm_label": "instagramscraper"
-    },
-    {
-      "label": ".fetchRecentPosts()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "fetchrecent_posts",
-      "community": 0,
-      "norm_label": ".fetchrecentposts()"
-    },
-    {
-      "label": ".ensureLoggedIn()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "ensurelogged_in",
-      "community": 0,
-      "norm_label": ".ensureloggedin()"
-    },
-    {
-      "label": ".performLogin()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "performlogin",
-      "community": 0,
-      "norm_label": ".performlogin()"
-    },
-    {
-      "label": ".close()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "close_method",
-      "community": 0,
-      "norm_label": ".close()"
-    },
-    {
-      "label": ".hasChallenge()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "haschal_lenge",
-      "community": 0,
-      "norm_label": ".haschallenge()"
-    },
-    {
-      "label": ".newPage()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "newpage",
-      "community": 0,
-      "norm_label": ".newpage()"
-    },
-    {
-      "label": ".waitBetweenHandles()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "waitbetween_handles",
-      "community": 0,
-      "norm_label": ".waitbetweenhandles()"
-    },
-    {
-      "label": ".isLoggedIn()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "isloggedin",
-      "community": 0,
-      "norm_label": ".isloggedin()"
-    },
-    {
-      "label": ".open()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "open_method",
-      "community": 0,
-      "norm_label": ".open()"
-    },
-    {
-      "label": ".constructor()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "constructor_method",
-      "community": 0,
-      "norm_label": ".constructor()"
-    },
-    {
-      "label": "jitter()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/jitter.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "jitter_function",
-      "community": 0,
-      "norm_label": "jitter()"
-    },
-    {
-      "label": "sleep()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/jitter.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "sleep_function",
-      "community": 0,
-      "norm_label": "sleep()"
-    },
-    {
-      "label": "randomJitter()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/jitter.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "randomjitter_function",
-      "community": 0,
-      "norm_label": "randomjitter()"
-    },
-    {
-      "label": "loadScraperConfigFromEnv()",
-      "file_type": "code",
-      "source_file": "libs/scraper/src/config.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "load_scraper_config_from_env",
-      "community": 0,
-      "norm_label": "loadscraperconfigfromenv()"
-    },
-    {
-      "label": "runPipeline()",
-      "file_type": "code",
-      "source_file": "apps/worker/src/pipeline.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "run_pipeline",
-      "community": 0,
-      "norm_label": "runpipeline()"
-    },
-    {
-      "label": "loadWorkerEnv()",
-      "file_type": "code",
-      "source_file": "apps/worker/src/config.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "load_worker_env",
-      "community": 0,
-      "norm_label": "loadworkerenv()"
-    },
-    {
-      "label": "classifyBatch()",
-      "file_type": "code",
-      "source_file": "apps/worker/src/pipeline.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "classifybatch",
-      "community": 0,
-      "norm_label": "classifybatch()"
-    },
-    {
-      "label": "classifyAndStore()",
-      "file_type": "code",
-      "source_file": "apps/worker/src/pipeline.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "classifyand_store",
-      "community": 0,
-      "norm_label": "classifyandstore()"
-    },
-    {
-      "label": "scrapeAndStore()",
-      "file_type": "code",
-      "source_file": "apps/worker/src/pipeline.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "scrapeand_store",
-      "community": 0,
-      "norm_label": "scrapeandstore()"
-    },
-    {
-      "label": "finishRun()",
-      "file_type": "code",
-      "source_file": "apps/worker/src/pipeline.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "finishrun",
-      "community": 0,
-      "norm_label": "finishrun()"
-    },
-    {
-      "label": "translator.ts",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/translator.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "translator_ts",
-      "community": 16,
-      "norm_label": "translator.ts"
-    },
-    {
-      "label": "getTranslator()",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/translator.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "get_translator",
-      "community": 16,
-      "norm_label": "gettranslator()"
-    },
-    {
-      "label": "warnMissingTranslation()",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/translator.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "warn_missing_translation",
-      "community": 16,
-      "norm_label": "warnmissingtranslation()"
-    },
-    {
-      "label": "ThemeProvider()",
-      "file_type": "code",
-      "source_file": "libs/ui/src/ThemeProvider.tsx",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "theme_provider",
       "community": 72,
-      "norm_label": "themeprovider()"
-    },
-    {
-      "label": "InternationalizationProvider()",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/InternationalizationProvider.tsx",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "internationalization_provider",
-      "community": 16,
-      "norm_label": "internationalizationprovider()"
-    },
-    {
-      "label": "formatMessage()",
-      "file_type": "code",
-      "source_file": "libs/internationalization/src/lib/format.ts",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "format_message",
-      "community": 73,
-      "norm_label": "formatmessage()"
-    },
-    {
-      "label": "AppShell()",
-      "file_type": "code",
-      "source_file": "apps/web/src/components/AppShell.tsx",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "appshell",
-      "community": 74,
-      "norm_label": "appshell()"
+      "norm_label": "accountsmanager component refactoring",
+      "id": "accountsmanager_component_refactoring"
     }
   ],
   "links": [
@@ -2740,14 +2177,26 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/parse.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_libs_scraper_src_parse_js",
+      "_tgt": "parse_extractpostsfromnodes",
+      "source": "parse_extractpostsfromnodes",
+      "target": "users_zibby_workspace_onehub_libs_scraper_src_parse_js",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L91",
       "weight": 1.0,
-      "_src": "instagram_instagramscraper_fetchrecentposts",
-      "_tgt": "parse_extractpostsfromnodes",
+      "_src": "parse_extractpostsfromnodes",
+      "_tgt": "instagram_instagramscraper_fetchrecentposts",
       "source": "parse_extractpostsfromnodes",
       "target": "instagram_instagramscraper_fetchrecentposts"
     },
@@ -2764,15 +2213,27 @@
       "target": "parse_istimelinenode"
     },
     {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
+      "relation": "references",
+      "confidence": "INFERRED",
       "source_file": "libs/scraper/src/parse.ts",
-      "source_location": "L84",
+      "source_location": null,
       "weight": 1.0,
-      "_src": "parse_extracttimelinenodesfromhtml",
-      "_tgt": "parse_findtimelineedges",
+      "_src": "parse_findtimelineedges",
+      "_tgt": "parse_extracttimelinenodesfromhtml",
+      "confidence_score": 0.75,
       "source": "parse_extracttimelinenodesfromhtml",
-      "target": "parse_findtimelineedges",
+      "target": "parse_findtimelineedges"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/parse.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_libs_scraper_src_parse_js",
+      "_tgt": "parse_extracttimelinenodesfromhtml",
+      "source": "parse_extracttimelinenodesfromhtml",
+      "target": "users_zibby_workspace_onehub_libs_scraper_src_parse_js",
       "confidence_score": 1.0
     },
     {
@@ -2782,34 +2243,10 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L90",
       "weight": 1.0,
-      "_src": "instagram_instagramscraper_fetchrecentposts",
-      "_tgt": "parse_extracttimelinenodesfromhtml",
+      "_src": "parse_extracttimelinenodesfromhtml",
+      "_tgt": "instagram_instagramscraper_fetchrecentposts",
       "source": "parse_extracttimelinenodesfromhtml",
       "target": "instagram_instagramscraper_fetchrecentposts"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/parse.ts",
-      "source_location": "L132",
-      "weight": 1.0,
-      "_src": "parse_findtimelineedges",
-      "_tgt": "parse_istimelinenode",
-      "source": "parse_findtimelineedges",
-      "target": "parse_istimelinenode",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "libs/scraper/src/parse.ts",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "parse_findtimelineedges",
-      "_tgt": "parse_extracttimelinenodesFromhtml",
-      "source": "parse_findtimelineedges",
-      "target": "parse_extracttimelinenodesFromhtml"
     },
     {
       "relation": "calls",
@@ -2818,10 +2255,202 @@
       "source_file": "libs/scraper/src/parse.ts",
       "source_location": null,
       "weight": 1.0,
-      "_src": "parse_extracttimelinenodesFromhtml",
+      "_src": "parse_istimelinenode",
+      "_tgt": "parse_extracttimelinenodesfromhtml",
+      "source": "parse_extracttimelinenodesfromhtml",
+      "target": "parse_istimelinenode"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/parse.js",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_src": "parse_findtimelineedges",
+      "_tgt": "parse_istimelinenode",
+      "source": "parse_findtimelineedges",
+      "target": "parse_istimelinenode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/parse.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_libs_scraper_src_parse_js",
+      "_tgt": "parse_findtimelineedges",
+      "source": "parse_findtimelineedges",
+      "target": "users_zibby_workspace_onehub_libs_scraper_src_parse_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/parse.js",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_libs_scraper_src_parse_js",
       "_tgt": "parse_istimelinenode",
       "source": "parse_istimelinenode",
-      "target": "parse_extracttimelinenodesFromhtml"
+      "target": "users_zibby_workspace_onehub_libs_scraper_src_parse_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.d.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_libs_scraper_src_instagram_d_ts",
+      "_tgt": "instagram_d_instagramscraper",
+      "source": "users_zibby_workspace_onehub_libs_scraper_src_instagram_d_ts",
+      "target": "instagram_d_instagramscraper",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/jitter.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_libs_scraper_src_jitter_js",
+      "_tgt": "jitter_sleep",
+      "source": "users_zibby_workspace_onehub_libs_scraper_src_jitter_js",
+      "target": "jitter_sleep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/jitter.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_libs_scraper_src_jitter_js",
+      "_tgt": "jitter_randomjitter",
+      "source": "users_zibby_workspace_onehub_libs_scraper_src_jitter_js",
+      "target": "jitter_randomjitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/jitter.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_libs_scraper_src_jitter_js",
+      "_tgt": "jitter_jitter",
+      "source": "users_zibby_workspace_onehub_libs_scraper_src_jitter_js",
+      "target": "jitter_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "libs/scraper/src/jitter.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "jitter_jitter",
+      "_tgt": "jitter_sleep",
+      "source": "jitter_sleep",
+      "target": "jitter_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "libs/scraper/src/jitter.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_src": "libs_scraper_src_jitter_ts",
+      "_tgt": "jitter_sleep",
+      "source": "jitter_sleep",
+      "target": "libs_scraper_src_jitter_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_src": "instagram_instagramscraper_waitbetweenhandles",
+      "_tgt": "jitter_sleep",
+      "source": "jitter_sleep",
+      "target": "instagram_instagramscraper_waitbetweenhandles"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "libs/scraper/src/jitter.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "jitter_jitter",
+      "_tgt": "jitter_randomjitter",
+      "source": "jitter_randomjitter",
+      "target": "jitter_jitter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "libs/scraper/src/jitter.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_src": "libs_scraper_src_jitter_ts",
+      "_tgt": "jitter_randomjitter",
+      "source": "jitter_randomjitter",
+      "target": "libs_scraper_src_jitter_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "libs/scraper/src/jitter.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "libs_scraper_src_jitter_ts",
+      "_tgt": "jitter_jitter",
+      "source": "jitter_jitter",
+      "target": "libs_scraper_src_jitter_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_src": "instagram_instagramscraper_ensureloggedin",
+      "_tgt": "jitter_jitter",
+      "source": "jitter_jitter",
+      "target": "instagram_instagramscraper_ensureloggedin"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_src": "instagram_instagramscraper_fetchrecentposts",
+      "_tgt": "jitter_jitter",
+      "source": "jitter_jitter",
+      "target": "instagram_instagramscraper_fetchrecentposts"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_src": "instagram_instagramscraper_performlogin",
+      "_tgt": "jitter_jitter",
+      "source": "jitter_jitter",
+      "target": "instagram_instagramscraper_performlogin"
     },
     {
       "relation": "imports_from",
@@ -2862,8 +2491,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L28",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L25",
       "weight": 1.0,
       "_src": "instagram_instagramscraper",
       "_tgt": "instagram_instagramscraper_constructor",
@@ -2874,8 +2503,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L33",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L29",
       "weight": 1.0,
       "_src": "instagram_instagramscraper",
       "_tgt": "instagram_instagramscraper_open",
@@ -2886,8 +2515,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L44",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L39",
       "weight": 1.0,
       "_src": "instagram_instagramscraper",
       "_tgt": "instagram_instagramscraper_close",
@@ -2898,8 +2527,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L52",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L46",
       "weight": 1.0,
       "_src": "instagram_instagramscraper",
       "_tgt": "instagram_instagramscraper_ensureloggedin",
@@ -2910,8 +2539,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L72",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L66",
       "weight": 1.0,
       "_src": "instagram_instagramscraper",
       "_tgt": "instagram_instagramscraper_fetchrecentposts",
@@ -2922,8 +2551,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L102",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L91",
       "weight": 1.0,
       "_src": "instagram_instagramscraper",
       "_tgt": "instagram_instagramscraper_waitbetweenhandles",
@@ -2934,8 +2563,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L106",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L94",
       "weight": 1.0,
       "_src": "instagram_instagramscraper",
       "_tgt": "instagram_instagramscraper_newpage",
@@ -2946,8 +2575,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L115",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L102",
       "weight": 1.0,
       "_src": "instagram_instagramscraper",
       "_tgt": "instagram_instagramscraper_isloggedin",
@@ -2958,8 +2587,8 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L123",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L109",
       "weight": 1.0,
       "_src": "instagram_instagramscraper",
       "_tgt": "instagram_instagramscraper_haschallenge",
@@ -2970,13 +2599,25 @@
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L128",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L113",
       "weight": 1.0,
       "_src": "instagram_instagramscraper",
       "_tgt": "instagram_instagramscraper_performlogin",
       "source": "instagram_instagramscraper",
       "target": "instagram_instagramscraper_performlogin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_libs_scraper_src_instagram_js",
+      "_tgt": "instagram_instagramscraper",
+      "source": "instagram_instagramscraper",
+      "target": "users_zibby_workspace_onehub_libs_scraper_src_instagram_js",
       "confidence_score": 1.0
     },
     {
@@ -2986,16 +2627,16 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L44",
       "weight": 1.0,
-      "_src": "pipeline_runpipeline",
-      "_tgt": "instagram_instagramscraper_open",
+      "_src": "instagram_instagramscraper_open",
+      "_tgt": "pipeline_runpipeline",
       "source": "instagram_instagramscraper_open",
       "target": "pipeline_runpipeline"
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L61",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L56",
       "weight": 1.0,
       "_src": "instagram_instagramscraper_ensureloggedin",
       "_tgt": "instagram_instagramscraper_close",
@@ -3006,8 +2647,8 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L97",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L87",
       "weight": 1.0,
       "_src": "instagram_instagramscraper_fetchrecentposts",
       "_tgt": "instagram_instagramscraper_close",
@@ -3022,16 +2663,16 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L75",
       "weight": 1.0,
-      "_src": "pipeline_runpipeline",
-      "_tgt": "instagram_instagramscraper_close",
+      "_src": "instagram_instagramscraper_close",
+      "_tgt": "pipeline_runpipeline",
       "source": "instagram_instagramscraper_close",
       "target": "pipeline_runpipeline"
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L53",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L47",
       "weight": 1.0,
       "_src": "instagram_instagramscraper_ensureloggedin",
       "_tgt": "instagram_instagramscraper_newpage",
@@ -3042,8 +2683,8 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L58",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L51",
       "weight": 1.0,
       "_src": "instagram_instagramscraper_ensureloggedin",
       "_tgt": "instagram_instagramscraper_isloggedin",
@@ -3054,8 +2695,8 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L59",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L53",
       "weight": 1.0,
       "_src": "instagram_instagramscraper_ensureloggedin",
       "_tgt": "instagram_instagramscraper_performlogin",
@@ -3067,31 +2708,19 @@
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L56",
-      "weight": 1.0,
-      "_src": "instagram_instagramscraper_ensureloggedin",
-      "_tgt": "jitter_jitter",
-      "source": "instagram_instagramscraper_ensureloggedin",
-      "target": "jitter_jitter"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L46",
       "weight": 1.0,
-      "_src": "pipeline_runpipeline",
-      "_tgt": "instagram_instagramscraper_ensureloggedin",
+      "_src": "instagram_instagramscraper_ensureloggedin",
+      "_tgt": "pipeline_runpipeline",
       "source": "instagram_instagramscraper_ensureloggedin",
       "target": "pipeline_runpipeline"
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L77",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L68",
       "weight": 1.0,
       "_src": "instagram_instagramscraper_fetchrecentposts",
       "_tgt": "instagram_instagramscraper_newpage",
@@ -3102,8 +2731,8 @@
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L84",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L74",
       "weight": 1.0,
       "_src": "instagram_instagramscraper_fetchrecentposts",
       "_tgt": "instagram_instagramscraper_haschallenge",
@@ -3115,37 +2744,13 @@
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L82",
-      "weight": 1.0,
-      "_src": "instagram_instagramscraper_fetchrecentposts",
-      "_tgt": "jitter_jitter",
-      "source": "instagram_instagramscraper_fetchrecentposts",
-      "target": "jitter_jitter"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L87",
       "weight": 1.0,
-      "_src": "pipeline_scrapeandstore",
-      "_tgt": "instagram_instagramscraper_fetchrecentposts",
+      "_src": "instagram_instagramscraper_fetchrecentposts",
+      "_tgt": "pipeline_scrapeandstore",
       "source": "instagram_instagramscraper_fetchrecentposts",
       "target": "pipeline_scrapeandstore"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L103",
-      "weight": 1.0,
-      "_src": "instagram_instagramscraper_waitbetweenhandles",
-      "_tgt": "jitter_sleep",
-      "source": "instagram_instagramscraper_waitbetweenhandles",
-      "target": "jitter_sleep"
     },
     {
       "relation": "calls",
@@ -3154,34 +2759,22 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L72",
       "weight": 1.0,
-      "_src": "pipeline_runpipeline",
-      "_tgt": "instagram_instagramscraper_waitbetweenhandles",
+      "_src": "instagram_instagramscraper_waitbetweenhandles",
+      "_tgt": "pipeline_runpipeline",
       "source": "instagram_instagramscraper_waitbetweenhandles",
       "target": "pipeline_runpipeline"
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L141",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/instagram.js",
+      "source_location": "L123",
       "weight": 1.0,
       "_src": "instagram_instagramscraper_performlogin",
       "_tgt": "instagram_instagramscraper_haschallenge",
       "source": "instagram_instagramscraper_haschallenge",
       "target": "instagram_instagramscraper_performlogin",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": "L130",
-      "weight": 1.0,
-      "_src": "instagram_instagramscraper_performlogin",
-      "_tgt": "jitter_jitter",
-      "source": "instagram_instagramscraper_performlogin",
-      "target": "jitter_jitter"
     },
     {
       "relation": "contains",
@@ -3198,13 +2791,25 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/scraper/src/config.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_libs_scraper_src_config_js",
+      "_tgt": "config_loadscraperconfigfromenv",
+      "source": "users_zibby_workspace_onehub_libs_scraper_src_config_js",
+      "target": "config_loadscraperconfigfromenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "libs/scraper/src/config.ts",
       "source_location": "L36",
       "weight": 1.0,
       "_src": "libs_scraper_src_config_ts",
       "_tgt": "config_loadscraperconfigfromenv",
-      "source": "libs_scraper_src_config_ts",
-      "target": "config_loadscraperconfigfromenv",
+      "source": "config_loadscraperconfigfromenv",
+      "target": "libs_scraper_src_config_ts",
       "confidence_score": 1.0
     },
     {
@@ -3214,70 +2819,10 @@
       "source_file": "apps/worker/src/config.ts",
       "source_location": "L16",
       "weight": 1.0,
-      "_src": "config_loadworkerenv",
-      "_tgt": "config_loadscraperconfigfromenv",
+      "_src": "config_loadscraperconfigfromenv",
+      "_tgt": "config_loadworkerenv",
       "source": "config_loadscraperconfigfromenv",
       "target": "config_loadworkerenv"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/jitter.ts",
-      "source_location": "L6",
-      "weight": 1.0,
-      "_src": "libs_scraper_src_jitter_ts",
-      "_tgt": "jitter_sleep",
-      "source": "libs_scraper_src_jitter_ts",
-      "target": "jitter_sleep",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/jitter.ts",
-      "source_location": "L9",
-      "weight": 1.0,
-      "_src": "libs_scraper_src_jitter_ts",
-      "_tgt": "jitter_randomjitter",
-      "source": "libs_scraper_src_jitter_ts",
-      "target": "jitter_randomjitter",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/jitter.ts",
-      "source_location": "L14",
-      "weight": 1.0,
-      "_src": "libs_scraper_src_jitter_ts",
-      "_tgt": "jitter_jitter",
-      "source": "libs_scraper_src_jitter_ts",
-      "target": "jitter_jitter",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/jitter.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_src": "jitter_jitter",
-      "_tgt": "jitter_sleep",
-      "source": "jitter_sleep",
-      "target": "jitter_jitter",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/scraper/src/jitter.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_src": "jitter_jitter",
-      "_tgt": "jitter_randomjitter",
-      "source": "jitter_randomjitter",
-      "target": "jitter_jitter",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3354,74 +2899,98 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "libs/internationalization/src/lib/translator.ts",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_src": "libs_internationalization_src_lib_translator_ts",
-      "_tgt": "translator_warnmissingtranslation",
-      "source": "libs_internationalization_src_lib_translator_ts",
-      "target": "translator_warnmissingtranslation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/internationalization/src/lib/translator.ts",
-      "source_location": "L28",
-      "weight": 1.0,
-      "_src": "libs_internationalization_src_lib_translator_ts",
-      "_tgt": "translator_gettranslator",
-      "source": "libs_internationalization_src_lib_translator_ts",
-      "target": "translator_gettranslator",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/internationalization/src/lib/InternationalizationProvider.tsx",
-      "source_location": "L25",
-      "weight": 1.0,
-      "_src": "libs_internationalization_src_lib_internationalizationprovider_tsx",
-      "_tgt": "internationalizationprovider_internationalizationprovider",
-      "source": "libs_internationalization_src_lib_internationalizationprovider_tsx",
-      "target": "internationalizationprovider_internationalizationprovider",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/internationalization/src/lib/format.ts",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/internationalization/src/lib/serverTranslator.ts",
       "source_location": "L5",
       "weight": 1.0,
-      "_src": "libs_internationalization_src_lib_format_ts",
-      "_tgt": "format_formatmessage",
-      "source": "libs_internationalization_src_lib_format_ts",
-      "target": "format_formatmessage",
+      "_src": "users_zibby_workspace_onehub_libs_internationalization_src_lib_servertranslator_ts",
+      "_tgt": "servertranslator_getservertranslator",
+      "source": "users_zibby_workspace_onehub_libs_internationalization_src_lib_servertranslator_ts",
+      "target": "servertranslator_getservertranslator",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/layout.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_src": "layout_generatemetadata",
+      "_tgt": "servertranslator_getservertranslator",
+      "source": "servertranslator_getservertranslator",
+      "target": "layout_generatemetadata"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "page_currentcontestspage",
+      "_tgt": "servertranslator_getservertranslator",
+      "source": "servertranslator_getservertranslator",
+      "target": "page_currentcontestspage"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/accounts/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "page_accountspage",
+      "_tgt": "servertranslator_getservertranslator",
+      "source": "servertranslator_getservertranslator",
+      "target": "page_accountspage"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/history/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_src": "page_historypage",
+      "_tgt": "servertranslator_getservertranslator",
+      "source": "servertranslator_getservertranslator",
+      "target": "page_historypage"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "libs/internationalization/src/lib/useLocalizedText.spec.tsx",
-      "source_location": "L8",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/internationalization/src/lib/hooks/useLocalizedText.ts",
+      "source_location": "L7",
       "weight": 1.0,
-      "_src": "libs_internationalization_src_lib_uselocalizedtext_spec_tsx",
-      "_tgt": "uselocalizedtext_spec_providerwrapper",
-      "source": "libs_internationalization_src_lib_uselocalizedtext_spec_tsx",
-      "target": "uselocalizedtext_spec_providerwrapper",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/internationalization/src/lib/useLocalizedText.ts",
-      "source_location": "L18",
-      "weight": 1.0,
-      "_src": "libs_internationalization_src_lib_uselocalizedtext_ts",
+      "_src": "users_zibby_workspace_onehub_libs_internationalization_src_lib_hooks_uselocalizedtext_ts",
       "_tgt": "uselocalizedtext_uselocalizedtext",
-      "source": "libs_internationalization_src_lib_uselocalizedtext_ts",
+      "source": "users_zibby_workspace_onehub_libs_internationalization_src_lib_hooks_uselocalizedtext_ts",
       "target": "uselocalizedtext_uselocalizedtext",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/AppShell.tsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_src": "appshell_appshell",
+      "_tgt": "uselocalizedtext_uselocalizedtext",
+      "source": "uselocalizedtext_uselocalizedtext",
+      "target": "appshell_appshell"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/ContestList.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_src": "contestlist_contestlist",
+      "_tgt": "uselocalizedtext_uselocalizedtext",
+      "source": "uselocalizedtext_uselocalizedtext",
+      "target": "contestlist_contestlist"
     },
     {
       "relation": "imports_from",
@@ -3474,25 +3043,25 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/config.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_libs_ai_src_config_js",
+      "_tgt": "config_loadclassifierconfigfromenv",
+      "source": "users_zibby_workspace_onehub_libs_ai_src_config_js",
+      "target": "config_loadclassifierconfigfromenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "libs/ai/src/config.ts",
       "source_location": "L37",
       "weight": 1.0,
       "_src": "libs_ai_src_config_ts",
       "_tgt": "config_loadclassifierconfigfromenv",
-      "source": "libs_ai_src_config_ts",
-      "target": "config_loadclassifierconfigfromenv",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/ai/src/classifier.ts",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_src": "libs_ai_src_classifier_ts",
-      "_tgt": "libs_ai_src_config_ts",
-      "source": "libs_ai_src_config_ts",
-      "target": "libs_ai_src_classifier_ts",
+      "source": "config_loadclassifierconfigfromenv",
+      "target": "libs_ai_src_config_ts",
       "confidence_score": 1.0
     },
     {
@@ -3502,92 +3071,68 @@
       "source_file": "apps/worker/src/config.ts",
       "source_location": "L17",
       "weight": 1.0,
-      "_src": "config_loadworkerenv",
-      "_tgt": "config_loadclassifierconfigfromenv",
+      "_src": "config_loadclassifierconfigfromenv",
+      "_tgt": "config_loadworkerenv",
       "source": "config_loadclassifierconfigfromenv",
       "target": "config_loadworkerenv"
     },
     {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "libs/ai/src/classifier.ts",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "classify_classify",
-      "_tgt": "config_loadclassifierconfigfromenv",
-      "source": "config_loadclassifierconfigfromenv",
-      "target": "classify_classify"
-    },
-    {
-      "relation": "imports_from",
-      "confidence": "EXTRACTED",
-      "source_file": "libs/ai/src/classifier.ts",
-      "source_location": "L15",
-      "weight": 1.0,
-      "_src": "libs_ai_src_classifier_ts",
-      "_tgt": "libs_ai_src_prompts_classify_ts",
-      "source": "libs_ai_src_classifier_ts",
-      "target": "libs_ai_src_prompts_classify_ts",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "libs/ai/src/classifier.ts",
-      "source_location": "L39",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/classifier.js",
+      "source_location": "L20",
       "weight": 1.0,
-      "_src": "libs_ai_src_classifier_ts",
+      "_src": "users_zibby_workspace_onehub_libs_ai_src_classifier_js",
       "_tgt": "classifier_classify",
-      "source": "libs_ai_src_classifier_ts",
+      "source": "users_zibby_workspace_onehub_libs_ai_src_classifier_js",
       "target": "classifier_classify",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "libs/ai/src/classifier.ts",
-      "source_location": "L60",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/classifier.js",
+      "source_location": "L35",
       "weight": 1.0,
-      "_src": "libs_ai_src_classifier_ts",
+      "_src": "users_zibby_workspace_onehub_libs_ai_src_classifier_js",
       "_tgt": "classifier_classifybatch",
-      "source": "libs_ai_src_classifier_ts",
+      "source": "users_zibby_workspace_onehub_libs_ai_src_classifier_js",
       "target": "classifier_classifybatch",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "libs/ai/src/classifier.ts",
-      "source_location": "L89",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/classifier.js",
+      "source_location": "L58",
       "weight": 1.0,
-      "_src": "libs_ai_src_classifier_ts",
+      "_src": "users_zibby_workspace_onehub_libs_ai_src_classifier_js",
       "_tgt": "classifier_renderbatchusermessage",
-      "source": "libs_ai_src_classifier_ts",
+      "source": "users_zibby_workspace_onehub_libs_ai_src_classifier_js",
       "target": "classifier_renderbatchusermessage",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "libs/ai/src/classifier.ts",
-      "source_location": "L107",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/classifier.js",
+      "source_location": "L75",
       "weight": 1.0,
-      "_src": "libs_ai_src_classifier_ts",
+      "_src": "users_zibby_workspace_onehub_libs_ai_src_classifier_js",
       "_tgt": "classifier_extracttext",
-      "source": "libs_ai_src_classifier_ts",
+      "source": "users_zibby_workspace_onehub_libs_ai_src_classifier_js",
       "target": "classifier_extracttext",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "libs/ai/src/classifier.ts",
-      "source_location": "L118",
+      "source_file": "/Users/zibby/Workspace/onehub/libs/ai/src/classifier.js",
+      "source_location": "L86",
       "weight": 1.0,
-      "_src": "libs_ai_src_classifier_ts",
+      "_src": "users_zibby_workspace_onehub_libs_ai_src_classifier_js",
       "_tgt": "classifier_parsejsonfromtext",
-      "source": "libs_ai_src_classifier_ts",
+      "source": "users_zibby_workspace_onehub_libs_ai_src_classifier_js",
       "target": "classifier_parsejsonfromtext",
       "confidence_score": 1.0
     },
@@ -3604,14 +3149,26 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "libs/ai/src/classifier.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_src": "libs_ai_src_classifier_ts",
+      "_tgt": "classifier_classify",
+      "source": "classifier_classify",
+      "target": "libs_ai_src_classifier_ts",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L124",
       "weight": 1.0,
-      "_src": "pipeline_classifyandstore",
-      "_tgt": "classifier_classify",
+      "_src": "classifier_classify",
+      "_tgt": "pipeline_classifyandstore",
       "source": "classifier_classify",
       "target": "pipeline_classifyandstore"
     },
@@ -3619,25 +3176,25 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "libs/ai/src/classifier.ts",
-      "source_location": null,
+      "source_location": "L78",
       "weight": 1.0,
       "_src": "classifier_classifybatch",
       "_tgt": "classifier_renderbatchusermessage",
-      "confidence_score": 1.0,
       "source": "classifier_classifybatch",
-      "target": "classifier_renderbatchusermessage"
+      "target": "classifier_renderbatchusermessage",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "libs/ai/src/classifier.ts",
-      "source_location": null,
+      "source_location": "L83",
       "weight": 1.0,
       "_src": "classifier_classifybatch",
       "_tgt": "classifier_extracttext",
-      "confidence_score": 1.0,
       "source": "classifier_classifybatch",
-      "target": "classifier_extracttext"
+      "target": "classifier_extracttext",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3652,28 +3209,76 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "calls",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "libs/ai/src/classifier.ts",
-      "source_location": null,
+      "source_location": "L60",
       "weight": 1.0,
-      "_src": "classifier_classifybatch",
-      "_tgt": "classify_classify",
+      "_src": "libs_ai_src_classifier_ts",
+      "_tgt": "classifier_classifybatch",
       "source": "classifier_classifybatch",
-      "target": "classify_classify"
+      "target": "libs_ai_src_classifier_ts",
+      "confidence_score": 1.0
     },
     {
-      "relation": "calls",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "libs/ai/src/classifier.ts",
-      "source_location": null,
+      "source_location": "L89",
       "weight": 1.0,
-      "_src": "classifier_classifybatch",
-      "_tgt": "classifier_parseJsonFromText",
-      "source": "classifier_classifybatch",
-      "target": "classifier_parseJsonFromText"
+      "_src": "libs_ai_src_classifier_ts",
+      "_tgt": "classifier_renderbatchusermessage",
+      "source": "classifier_renderbatchusermessage",
+      "target": "libs_ai_src_classifier_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "libs/ai/src/classifier.ts",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_src": "libs_ai_src_classifier_ts",
+      "_tgt": "classifier_extracttext",
+      "source": "classifier_extracttext",
+      "target": "libs_ai_src_classifier_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "libs/ai/src/classifier.ts",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_src": "libs_ai_src_classifier_ts",
+      "_tgt": "classifier_parsejsonfromtext",
+      "source": "classifier_parsejsonfromtext",
+      "target": "libs_ai_src_classifier_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "libs/ai/src/classifier.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_src": "libs_ai_src_classifier_ts",
+      "_tgt": "libs_ai_src_config_ts",
+      "source": "libs_ai_src_config_ts",
+      "target": "libs_ai_src_classifier_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "libs/ai/src/classifier.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_src": "libs_ai_src_classifier_ts",
+      "_tgt": "libs_ai_src_prompts_classify_ts",
+      "source": "libs_ai_src_classifier_ts",
+      "target": "libs_ai_src_prompts_classify_ts",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3702,24 +3307,36 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/layout.tsx",
-      "source_location": "L12",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/layout.tsx",
+      "source_location": "L10",
       "weight": 1.0,
-      "_src": "apps_web_src_app_layout_tsx",
+      "_src": "users_zibby_workspace_onehub_apps_web_src_app_layout_tsx",
+      "_tgt": "layout_generatemetadata",
+      "source": "users_zibby_workspace_onehub_apps_web_src_app_layout_tsx",
+      "target": "layout_generatemetadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/layout.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_src": "users_zibby_workspace_onehub_apps_web_src_app_layout_tsx",
       "_tgt": "layout_rootlayout",
-      "source": "apps_web_src_app_layout_tsx",
+      "source": "users_zibby_workspace_onehub_apps_web_src_app_layout_tsx",
       "target": "layout_rootlayout",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/page.tsx",
-      "source_location": "L7",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/page.tsx",
+      "source_location": "L8",
       "weight": 1.0,
-      "_src": "apps_web_src_app_page_tsx",
+      "_src": "users_zibby_workspace_onehub_apps_web_src_app_page_tsx",
       "_tgt": "page_currentcontestspage",
-      "source": "apps_web_src_app_page_tsx",
+      "source": "users_zibby_workspace_onehub_apps_web_src_app_page_tsx",
       "target": "page_currentcontestspage",
       "confidence_score": 1.0
     },
@@ -3738,36 +3355,36 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/Providers.tsx",
-      "source_location": "L14",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/Providers.tsx",
+      "source_location": "L7",
       "weight": 1.0,
-      "_src": "apps_web_src_app_providers_tsx",
+      "_src": "users_zibby_workspace_onehub_apps_web_src_app_providers_tsx",
       "_tgt": "providers_providers",
-      "source": "apps_web_src_app_providers_tsx",
+      "source": "users_zibby_workspace_onehub_apps_web_src_app_providers_tsx",
       "target": "providers_providers",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/accounts/page.tsx",
-      "source_location": "L7",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/accounts/page.tsx",
+      "source_location": "L8",
       "weight": 1.0,
-      "_src": "apps_web_src_app_accounts_page_tsx",
+      "_src": "users_zibby_workspace_onehub_apps_web_src_app_accounts_page_tsx",
       "_tgt": "page_accountspage",
-      "source": "apps_web_src_app_accounts_page_tsx",
+      "source": "users_zibby_workspace_onehub_apps_web_src_app_accounts_page_tsx",
       "target": "page_accountspage",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/history/page.tsx",
-      "source_location": "L7",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/history/page.tsx",
+      "source_location": "L8",
       "weight": 1.0,
-      "_src": "apps_web_src_app_history_page_tsx",
+      "_src": "users_zibby_workspace_onehub_apps_web_src_app_history_page_tsx",
       "_tgt": "page_historypage",
-      "source": "apps_web_src_app_history_page_tsx",
+      "source": "users_zibby_workspace_onehub_apps_web_src_app_history_page_tsx",
       "target": "page_historypage",
       "confidence_score": 1.0
     },
@@ -3894,12 +3511,12 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/app/runs/page.tsx",
-      "source_location": "L30",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/app/runs/page.tsx",
+      "source_location": "L37",
       "weight": 1.0,
-      "_src": "apps_web_src_app_runs_page_tsx",
+      "_src": "users_zibby_workspace_onehub_apps_web_src_app_runs_page_tsx",
       "_tgt": "page_formatdatetime",
-      "source": "apps_web_src_app_runs_page_tsx",
+      "source": "users_zibby_workspace_onehub_apps_web_src_app_runs_page_tsx",
       "target": "page_formatdatetime",
       "confidence_score": 1.0
     },
@@ -3918,36 +3535,36 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/components/ContestCard.tsx",
-      "source_location": "L71",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/ContestCard.tsx",
+      "source_location": "L82",
       "weight": 1.0,
-      "_src": "apps_web_src_components_contestcard_tsx",
+      "_src": "users_zibby_workspace_onehub_apps_web_src_components_contestcard_tsx",
       "_tgt": "contestcard_copycomment",
-      "source": "apps_web_src_components_contestcard_tsx",
+      "source": "users_zibby_workspace_onehub_apps_web_src_components_contestcard_tsx",
       "target": "contestcard_copycomment",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/components/AppShell.tsx",
-      "source_location": "L62",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/AppShell.tsx",
+      "source_location": "L56",
       "weight": 1.0,
-      "_src": "apps_web_src_components_appshell_tsx",
+      "_src": "users_zibby_workspace_onehub_apps_web_src_components_appshell_tsx",
       "_tgt": "appshell_appshell",
-      "source": "apps_web_src_components_appshell_tsx",
+      "source": "users_zibby_workspace_onehub_apps_web_src_components_appshell_tsx",
       "target": "appshell_appshell",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/components/ContestList.tsx",
-      "source_location": "L14",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/ContestList.tsx",
+      "source_location": "L15",
       "weight": 1.0,
-      "_src": "apps_web_src_components_contestlist_tsx",
+      "_src": "users_zibby_workspace_onehub_apps_web_src_components_contestlist_tsx",
       "_tgt": "contestlist_contestlist",
-      "source": "apps_web_src_components_contestlist_tsx",
+      "source": "users_zibby_workspace_onehub_apps_web_src_components_contestlist_tsx",
       "target": "contestlist_contestlist",
       "confidence_score": 1.0
     },
@@ -3966,74 +3583,14 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": "L37",
+      "source_file": "/Users/zibby/Workspace/onehub/apps/web/src/components/AccountsManager.tsx",
+      "source_location": "L38",
       "weight": 1.0,
-      "_src": "apps_web_src_components_accountsmanager_tsx",
-      "_tgt": "accountsmanager_accountsmanager",
-      "source": "apps_web_src_components_accountsmanager_tsx",
-      "target": "accountsmanager_accountsmanager",
+      "_src": "users_zibby_workspace_onehub_apps_web_src_components_accountsmanager_tsx",
+      "_tgt": "accountsmanager_geterrormessage",
+      "source": "users_zibby_workspace_onehub_apps_web_src_components_accountsmanager_tsx",
+      "target": "accountsmanager_geterrormessage",
       "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": "L43",
-      "weight": 1.0,
-      "_src": "accountsmanager_accountsmanager",
-      "_tgt": "fetchaccountsquery_usefetchaccountsquery",
-      "source": "accountsmanager_accountsmanager",
-      "target": "fetchaccountsquery_usefetchaccountsquery"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": "L52",
-      "weight": 1.0,
-      "_src": "accountsmanager_accountsmanager",
-      "_tgt": "createaccountmutation_usecreateaccountmutation",
-      "source": "accountsmanager_accountsmanager",
-      "target": "createaccountmutation_usecreateaccountmutation"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": "L65",
-      "weight": 1.0,
-      "_src": "accountsmanager_accountsmanager",
-      "_tgt": "updateaccountmutation_useupdateaccountmutation",
-      "source": "accountsmanager_accountsmanager",
-      "target": "updateaccountmutation_useupdateaccountmutation"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": "L67",
-      "weight": 1.0,
-      "_src": "accountsmanager_accountsmanager",
-      "_tgt": "deleteaccountmutation_usedeleteaccountmutation",
-      "source": "accountsmanager_accountsmanager",
-      "target": "deleteaccountmutation_usedeleteaccountmutation"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "apps/web/src/components/AccountsManager.tsx",
-      "source_location": "L121",
-      "weight": 1.0,
-      "_src": "accountsmanager_accountsmanager",
-      "_tgt": "format_formatrelative",
-      "source": "accountsmanager_accountsmanager",
-      "target": "format_formatrelative"
     },
     {
       "relation": "contains",
@@ -4606,8 +4163,8 @@
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "47-52",
       "weight": 1.0,
-      "_src": "refactoring_summary_accountsmanager_refactoring",
-      "_tgt": "refactoring_summary_fetchaccountsquery",
+      "_src": "refactoring_summary_fetchaccountsquery",
+      "_tgt": "refactoring_summary_accountsmanager_refactoring",
       "source": "refactoring_summary_fetchaccountsquery",
       "target": "refactoring_summary_accountsmanager_refactoring"
     },
@@ -4618,8 +4175,8 @@
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "146-150",
       "weight": 1.0,
-      "_src": "refactoring_summary_query_hook_extraction_pattern",
-      "_tgt": "refactoring_summary_fetchaccountsquery",
+      "_src": "refactoring_summary_fetchaccountsquery",
+      "_tgt": "refactoring_summary_query_hook_extraction_pattern",
       "source": "refactoring_summary_fetchaccountsquery",
       "target": "refactoring_summary_query_hook_extraction_pattern"
     },
@@ -4630,8 +4187,8 @@
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "47-52",
       "weight": 1.0,
-      "_src": "refactoring_summary_accountsmanager_refactoring",
-      "_tgt": "refactoring_summary_createaccountmutation",
+      "_src": "refactoring_summary_createaccountmutation",
+      "_tgt": "refactoring_summary_accountsmanager_refactoring",
       "source": "refactoring_summary_createaccountmutation",
       "target": "refactoring_summary_accountsmanager_refactoring"
     },
@@ -4642,8 +4199,8 @@
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "152-156",
       "weight": 1.0,
-      "_src": "refactoring_summary_mutation_hook_extraction_pattern",
-      "_tgt": "refactoring_summary_createaccountmutation",
+      "_src": "refactoring_summary_createaccountmutation",
+      "_tgt": "refactoring_summary_mutation_hook_extraction_pattern",
       "source": "refactoring_summary_createaccountmutation",
       "target": "refactoring_summary_mutation_hook_extraction_pattern"
     },
@@ -4654,8 +4211,8 @@
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "47-52",
       "weight": 1.0,
-      "_src": "refactoring_summary_accountsmanager_refactoring",
-      "_tgt": "refactoring_summary_updateaccountmutation",
+      "_src": "refactoring_summary_updateaccountmutation",
+      "_tgt": "refactoring_summary_accountsmanager_refactoring",
       "source": "refactoring_summary_updateaccountmutation",
       "target": "refactoring_summary_accountsmanager_refactoring"
     },
@@ -4666,8 +4223,8 @@
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "47-52",
       "weight": 1.0,
-      "_src": "refactoring_summary_accountsmanager_refactoring",
-      "_tgt": "refactoring_summary_deleteaccountmutation",
+      "_src": "refactoring_summary_deleteaccountmutation",
+      "_tgt": "refactoring_summary_accountsmanager_refactoring",
       "source": "refactoring_summary_deleteaccountmutation",
       "target": "refactoring_summary_accountsmanager_refactoring"
     },
@@ -4678,8 +4235,8 @@
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "54-58",
       "weight": 1.0,
-      "_src": "refactoring_summary_contestlist_refactoring",
-      "_tgt": "refactoring_summary_updatestatusmutation",
+      "_src": "refactoring_summary_updatestatusmutation",
+      "_tgt": "refactoring_summary_contestlist_refactoring",
       "source": "refactoring_summary_updatestatusmutation",
       "target": "refactoring_summary_contestlist_refactoring"
     },
@@ -4786,8 +4343,8 @@
       "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "claude_md_graphify",
-      "_tgt": "agents_project_summary",
+      "_src": "agents_project_summary",
+      "_tgt": "claude_md_graphify",
       "source": "agents_project_summary",
       "target": "claude_md_graphify"
     },
@@ -4798,8 +4355,8 @@
       "source_file": "AGENTS.md",
       "source_location": "144-165",
       "weight": 1.0,
-      "_src": "agents_nx_workflow_guidelines",
-      "_tgt": "agents_repository_layout",
+      "_src": "agents_repository_layout",
+      "_tgt": "agents_nx_workflow_guidelines",
       "source": "agents_repository_layout",
       "target": "agents_nx_workflow_guidelines"
     },
@@ -4852,54 +4409,6 @@
       "target": "agents_critical_invariants"
     },
     {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_fetchrecentposts",
-      "_tgt": "instagram_ensureloggedin",
-      "source": "instagram_fetchrecentposts",
-      "target": "instagram_ensureloggedin"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_ensureloggedin",
-      "_tgt": "instagram_isloggedin",
-      "source": "instagram_ensureloggedin",
-      "target": "instagram_isloggedin"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_ensureloggedin",
-      "_tgt": "instagram_performlogin",
-      "source": "instagram_ensureloggedin",
-      "target": "instagram_performlogin"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "libs/scraper/src/instagram.ts",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_performlogin",
-      "_tgt": "instagram_haschallenge",
-      "source": "instagram_performlogin",
-      "target": "instagram_haschallenge"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -4934,462 +4443,6 @@
       "_tgt": "technology_stack_definition",
       "source": "instagram_giveaway_aggregator_project_summary",
       "target": "technology_stack_definition"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/AccountsManager_Component_Refactoring.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "accountsmanager_component_refactoring",
-      "_tgt": "fetch_accounts_query_hook",
-      "source": "accountsmanager_component_refactoring",
-      "target": "fetch_accounts_query_hook"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/AccountsManager_Component_Refactoring.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "accountsmanager_component_refactoring",
-      "_tgt": "create_account_mutation_hook",
-      "source": "accountsmanager_component_refactoring",
-      "target": "create_account_mutation_hook"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/AccountsManager_Component_Refactoring.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "accountsmanager_component_refactoring",
-      "_tgt": "update_account_mutation_hook",
-      "source": "accountsmanager_component_refactoring",
-      "target": "update_account_mutation_hook"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/AccountsManager_Component_Refactoring.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "accountsmanager_component_refactoring",
-      "_tgt": "delete_account_mutation_hook",
-      "source": "accountsmanager_component_refactoring",
-      "target": "delete_account_mutation_hook"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "graphify-out/wiki/AccountsManager().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "accountsmanager",
-      "_tgt": "format_relative_function",
-      "source": "accountsmanager",
-      "target": "format_relative_function"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "graphify-out/wiki/AccountsManager().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "accountsmanager",
-      "_tgt": "fetch_accounts_query_hook",
-      "source": "accountsmanager",
-      "target": "fetch_accounts_query_hook"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "graphify-out/wiki/AccountsManager().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "accountsmanager",
-      "_tgt": "create_account_mutation_hook",
-      "source": "accountsmanager",
-      "target": "create_account_mutation_hook"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "graphify-out/wiki/AccountsManager().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "accountsmanager",
-      "_tgt": "update_account_mutation_hook",
-      "source": "accountsmanager",
-      "target": "update_account_mutation_hook"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "graphify-out/wiki/AccountsManager().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "accountsmanager",
-      "_tgt": "delete_account_mutation_hook",
-      "source": "accountsmanager",
-      "target": "delete_account_mutation_hook"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/handleRouteError().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "handleroute_error",
-      "_tgt": "zod_error_response",
-      "source": "handleroute_error",
-      "target": "zod_error_response"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.65,
-      "source_file": "graphify-out/wiki/handleRouteError().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "handleroute_error",
-      "_tgt": "patch_http_handler",
-      "source": "handleroute_error",
-      "target": "patch_http_handler"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.65,
-      "source_file": "graphify-out/wiki/handleRouteError().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "handleroute_error",
-      "_tgt": "get_http_handler",
-      "source": "handleroute_error",
-      "target": "get_http_handler"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.65,
-      "source_file": "graphify-out/wiki/handleRouteError().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "handleroute_error",
-      "_tgt": "post_http_handler",
-      "source": "handleroute_error",
-      "target": "post_http_handler"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.65,
-      "source_file": "graphify-out/wiki/handleRouteError().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "handleroute_error",
-      "_tgt": "delete_http_handler",
-      "source": "handleroute_error",
-      "target": "delete_http_handler"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_scraper",
-      "_tgt": "fetchrecent_posts",
-      "source": "instagram_scraper",
-      "target": "fetchrecent_posts"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_scraper",
-      "_tgt": "ensurelogged_in",
-      "source": "instagram_scraper",
-      "target": "ensurelogged_in"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_scraper",
-      "_tgt": "performlogin",
-      "source": "instagram_scraper",
-      "target": "performlogin"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_scraper",
-      "_tgt": "close_method",
-      "source": "instagram_scraper",
-      "target": "close_method"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_scraper",
-      "_tgt": "haschal_lenge",
-      "source": "instagram_scraper",
-      "target": "haschal_lenge"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_scraper",
-      "_tgt": "newpage",
-      "source": "instagram_scraper",
-      "target": "newpage"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_scraper",
-      "_tgt": "waitbetween_handles",
-      "source": "instagram_scraper",
-      "target": "waitbetween_handles"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_scraper",
-      "_tgt": "isloggedin",
-      "source": "instagram_scraper",
-      "target": "isloggedin"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_scraper",
-      "_tgt": "open_method",
-      "source": "instagram_scraper",
-      "target": "open_method"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "instagram_scraper",
-      "_tgt": "constructor_method",
-      "source": "instagram_scraper",
-      "target": "constructor_method"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "load_scraper_config_from_env",
-      "_tgt": "instagram_scraper",
-      "source": "instagram_scraper",
-      "target": "load_scraper_config_from_env"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "graphify-out/wiki/config.ts.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "scrapeand_store",
-      "_tgt": "instagram_scraper",
-      "source": "instagram_scraper",
-      "target": "scrapeand_store"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "fetchrecent_posts",
-      "_tgt": "jitter_function",
-      "source": "fetchrecent_posts",
-      "target": "jitter_function"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "ensurelogged_in",
-      "_tgt": "jitter_function",
-      "source": "ensurelogged_in",
-      "target": "jitter_function"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "jitter_function",
-      "_tgt": "sleep_function",
-      "source": "jitter_function",
-      "target": "sleep_function"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "jitter_function",
-      "_tgt": "randomjitter_function",
-      "source": "jitter_function",
-      "target": "randomjitter_function"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "graphify-out/wiki/config.ts.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "run_pipeline",
-      "_tgt": "load_worker_env",
-      "source": "run_pipeline",
-      "target": "load_worker_env"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "graphify-out/wiki/config.ts.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "run_pipeline",
-      "_tgt": "classifyand_store",
-      "source": "run_pipeline",
-      "target": "classifyand_store"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "graphify-out/wiki/config.ts.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "run_pipeline",
-      "_tgt": "scrapeand_store",
-      "source": "run_pipeline",
-      "target": "scrapeand_store"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "graphify-out/wiki/config.ts.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "run_pipeline",
-      "_tgt": "finishrun",
-      "source": "run_pipeline",
-      "target": "finishrun"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "graphify-out/wiki/config.ts.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "classifyand_store",
-      "_tgt": "classifybatch",
-      "source": "classifybatch",
-      "target": "classifyand_store"
-    },
-    {
-      "relation": "exports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/translator.ts.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "translator_ts",
-      "_tgt": "get_translator",
-      "source": "translator_ts",
-      "target": "get_translator"
-    },
-    {
-      "relation": "exports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "graphify-out/wiki/translator.ts.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "translator_ts",
-      "_tgt": "warn_missing_translation",
-      "source": "translator_ts",
-      "target": "warn_missing_translation"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "graphify-out/wiki/InternationalizationProvider().md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "internationalization_provider",
-      "_tgt": "translator_ts",
-      "source": "translator_ts",
-      "target": "internationalization_provider"
     }
   ],
   "hyperedges": [

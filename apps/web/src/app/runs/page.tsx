@@ -1,10 +1,12 @@
 import { prisma } from '@app/db';
 import { Card, CardBody, CardHeader, CardTitle, Row, Stack } from '@app/ui';
+import { getServerTranslator, Translations } from '@app/internationalization';
 import { formatDateTime, formatRelative } from '../../lib/format';
 
 export const dynamic = 'force-dynamic';
 
 export default async function RunsPage() {
+  const t = await getServerTranslator();
   const runs = await prisma.classificationRun.findMany({
     orderBy: { startedAt: 'desc' },
     take: 50,
@@ -12,9 +14,9 @@ export default async function RunsPage() {
 
   return (
     <Stack gap={5}>
-      <h1>B\u011bhy workeru</h1>
+      <h1>{t(Translations.RunsPageTitle)}</h1>
       {runs.length === 0 ? (
-        <p>Je\u0161t\u011b nebyl spu\u0161t\u011bn \u017e\u00e1dn\u00fd b\u011bh.</p>
+        <p>{t(Translations.RunsEmpty)}</p>
       ) : (
         <Stack gap={3}>
           {runs.map((r) => {
@@ -23,6 +25,11 @@ export default async function RunsPage() {
                 ? Math.round((r.finishedAt.getTime() - r.startedAt.getTime()) / 1000)
                 : null;
             const errorCount = Array.isArray(r.errors) ? r.errors.length : 0;
+            const statusValue = r.finishedAt
+              ? duration != null
+                ? t(Translations.RunsStatusDoneWithDuration, { duration })
+                : t(Translations.RunsStatusDone)
+              : t(Translations.RunsStatusRunning);
             return (
               <Card key={r.id}>
                 <CardHeader>
@@ -32,12 +39,10 @@ export default async function RunsPage() {
                 </CardHeader>
                 <CardBody>
                   <Row gap={4} wrap>
-                    <small>Postů naskenováno: {r.postsScanned}</small>
-                    <small>Soutěží nalezeno: {r.contestsFound}</small>
-                    <small>
-                      Stav: {r.finishedAt ? `hotovo${duration != null ? ` (${duration}s)` : ''}` : 'b\u011b\u017e\u00ed'}
-                    </small>
-                    <small>Chyby: {errorCount}</small>
+                    <small>{t(Translations.RunsPostsScanned, { count: r.postsScanned })}</small>
+                    <small>{t(Translations.RunsContestsFound, { count: r.contestsFound })}</small>
+                    <small>{t(Translations.RunsStatusLabel, { value: statusValue })}</small>
+                    <small>{t(Translations.RunsErrorsCount, { count: errorCount })}</small>
                   </Row>
                   {errorCount > 0 && (
                     <pre style={{ marginTop: 12, fontSize: 12, whiteSpace: 'pre-wrap' }}>

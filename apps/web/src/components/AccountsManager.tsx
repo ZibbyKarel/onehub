@@ -23,6 +23,7 @@ import {
   accountFormSchema,
   type AccountFormValues,
 } from '@app/shared-types';
+import { useLocalizedText, Translations, type TranslationFunction } from '@app/internationalization';
 import { formatDateTime, formatRelative } from '../lib/format';
 import {
   useFetchAccountsQuery,
@@ -34,12 +35,20 @@ import { useDeleteAccountMutation } from '../lib/mutations/deleteAccountMutation
 
 export type { AccountSummary } from '../lib/queries/fetchAccountsQuery';
 
+const getErrorMessage = (err: unknown, t: TranslationFunction): string => {
+  const msg = err instanceof Error ? err.message : '';
+  if (msg === 'handle_already_exists') return t(Translations.AccountsErrorHandleExists);
+  if (msg === 'validation_failed') return t(Translations.AccountsErrorValidation);
+  return t(Translations.AccountsErrorUnknown);
+};
+
 export function AccountsManager({
   initialAccounts,
 }: {
   initialAccounts: AccountSummary[];
 }) {
   const qc = useQueryClient();
+  const t = useLocalizedText();
   const { data: accounts = initialAccounts } = useFetchAccountsQuery({
     initialData: initialAccounts,
   });
@@ -57,7 +66,7 @@ export function AccountsManager({
     onError: (err) => {
       form.setError('handle', {
         type: 'manual',
-        message: err instanceof Error ? err.message : 'Chyba',
+        message: getErrorMessage(err, t),
       });
     },
   });
@@ -72,7 +81,7 @@ export function AccountsManager({
     <Stack gap={5}>
       <Card>
         <CardHeader>
-          <CardTitle>P\u0159idat \u00fa\u010det</CardTitle>
+          <CardTitle>{t(Translations.AccountsAddCardTitle)}</CardTitle>
         </CardHeader>
         <CardBody>
           <FormProvider {...form}>
@@ -81,19 +90,23 @@ export function AccountsManager({
                 <FormInput
                   name="handle"
                   control={form.control}
-                  label="Instagram handle"
-                  placeholder="nike"
+                  label={t(Translations.AccountsFieldHandleLabel)}
+                  placeholder={t(Translations.AccountsFieldHandlePlaceholder)}
                   autoComplete="off"
                 />
                 <FormInput
                   name="displayName"
                   control={form.control}
-                  label="N\u00e1zev (nepovinn\u00fd)"
-                  placeholder="Nike"
+                  label={t(Translations.AccountsFieldNameLabel)}
+                  placeholder={t(Translations.AccountsFieldNamePlaceholder)}
                 />
-                <FormCheckbox name="active" control={form.control} label="Aktivn\u00ed (scrapovat)" />
+                <FormCheckbox
+                  name="active"
+                  control={form.control}
+                  label={t(Translations.AccountsFieldActiveLabel)}
+                />
                 <Row>
-                  <FormSubmit>P\u0159idat</FormSubmit>
+                  <FormSubmit>{t(Translations.AccountsSubmitAdd)}</FormSubmit>
                 </Row>
               </Stack>
             </form>
@@ -110,15 +123,18 @@ export function AccountsManager({
                 {a.displayName && <small>{a.displayName}</small>}
               </Stack>
               <Badge variant={a.active ? 'success' : 'neutral'}>
-                {a.active ? 'aktivn\u00ed' : 'pozastaven'}
+                {a.active ? t(Translations.AccountsBadgeActive) : t(Translations.AccountsBadgePaused)}
               </Badge>
             </CardHeader>
             <CardBody>
               <Row gap={4} wrap>
-                <small>P\u0159id\u00e1n: {formatDateTime(a.createdAt)}</small>
+                <small>{t(Translations.AccountsAddedAt, { date: formatDateTime(a.createdAt) })}</small>
                 <small>
-                  Posledn\u00ed sken:{' '}
-                  {a.lastScrapedAt ? formatRelative(a.lastScrapedAt) : 'nikdy'}
+                  {t(Translations.AccountsLastScan, {
+                    when: a.lastScrapedAt
+                      ? formatRelative(a.lastScrapedAt)
+                      : t(Translations.AccountsLastScanNever),
+                  })}
                 </small>
               </Row>
             </CardBody>
@@ -127,10 +143,10 @@ export function AccountsManager({
                 variant="secondary"
                 onClick={() => toggleMut.mutate({ id: a.id, patch: { active: !a.active } })}
               >
-                {a.active ? 'Pozastavit' : 'Obnovit'}
+                {a.active ? t(Translations.AccountsButtonPause) : t(Translations.AccountsButtonResume)}
               </Button>
               <Button variant="danger" onClick={() => deleteMut.mutate(a.id)}>
-                Smazat
+                {t(Translations.AccountsButtonDelete)}
               </Button>
             </CardFooter>
           </Card>
