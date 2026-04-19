@@ -4,7 +4,7 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "refactoring_extracted_hooks",
+        "id": "extracted_tanstack_query_hooks_set",
         "label": "Extracted TanStack Query Hooks Set",
         "nodes": [
           "refactoring_summary_fetchaccountsquery",
@@ -19,7 +19,7 @@
         "source_file": "REFACTORING_SUMMARY.md"
       },
       {
-        "id": "agents_skill_governance",
+        "id": "ai_agent_skill_governance_framework",
         "label": "AI Agent Skill Governance Framework",
         "nodes": [
           "agents_tier1_skills",
@@ -33,7 +33,7 @@
         "source_file": "AGENTS.md"
       },
       {
-        "id": "project_documentation_coherence",
+        "id": "project_documentation_config",
         "label": "Project Documentation & Configuration",
         "nodes": [
           "readme_ig_giveaway_aggregator",
@@ -41,10 +41,81 @@
           "agents_project_summary",
           "agents_stack"
         ],
-        "relation": "form",
+        "relation": "participate_in",
         "confidence": "INFERRED",
         "confidence_score": 0.82,
-        "source_file": null
+        "source_file": "README.md"
+      },
+      {
+        "id": "instagram_scraper_lifecycle",
+        "label": "InstagramScraper Lifecycle",
+        "nodes": [
+          "instagram_instagramscraper",
+          "instagram_constructor",
+          "instagram_open",
+          "instagram_ensureloggedin",
+          "instagram_close"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "libs/scraper/src/instagram.ts"
+      },
+      {
+        "id": "classifier_pipeline",
+        "label": "Classifier Processing Pipeline",
+        "nodes": [
+          "classifier_classifybatch",
+          "classify_classify",
+          "classifier_extracttext",
+          "classifier_parseJsonFromText",
+          "classifier_renderbatchusermessage"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "libs/ai/src/classifier.ts"
+      },
+      {
+        "id": "form_components",
+        "label": "Form Components",
+        "nodes": [
+          "forminput_forminput",
+          "formtextarea_formtextarea",
+          "uselocalizedtext_uselocalizedtext"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.7,
+        "source_file": "libs/form/src/FormInput.tsx"
+      },
+      {
+        "id": "instagram_scraper_login_flow",
+        "label": "Instagram Scraper Login Flow",
+        "nodes": [
+          "instagram_scraper",
+          "performlogin",
+          "ensurelogged_in",
+          "isloggedin"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md"
+      },
+      {
+        "id": "data_pipeline_flow",
+        "label": "Data Pipeline Flow",
+        "nodes": [
+          "run_pipeline",
+          "scrapeand_store",
+          "classifyand_store",
+          "finishrun"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "graphify-out/wiki/config.ts.md"
       }
     ]
   },
@@ -55,7 +126,7 @@
       "source_file": "libs/scraper/vitest.config.ts",
       "source_location": "L1",
       "id": "libs_scraper_vitest_config_ts",
-      "community": 29,
+      "community": 30,
       "norm_label": "vitest.config.ts"
     },
     {
@@ -64,7 +135,7 @@
       "source_file": "libs/scraper/src/parse.ts",
       "source_location": "L1",
       "id": "libs_scraper_src_parse_ts",
-      "community": 6,
+      "community": 8,
       "norm_label": "parse.ts"
     },
     {
@@ -73,7 +144,7 @@
       "source_file": "libs/scraper/src/parse.ts",
       "source_location": "L37",
       "id": "parse_extractpostsfromnodes",
-      "community": 6,
+      "community": 8,
       "norm_label": "extractpostsfromnodes()"
     },
     {
@@ -82,7 +153,7 @@
       "source_file": "libs/scraper/src/parse.ts",
       "source_location": "L78",
       "id": "parse_extracttimelinenodesfromhtml",
-      "community": 6,
+      "community": 8,
       "norm_label": "extracttimelinenodesfromhtml()"
     },
     {
@@ -91,7 +162,7 @@
       "source_file": "libs/scraper/src/parse.ts",
       "source_location": "L113",
       "id": "parse_findtimelineedges",
-      "community": 6,
+      "community": 8,
       "norm_label": "findtimelineedges()"
     },
     {
@@ -100,7 +171,7 @@
       "source_file": "libs/scraper/src/parse.ts",
       "source_location": "L146",
       "id": "parse_istimelinenode",
-      "community": 6,
+      "community": 8,
       "norm_label": "istimelinenode()"
     },
     {
@@ -109,7 +180,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L1",
       "id": "libs_scraper_src_instagram_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "instagram.ts"
     },
     {
@@ -118,7 +189,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L27",
       "id": "instagram_instagramscraper",
-      "community": 1,
+      "community": 2,
       "norm_label": "instagramscraper"
     },
     {
@@ -127,7 +198,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L28",
       "id": "instagram_instagramscraper_constructor",
-      "community": 1,
+      "community": 2,
       "norm_label": ".constructor()"
     },
     {
@@ -136,7 +207,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L33",
       "id": "instagram_instagramscraper_open",
-      "community": 2,
+      "community": 3,
       "norm_label": ".open()"
     },
     {
@@ -145,7 +216,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L44",
       "id": "instagram_instagramscraper_close",
-      "community": 1,
+      "community": 2,
       "norm_label": ".close()"
     },
     {
@@ -154,7 +225,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L52",
       "id": "instagram_instagramscraper_ensureloggedin",
-      "community": 1,
+      "community": 2,
       "norm_label": ".ensureloggedin()"
     },
     {
@@ -163,7 +234,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L72",
       "id": "instagram_instagramscraper_fetchrecentposts",
-      "community": 1,
+      "community": 2,
       "norm_label": ".fetchrecentposts()"
     },
     {
@@ -172,7 +243,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L102",
       "id": "instagram_instagramscraper_waitbetweenhandles",
-      "community": 1,
+      "community": 2,
       "norm_label": ".waitbetweenhandles()"
     },
     {
@@ -181,7 +252,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L106",
       "id": "instagram_instagramscraper_newpage",
-      "community": 1,
+      "community": 2,
       "norm_label": ".newpage()"
     },
     {
@@ -190,7 +261,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L115",
       "id": "instagram_instagramscraper_isloggedin",
-      "community": 1,
+      "community": 2,
       "norm_label": ".isloggedin()"
     },
     {
@@ -199,7 +270,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L123",
       "id": "instagram_instagramscraper_haschallenge",
-      "community": 1,
+      "community": 2,
       "norm_label": ".haschallenge()"
     },
     {
@@ -208,7 +279,7 @@
       "source_file": "libs/scraper/src/instagram.ts",
       "source_location": "L128",
       "id": "instagram_instagramscraper_performlogin",
-      "community": 1,
+      "community": 2,
       "norm_label": ".performlogin()"
     },
     {
@@ -217,7 +288,7 @@
       "source_file": "libs/scraper/src/parse.test.ts",
       "source_location": "L1",
       "id": "libs_scraper_src_parse_test_ts",
-      "community": 6,
+      "community": 8,
       "norm_label": "parse.test.ts"
     },
     {
@@ -226,7 +297,7 @@
       "source_file": "libs/scraper/src/parse.test.ts",
       "source_location": "L8",
       "id": "parse_test_node",
-      "community": 6,
+      "community": 8,
       "norm_label": "node()"
     },
     {
@@ -235,7 +306,7 @@
       "source_file": "libs/scraper/src/index.ts",
       "source_location": "L1",
       "id": "libs_scraper_src_index_ts",
-      "community": 30,
+      "community": 31,
       "norm_label": "index.ts"
     },
     {
@@ -244,7 +315,7 @@
       "source_file": "libs/scraper/src/config.ts",
       "source_location": "L1",
       "id": "libs_scraper_src_config_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "config.ts"
     },
     {
@@ -253,7 +324,7 @@
       "source_file": "libs/scraper/src/config.ts",
       "source_location": "L36",
       "id": "config_loadscraperconfigfromenv",
-      "community": 1,
+      "community": 2,
       "norm_label": "loadscraperconfigfromenv()"
     },
     {
@@ -262,7 +333,7 @@
       "source_file": "libs/scraper/src/jitter.ts",
       "source_location": "L1",
       "id": "libs_scraper_src_jitter_ts",
-      "community": 1,
+      "community": 2,
       "norm_label": "jitter.ts"
     },
     {
@@ -271,7 +342,7 @@
       "source_file": "libs/scraper/src/jitter.ts",
       "source_location": "L6",
       "id": "jitter_sleep",
-      "community": 1,
+      "community": 2,
       "norm_label": "sleep()"
     },
     {
@@ -280,7 +351,7 @@
       "source_file": "libs/scraper/src/jitter.ts",
       "source_location": "L9",
       "id": "jitter_randomjitter",
-      "community": 1,
+      "community": 2,
       "norm_label": "randomjitter()"
     },
     {
@@ -289,7 +360,7 @@
       "source_file": "libs/scraper/src/jitter.ts",
       "source_location": "L14",
       "id": "jitter_jitter",
-      "community": 1,
+      "community": 2,
       "norm_label": "jitter()"
     },
     {
@@ -298,7 +369,7 @@
       "source_file": "libs/ui/src/Card.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_card_tsx",
-      "community": 31,
+      "community": 32,
       "norm_label": "card.tsx"
     },
     {
@@ -307,7 +378,7 @@
       "source_file": "libs/ui/src/styled.d.ts",
       "source_location": "L1",
       "id": "libs_ui_src_styled_d_ts",
-      "community": 32,
+      "community": 33,
       "norm_label": "styled.d.ts"
     },
     {
@@ -316,7 +387,7 @@
       "source_file": "libs/ui/src/Stack.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_stack_tsx",
-      "community": 33,
+      "community": 34,
       "norm_label": "stack.tsx"
     },
     {
@@ -325,7 +396,7 @@
       "source_file": "libs/ui/src/ThemeProvider.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_themeprovider_tsx",
-      "community": 13,
+      "community": 18,
       "norm_label": "themeprovider.tsx"
     },
     {
@@ -334,7 +405,7 @@
       "source_file": "libs/ui/src/ThemeProvider.tsx",
       "source_location": "L12",
       "id": "themeprovider_themeprovider",
-      "community": 13,
+      "community": 18,
       "norm_label": "themeprovider()"
     },
     {
@@ -343,7 +414,7 @@
       "source_file": "libs/ui/src/Badge.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_badge_tsx",
-      "community": 34,
+      "community": 35,
       "norm_label": "badge.tsx"
     },
     {
@@ -352,7 +423,7 @@
       "source_file": "libs/ui/src/GlobalStyles.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_globalstyles_tsx",
-      "community": 35,
+      "community": 36,
       "norm_label": "globalstyles.tsx"
     },
     {
@@ -361,7 +432,7 @@
       "source_file": "libs/ui/src/index.ts",
       "source_location": "L1",
       "id": "libs_ui_src_index_ts",
-      "community": 36,
+      "community": 37,
       "norm_label": "index.ts"
     },
     {
@@ -370,7 +441,7 @@
       "source_file": "libs/ui/src/Button.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_button_tsx",
-      "community": 37,
+      "community": 38,
       "norm_label": "button.tsx"
     },
     {
@@ -379,7 +450,7 @@
       "source_file": "libs/ui/src/Checkbox.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_checkbox_tsx",
-      "community": 38,
+      "community": 39,
       "norm_label": "checkbox.tsx"
     },
     {
@@ -388,7 +459,7 @@
       "source_file": "libs/ui/src/Select.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_select_tsx",
-      "community": 39,
+      "community": 40,
       "norm_label": "select.tsx"
     },
     {
@@ -397,7 +468,7 @@
       "source_file": "libs/ui/src/Textarea.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_textarea_tsx",
-      "community": 40,
+      "community": 41,
       "norm_label": "textarea.tsx"
     },
     {
@@ -406,7 +477,7 @@
       "source_file": "libs/ui/src/Input.tsx",
       "source_location": "L1",
       "id": "libs_ui_src_input_tsx",
-      "community": 41,
+      "community": 42,
       "norm_label": "input.tsx"
     },
     {
@@ -415,7 +486,7 @@
       "source_file": "libs/form/src/FormSubmit.tsx",
       "source_location": "L1",
       "id": "libs_form_src_formsubmit_tsx",
-      "community": 14,
+      "community": 19,
       "norm_label": "formsubmit.tsx"
     },
     {
@@ -424,7 +495,7 @@
       "source_file": "libs/form/src/FormSubmit.tsx",
       "source_location": "L20",
       "id": "formsubmit_formsubmit",
-      "community": 14,
+      "community": 19,
       "norm_label": "formsubmit()"
     },
     {
@@ -433,7 +504,7 @@
       "source_file": "libs/form/src/FormTextarea.tsx",
       "source_location": "L1",
       "id": "libs_form_src_formtextarea_tsx",
-      "community": 15,
+      "community": 11,
       "norm_label": "formtextarea.tsx"
     },
     {
@@ -442,7 +513,7 @@
       "source_file": "libs/form/src/FormTextarea.tsx",
       "source_location": "L10",
       "id": "formtextarea_formtextarea",
-      "community": 15,
+      "community": 11,
       "norm_label": "formtextarea()"
     },
     {
@@ -451,7 +522,7 @@
       "source_file": "libs/form/src/FormCheckbox.tsx",
       "source_location": "L1",
       "id": "libs_form_src_formcheckbox_tsx",
-      "community": 42,
+      "community": 43,
       "norm_label": "formcheckbox.tsx"
     },
     {
@@ -460,7 +531,7 @@
       "source_file": "libs/form/src/FormSelect.tsx",
       "source_location": "L1",
       "id": "libs_form_src_formselect_tsx",
-      "community": 43,
+      "community": 44,
       "norm_label": "formselect.tsx"
     },
     {
@@ -469,7 +540,7 @@
       "source_file": "libs/form/src/types.ts",
       "source_location": "L1",
       "id": "libs_form_src_types_ts",
-      "community": 44,
+      "community": 45,
       "norm_label": "types.ts"
     },
     {
@@ -478,7 +549,7 @@
       "source_file": "libs/form/src/index.ts",
       "source_location": "L1",
       "id": "libs_form_src_index_ts",
-      "community": 45,
+      "community": 46,
       "norm_label": "index.ts"
     },
     {
@@ -487,7 +558,7 @@
       "source_file": "libs/form/src/FormInput.tsx",
       "source_location": "L1",
       "id": "libs_form_src_forminput_tsx",
-      "community": 16,
+      "community": 11,
       "norm_label": "forminput.tsx"
     },
     {
@@ -496,7 +567,7 @@
       "source_file": "libs/form/src/FormInput.tsx",
       "source_location": "L24",
       "id": "forminput_forminput",
-      "community": 16,
+      "community": 11,
       "norm_label": "forminput()"
     },
     {
@@ -505,7 +576,7 @@
       "source_file": "libs/internationalization/src/index.ts",
       "source_location": "L1",
       "id": "libs_internationalization_src_index_ts",
-      "community": 46,
+      "community": 47,
       "norm_label": "index.ts"
     },
     {
@@ -514,7 +585,7 @@
       "source_file": "libs/internationalization/src/lib/translator.ts",
       "source_location": "L1",
       "id": "libs_internationalization_src_lib_translator_ts",
-      "community": 11,
+      "community": 17,
       "norm_label": "translator.ts"
     },
     {
@@ -523,7 +594,7 @@
       "source_file": "libs/internationalization/src/lib/translator.ts",
       "source_location": "L8",
       "id": "translator_warnmissingtranslation",
-      "community": 11,
+      "community": 17,
       "norm_label": "warnmissingtranslation()"
     },
     {
@@ -532,7 +603,7 @@
       "source_file": "libs/internationalization/src/lib/translator.ts",
       "source_location": "L28",
       "id": "translator_gettranslator",
-      "community": 11,
+      "community": 17,
       "norm_label": "gettranslator()"
     },
     {
@@ -541,7 +612,7 @@
       "source_file": "libs/internationalization/src/lib/translationKeys.ts",
       "source_location": "L1",
       "id": "libs_internationalization_src_lib_translationkeys_ts",
-      "community": 47,
+      "community": 48,
       "norm_label": "translationkeys.ts"
     },
     {
@@ -550,7 +621,7 @@
       "source_file": "libs/internationalization/src/lib/translator.spec.ts",
       "source_location": "L1",
       "id": "libs_internationalization_src_lib_translator_spec_ts",
-      "community": 48,
+      "community": 49,
       "norm_label": "translator.spec.ts"
     },
     {
@@ -559,7 +630,7 @@
       "source_file": "libs/internationalization/src/lib/format.spec.ts",
       "source_location": "L1",
       "id": "libs_internationalization_src_lib_format_spec_ts",
-      "community": 49,
+      "community": 50,
       "norm_label": "format.spec.ts"
     },
     {
@@ -568,7 +639,7 @@
       "source_file": "libs/internationalization/src/lib/dictionaries.ts",
       "source_location": "L1",
       "id": "libs_internationalization_src_lib_dictionaries_ts",
-      "community": 50,
+      "community": 51,
       "norm_label": "dictionaries.ts"
     },
     {
@@ -577,7 +648,7 @@
       "source_file": "libs/internationalization/src/lib/InternationalizationProvider.tsx",
       "source_location": "L1",
       "id": "libs_internationalization_src_lib_internationalizationprovider_tsx",
-      "community": 17,
+      "community": 20,
       "norm_label": "internationalizationprovider.tsx"
     },
     {
@@ -586,7 +657,7 @@
       "source_file": "libs/internationalization/src/lib/InternationalizationProvider.tsx",
       "source_location": "L25",
       "id": "internationalizationprovider_internationalizationprovider",
-      "community": 17,
+      "community": 20,
       "norm_label": "internationalizationprovider()"
     },
     {
@@ -595,7 +666,7 @@
       "source_file": "libs/internationalization/src/lib/types.ts",
       "source_location": "L1",
       "id": "libs_internationalization_src_lib_types_ts",
-      "community": 51,
+      "community": 52,
       "norm_label": "types.ts"
     },
     {
@@ -604,7 +675,7 @@
       "source_file": "libs/internationalization/src/lib/format.ts",
       "source_location": "L1",
       "id": "libs_internationalization_src_lib_format_ts",
-      "community": 18,
+      "community": 21,
       "norm_label": "format.ts"
     },
     {
@@ -613,7 +684,7 @@
       "source_file": "libs/internationalization/src/lib/format.ts",
       "source_location": "L5",
       "id": "format_formatmessage",
-      "community": 18,
+      "community": 21,
       "norm_label": "formatmessage()"
     },
     {
@@ -622,7 +693,7 @@
       "source_file": "libs/internationalization/src/lib/context.tsx",
       "source_location": "L1",
       "id": "libs_internationalization_src_lib_context_tsx",
-      "community": 52,
+      "community": 53,
       "norm_label": "context.tsx"
     },
     {
@@ -631,7 +702,7 @@
       "source_file": "libs/internationalization/src/lib/useLocalizedText.spec.tsx",
       "source_location": "L1",
       "id": "libs_internationalization_src_lib_uselocalizedtext_spec_tsx",
-      "community": 19,
+      "community": 22,
       "norm_label": "uselocalizedtext.spec.tsx"
     },
     {
@@ -640,7 +711,7 @@
       "source_file": "libs/internationalization/src/lib/useLocalizedText.spec.tsx",
       "source_location": "L8",
       "id": "uselocalizedtext_spec_providerwrapper",
-      "community": 19,
+      "community": 22,
       "norm_label": "providerwrapper()"
     },
     {
@@ -649,7 +720,7 @@
       "source_file": "libs/internationalization/src/lib/useLocalizedText.ts",
       "source_location": "L1",
       "id": "libs_internationalization_src_lib_uselocalizedtext_ts",
-      "community": 20,
+      "community": 11,
       "norm_label": "uselocalizedtext.ts"
     },
     {
@@ -658,7 +729,7 @@
       "source_file": "libs/internationalization/src/lib/useLocalizedText.ts",
       "source_location": "L18",
       "id": "uselocalizedtext_uselocalizedtext",
-      "community": 20,
+      "community": 11,
       "norm_label": "uselocalizedtext()"
     },
     {
@@ -667,7 +738,7 @@
       "source_file": "libs/ai/vitest.config.ts",
       "source_location": "L1",
       "id": "libs_ai_vitest_config_ts",
-      "community": 53,
+      "community": 54,
       "norm_label": "vitest.config.ts"
     },
     {
@@ -676,7 +747,7 @@
       "source_file": "libs/ai/src/classifier.test.ts",
       "source_location": "L1",
       "id": "libs_ai_src_classifier_test_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "classifier.test.ts"
     },
     {
@@ -685,7 +756,7 @@
       "source_file": "libs/ai/src/classifier.test.ts",
       "source_location": "L13",
       "id": "classifier_test_makepost",
-      "community": 3,
+      "community": 4,
       "norm_label": "makepost()"
     },
     {
@@ -694,7 +765,7 @@
       "source_file": "libs/ai/src/classifier.test.ts",
       "source_location": "L24",
       "id": "classifier_test_makeclient",
-      "community": 3,
+      "community": 4,
       "norm_label": "makeclient()"
     },
     {
@@ -703,7 +774,7 @@
       "source_file": "libs/ai/src/index.ts",
       "source_location": "L1",
       "id": "libs_ai_src_index_ts",
-      "community": 54,
+      "community": 55,
       "norm_label": "index.ts"
     },
     {
@@ -712,7 +783,7 @@
       "source_file": "libs/ai/src/config.ts",
       "source_location": "L1",
       "id": "libs_ai_src_config_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "config.ts"
     },
     {
@@ -721,7 +792,7 @@
       "source_file": "libs/ai/src/config.ts",
       "source_location": "L37",
       "id": "config_loadclassifierconfigfromenv",
-      "community": 3,
+      "community": 4,
       "norm_label": "loadclassifierconfigfromenv()"
     },
     {
@@ -730,7 +801,7 @@
       "source_file": "libs/ai/src/classifier.ts",
       "source_location": "L1",
       "id": "libs_ai_src_classifier_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "classifier.ts"
     },
     {
@@ -739,7 +810,7 @@
       "source_file": "libs/ai/src/classifier.ts",
       "source_location": "L39",
       "id": "classifier_classify",
-      "community": 3,
+      "community": 4,
       "norm_label": "classify()"
     },
     {
@@ -748,7 +819,7 @@
       "source_file": "libs/ai/src/classifier.ts",
       "source_location": "L60",
       "id": "classifier_classifybatch",
-      "community": 3,
+      "community": 4,
       "norm_label": "classifybatch()"
     },
     {
@@ -757,7 +828,7 @@
       "source_file": "libs/ai/src/classifier.ts",
       "source_location": "L89",
       "id": "classifier_renderbatchusermessage",
-      "community": 3,
+      "community": 4,
       "norm_label": "renderbatchusermessage()"
     },
     {
@@ -766,7 +837,7 @@
       "source_file": "libs/ai/src/classifier.ts",
       "source_location": "L107",
       "id": "classifier_extracttext",
-      "community": 3,
+      "community": 4,
       "norm_label": "extracttext()"
     },
     {
@@ -775,7 +846,7 @@
       "source_file": "libs/ai/src/classifier.ts",
       "source_location": "L118",
       "id": "classifier_parsejsonfromtext",
-      "community": 3,
+      "community": 4,
       "norm_label": "parsejsonfromtext()"
     },
     {
@@ -784,7 +855,7 @@
       "source_file": "libs/ai/src/prompts/classify.ts",
       "source_location": "L1",
       "id": "libs_ai_src_prompts_classify_ts",
-      "community": 3,
+      "community": 4,
       "norm_label": "classify.ts"
     },
     {
@@ -793,7 +864,7 @@
       "source_file": "libs/sharedTypes/src/forms.ts",
       "source_location": "L1",
       "id": "libs_sharedtypes_src_forms_ts",
-      "community": 55,
+      "community": 56,
       "norm_label": "forms.ts"
     },
     {
@@ -802,7 +873,7 @@
       "source_file": "libs/sharedTypes/src/contest.ts",
       "source_location": "L1",
       "id": "libs_sharedtypes_src_contest_ts",
-      "community": 56,
+      "community": 57,
       "norm_label": "contest.ts"
     },
     {
@@ -811,7 +882,7 @@
       "source_file": "libs/sharedTypes/src/index.ts",
       "source_location": "L1",
       "id": "libs_sharedtypes_src_index_ts",
-      "community": 57,
+      "community": 58,
       "norm_label": "index.ts"
     },
     {
@@ -820,7 +891,7 @@
       "source_file": "libs/sharedTypes/src/classifier.ts",
       "source_location": "L1",
       "id": "libs_sharedtypes_src_classifier_ts",
-      "community": 58,
+      "community": 59,
       "norm_label": "classifier.ts"
     },
     {
@@ -829,7 +900,7 @@
       "source_file": "libs/sharedTypes/src/scraper.ts",
       "source_location": "L1",
       "id": "libs_sharedtypes_src_scraper_ts",
-      "community": 59,
+      "community": 60,
       "norm_label": "scraper.ts"
     },
     {
@@ -838,7 +909,7 @@
       "source_file": "libs/db/prisma/seed.ts",
       "source_location": "L1",
       "id": "libs_db_prisma_seed_ts",
-      "community": 21,
+      "community": 23,
       "norm_label": "seed.ts"
     },
     {
@@ -847,7 +918,7 @@
       "source_file": "libs/db/prisma/seed.ts",
       "source_location": "L16",
       "id": "seed_main",
-      "community": 21,
+      "community": 23,
       "norm_label": "main()"
     },
     {
@@ -856,7 +927,7 @@
       "source_file": "libs/db/src/index.ts",
       "source_location": "L1",
       "id": "libs_db_src_index_ts",
-      "community": 60,
+      "community": 61,
       "norm_label": "index.ts"
     },
     {
@@ -865,7 +936,7 @@
       "source_file": "apps/web/next.config.mjs",
       "source_location": "L1",
       "id": "apps_web_next_config_mjs",
-      "community": 61,
+      "community": 62,
       "norm_label": "next.config.mjs"
     },
     {
@@ -874,7 +945,7 @@
       "source_file": "apps/web/next-env.d.ts",
       "source_location": "L1",
       "id": "apps_web_next_env_d_ts",
-      "community": 62,
+      "community": 63,
       "norm_label": "next-env.d.ts"
     },
     {
@@ -883,7 +954,7 @@
       "source_file": "apps/web/src/app/StyledComponentsRegistry.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_styledcomponentsregistry_tsx",
-      "community": 22,
+      "community": 24,
       "norm_label": "styledcomponentsregistry.tsx"
     },
     {
@@ -892,7 +963,7 @@
       "source_file": "apps/web/src/app/StyledComponentsRegistry.tsx",
       "source_location": "L15",
       "id": "styledcomponentsregistry_styledcomponentsregistry",
-      "community": 22,
+      "community": 24,
       "norm_label": "styledcomponentsregistry()"
     },
     {
@@ -901,7 +972,7 @@
       "source_file": "apps/web/src/app/layout.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_layout_tsx",
-      "community": 23,
+      "community": 25,
       "norm_label": "layout.tsx"
     },
     {
@@ -910,7 +981,7 @@
       "source_file": "apps/web/src/app/layout.tsx",
       "source_location": "L12",
       "id": "layout_rootlayout",
-      "community": 23,
+      "community": 25,
       "norm_label": "rootlayout()"
     },
     {
@@ -919,7 +990,7 @@
       "source_file": "apps/web/src/app/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_page_tsx",
-      "community": 7,
+      "community": 9,
       "norm_label": "page.tsx"
     },
     {
@@ -928,7 +999,7 @@
       "source_file": "apps/web/src/app/page.tsx",
       "source_location": "L7",
       "id": "page_currentcontestspage",
-      "community": 7,
+      "community": 9,
       "norm_label": "currentcontestspage()"
     },
     {
@@ -937,7 +1008,7 @@
       "source_file": "apps/web/src/app/Providers.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_providers_tsx",
-      "community": 24,
+      "community": 26,
       "norm_label": "providers.tsx"
     },
     {
@@ -946,7 +1017,7 @@
       "source_file": "apps/web/src/app/Providers.tsx",
       "source_location": "L14",
       "id": "providers_providers",
-      "community": 24,
+      "community": 26,
       "norm_label": "providers()"
     },
     {
@@ -955,7 +1026,7 @@
       "source_file": "apps/web/src/app/accounts/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_accounts_page_tsx",
-      "community": 25,
+      "community": 27,
       "norm_label": "page.tsx"
     },
     {
@@ -964,7 +1035,7 @@
       "source_file": "apps/web/src/app/accounts/page.tsx",
       "source_location": "L7",
       "id": "page_accountspage",
-      "community": 25,
+      "community": 27,
       "norm_label": "accountspage()"
     },
     {
@@ -973,7 +1044,7 @@
       "source_file": "apps/web/src/app/history/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_history_page_tsx",
-      "community": 7,
+      "community": 9,
       "norm_label": "page.tsx"
     },
     {
@@ -982,7 +1053,7 @@
       "source_file": "apps/web/src/app/history/page.tsx",
       "source_location": "L7",
       "id": "page_historypage",
-      "community": 7,
+      "community": 9,
       "norm_label": "historypage()"
     },
     {
@@ -991,7 +1062,7 @@
       "source_file": "apps/web/src/app/api/accounts/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_accounts_route_ts",
-      "community": 5,
+      "community": 7,
       "norm_label": "route.ts"
     },
     {
@@ -1000,7 +1071,7 @@
       "source_file": "apps/web/src/app/api/accounts/route.ts",
       "source_location": "L9",
       "id": "route_get",
-      "community": 5,
+      "community": 7,
       "norm_label": "get()"
     },
     {
@@ -1009,7 +1080,7 @@
       "source_file": "apps/web/src/app/api/accounts/route.ts",
       "source_location": "L20",
       "id": "route_post",
-      "community": 5,
+      "community": 7,
       "norm_label": "post()"
     },
     {
@@ -1018,7 +1089,7 @@
       "source_file": "apps/web/src/app/api/accounts/[id]/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_accounts_id_route_ts",
-      "community": 5,
+      "community": 7,
       "norm_label": "route.ts"
     },
     {
@@ -1027,7 +1098,7 @@
       "source_file": "apps/web/src/app/api/contests/[postId]/route.ts",
       "source_location": "L11",
       "id": "route_patch",
-      "community": 5,
+      "community": 7,
       "norm_label": "patch()"
     },
     {
@@ -1036,7 +1107,7 @@
       "source_file": "apps/web/src/app/api/accounts/[id]/route.ts",
       "source_location": "L31",
       "id": "route_delete",
-      "community": 5,
+      "community": 7,
       "norm_label": "delete()"
     },
     {
@@ -1045,7 +1116,7 @@
       "source_file": "apps/web/src/app/api/contests/[postId]/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_contests_postid_route_ts",
-      "community": 5,
+      "community": 7,
       "norm_label": "route.ts"
     },
     {
@@ -1054,7 +1125,7 @@
       "source_file": "apps/web/src/app/runs/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_runs_page_tsx",
-      "community": 0,
+      "community": 1,
       "norm_label": "page.tsx"
     },
     {
@@ -1063,7 +1134,7 @@
       "source_file": "apps/web/src/app/runs/page.tsx",
       "source_location": "L30",
       "id": "page_formatdatetime",
-      "community": 0,
+      "community": 1,
       "norm_label": "formatdatetime()"
     },
     {
@@ -1072,7 +1143,7 @@
       "source_file": "apps/web/src/components/ContestCard.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_contestcard_tsx",
-      "community": 26,
+      "community": 28,
       "norm_label": "contestcard.tsx"
     },
     {
@@ -1081,7 +1152,7 @@
       "source_file": "apps/web/src/components/ContestCard.tsx",
       "source_location": "L71",
       "id": "contestcard_copycomment",
-      "community": 26,
+      "community": 28,
       "norm_label": "copycomment()"
     },
     {
@@ -1090,7 +1161,7 @@
       "source_file": "apps/web/src/components/AppShell.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_appshell_tsx",
-      "community": 27,
+      "community": 29,
       "norm_label": "appshell.tsx"
     },
     {
@@ -1099,7 +1170,7 @@
       "source_file": "apps/web/src/components/AppShell.tsx",
       "source_location": "L62",
       "id": "appshell_appshell",
-      "community": 27,
+      "community": 29,
       "norm_label": "appshell()"
     },
     {
@@ -1108,7 +1179,7 @@
       "source_file": "apps/web/src/components/ContestList.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_contestlist_tsx",
-      "community": 8,
+      "community": 13,
       "norm_label": "contestlist.tsx"
     },
     {
@@ -1117,7 +1188,7 @@
       "source_file": "apps/web/src/components/ContestList.tsx",
       "source_location": "L14",
       "id": "contestlist_contestlist",
-      "community": 8,
+      "community": 13,
       "norm_label": "contestlist()"
     },
     {
@@ -1126,7 +1197,7 @@
       "source_file": "apps/web/src/components/AccountsManager.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_accountsmanager_tsx",
-      "community": 0,
+      "community": 1,
       "norm_label": "accountsmanager.tsx"
     },
     {
@@ -1135,7 +1206,7 @@
       "source_file": "apps/web/src/components/AccountsManager.tsx",
       "source_location": "L37",
       "id": "accountsmanager_accountsmanager",
-      "community": 0,
+      "community": 1,
       "norm_label": "accountsmanager()"
     },
     {
@@ -1144,7 +1215,7 @@
       "source_file": "apps/web/src/lib/apiErrors.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_apierrors_ts",
-      "community": 5,
+      "community": 7,
       "norm_label": "apierrors.ts"
     },
     {
@@ -1153,7 +1224,7 @@
       "source_file": "apps/web/src/lib/apiErrors.ts",
       "source_location": "L8",
       "id": "apierrors_zoderrorresponse",
-      "community": 5,
+      "community": 7,
       "norm_label": "zoderrorresponse()"
     },
     {
@@ -1162,7 +1233,7 @@
       "source_file": "apps/web/src/lib/apiErrors.ts",
       "source_location": "L15",
       "id": "apierrors_handlerouteerror",
-      "community": 5,
+      "community": 7,
       "norm_label": "handlerouteerror()"
     },
     {
@@ -1171,7 +1242,7 @@
       "source_file": "apps/web/src/lib/contests.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_contests_ts",
-      "community": 7,
+      "community": 9,
       "norm_label": "contests.ts"
     },
     {
@@ -1180,7 +1251,7 @@
       "source_file": "apps/web/src/lib/contests.ts",
       "source_location": "L23",
       "id": "contests_tocard",
-      "community": 7,
+      "community": 9,
       "norm_label": "tocard()"
     },
     {
@@ -1189,7 +1260,7 @@
       "source_file": "apps/web/src/lib/contests.ts",
       "source_location": "L43",
       "id": "contests_fetchcontestsbystatus",
-      "community": 7,
+      "community": 9,
       "norm_label": "fetchcontestsbystatus()"
     },
     {
@@ -1198,7 +1269,7 @@
       "source_file": "apps/web/src/lib/format.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_format_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "format.ts"
     },
     {
@@ -1207,7 +1278,7 @@
       "source_file": "apps/web/src/lib/format.ts",
       "source_location": "L3",
       "id": "format_formatdatetime",
-      "community": 0,
+      "community": 1,
       "norm_label": "formatdatetime()"
     },
     {
@@ -1216,7 +1287,7 @@
       "source_file": "apps/web/src/lib/format.ts",
       "source_location": "L15",
       "id": "format_formatrelative",
-      "community": 0,
+      "community": 1,
       "norm_label": "formatrelative()"
     },
     {
@@ -1225,7 +1296,7 @@
       "source_file": "apps/web/src/lib/mutations/createAccountMutation.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_mutations_createaccountmutation_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "createaccountmutation.ts"
     },
     {
@@ -1234,7 +1305,7 @@
       "source_file": "apps/web/src/lib/mutations/createAccountMutation.ts",
       "source_location": "L10",
       "id": "createaccountmutation_createaccount",
-      "community": 0,
+      "community": 1,
       "norm_label": "createaccount()"
     },
     {
@@ -1243,7 +1314,7 @@
       "source_file": "apps/web/src/lib/mutations/createAccountMutation.ts",
       "source_location": "L27",
       "id": "createaccountmutation_usecreateaccountmutation",
-      "community": 0,
+      "community": 1,
       "norm_label": "usecreateaccountmutation()"
     },
     {
@@ -1252,7 +1323,7 @@
       "source_file": "apps/web/src/lib/mutations/deleteAccountMutation.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_mutations_deleteaccountmutation_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "deleteaccountmutation.ts"
     },
     {
@@ -1261,7 +1332,7 @@
       "source_file": "apps/web/src/lib/mutations/deleteAccountMutation.ts",
       "source_location": "L9",
       "id": "deleteaccountmutation_deleteaccount",
-      "community": 0,
+      "community": 1,
       "norm_label": "deleteaccount()"
     },
     {
@@ -1270,7 +1341,7 @@
       "source_file": "apps/web/src/lib/mutations/deleteAccountMutation.ts",
       "source_location": "L19",
       "id": "deleteaccountmutation_usedeleteaccountmutation",
-      "community": 0,
+      "community": 1,
       "norm_label": "usedeleteaccountmutation()"
     },
     {
@@ -1279,7 +1350,7 @@
       "source_file": "apps/web/src/lib/mutations/updateAccountMutation.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_mutations_updateaccountmutation_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "updateaccountmutation.ts"
     },
     {
@@ -1288,7 +1359,7 @@
       "source_file": "apps/web/src/lib/mutations/updateAccountMutation.ts",
       "source_location": "L11",
       "id": "updateaccountmutation_updateaccount",
-      "community": 0,
+      "community": 1,
       "norm_label": "updateaccount()"
     },
     {
@@ -1297,7 +1368,7 @@
       "source_file": "apps/web/src/lib/mutations/updateAccountMutation.ts",
       "source_location": "L28",
       "id": "updateaccountmutation_useupdateaccountmutation",
-      "community": 0,
+      "community": 1,
       "norm_label": "useupdateaccountmutation()"
     },
     {
@@ -1306,7 +1377,7 @@
       "source_file": "apps/web/src/lib/mutations/updateStatusMutation.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_mutations_updatestatusmutation_ts",
-      "community": 8,
+      "community": 13,
       "norm_label": "updatestatusmutation.ts"
     },
     {
@@ -1315,7 +1386,7 @@
       "source_file": "apps/web/src/lib/mutations/updateStatusMutation.ts",
       "source_location": "L14",
       "id": "updatestatusmutation_updatestatus",
-      "community": 8,
+      "community": 13,
       "norm_label": "updatestatus()"
     },
     {
@@ -1324,7 +1395,7 @@
       "source_file": "apps/web/src/lib/mutations/updateStatusMutation.ts",
       "source_location": "L27",
       "id": "updatestatusmutation_useupdatestatusmutation",
-      "community": 8,
+      "community": 13,
       "norm_label": "useupdatestatusmutation()"
     },
     {
@@ -1333,7 +1404,7 @@
       "source_file": "apps/web/src/lib/queries/fetchAccountsQuery.ts",
       "source_location": "L1",
       "id": "apps_web_src_lib_queries_fetchaccountsquery_ts",
-      "community": 0,
+      "community": 1,
       "norm_label": "fetchaccountsquery.ts"
     },
     {
@@ -1342,7 +1413,7 @@
       "source_file": "apps/web/src/lib/queries/fetchAccountsQuery.ts",
       "source_location": "L26",
       "id": "fetchaccountsquery_fetchaccounts",
-      "community": 0,
+      "community": 1,
       "norm_label": "fetchaccounts()"
     },
     {
@@ -1351,7 +1422,7 @@
       "source_file": "apps/web/src/lib/queries/fetchAccountsQuery.ts",
       "source_location": "L43",
       "id": "fetchaccountsquery_usefetchaccountsquery",
-      "community": 0,
+      "community": 1,
       "norm_label": "usefetchaccountsquery()"
     },
     {
@@ -1360,7 +1431,7 @@
       "source_file": "apps/worker/src/runOnce.ts",
       "source_location": "L1",
       "id": "apps_worker_src_runonce_ts",
-      "community": 2,
+      "community": 3,
       "norm_label": "runonce.ts"
     },
     {
@@ -1369,7 +1440,7 @@
       "source_file": "apps/worker/src/runOnce.ts",
       "source_location": "L10",
       "id": "runonce_main",
-      "community": 2,
+      "community": 3,
       "norm_label": "main()"
     },
     {
@@ -1378,7 +1449,7 @@
       "source_file": "apps/worker/src/seedAccounts.ts",
       "source_location": "L1",
       "id": "apps_worker_src_seedaccounts_ts",
-      "community": 2,
+      "community": 3,
       "norm_label": "seedaccounts.ts"
     },
     {
@@ -1387,7 +1458,7 @@
       "source_file": "apps/worker/src/seedAccounts.ts",
       "source_location": "L16",
       "id": "seedaccounts_main",
-      "community": 2,
+      "community": 3,
       "norm_label": "main()"
     },
     {
@@ -1396,7 +1467,7 @@
       "source_file": "apps/worker/src/main.ts",
       "source_location": "L1",
       "id": "apps_worker_src_main_ts",
-      "community": 2,
+      "community": 3,
       "norm_label": "main.ts"
     },
     {
@@ -1405,7 +1476,7 @@
       "source_file": "apps/worker/src/main.ts",
       "source_location": "L11",
       "id": "main_main",
-      "community": 2,
+      "community": 3,
       "norm_label": "main()"
     },
     {
@@ -1414,7 +1485,7 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L1",
       "id": "apps_worker_src_pipeline_ts",
-      "community": 2,
+      "community": 3,
       "norm_label": "pipeline.ts"
     },
     {
@@ -1423,7 +1494,7 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L31",
       "id": "pipeline_runpipeline",
-      "community": 2,
+      "community": 3,
       "norm_label": "runpipeline()"
     },
     {
@@ -1432,7 +1503,7 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L83",
       "id": "pipeline_scrapeandstore",
-      "community": 2,
+      "community": 3,
       "norm_label": "scrapeandstore()"
     },
     {
@@ -1441,7 +1512,7 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L112",
       "id": "pipeline_classifyandstore",
-      "community": 2,
+      "community": 3,
       "norm_label": "classifyandstore()"
     },
     {
@@ -1450,7 +1521,7 @@
       "source_file": "apps/worker/src/pipeline.ts",
       "source_location": "L150",
       "id": "pipeline_finishrun",
-      "community": 2,
+      "community": 3,
       "norm_label": "finishrun()"
     },
     {
@@ -1459,7 +1530,7 @@
       "source_file": "apps/worker/src/logger.ts",
       "source_location": "L1",
       "id": "apps_worker_src_logger_ts",
-      "community": 2,
+      "community": 3,
       "norm_label": "logger.ts"
     },
     {
@@ -1468,7 +1539,7 @@
       "source_file": "apps/worker/src/logger.ts",
       "source_location": "L7",
       "id": "logger_emit",
-      "community": 2,
+      "community": 3,
       "norm_label": "emit()"
     },
     {
@@ -1477,7 +1548,7 @@
       "source_file": "apps/worker/src/config.ts",
       "source_location": "L1",
       "id": "apps_worker_src_config_ts",
-      "community": 2,
+      "community": 3,
       "norm_label": "config.ts"
     },
     {
@@ -1486,59 +1557,33 @@
       "source_file": "apps/worker/src/config.ts",
       "source_location": "L13",
       "id": "config_loadworkerenv",
-      "community": 2,
+      "community": 3,
       "norm_label": "loadworkerenv()"
     },
     {
       "label": "TanStack Query & Mutation Refactoring",
       "file_type": "document",
       "source_file": "REFACTORING_SUMMARY.md",
-      "source_location": "1-10",
+      "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "id": "refactoring_summary_tanstack_query_refactoring",
-      "community": 10,
+      "community": 6,
       "norm_label": "tanstack query & mutation refactoring"
-    },
-    {
-      "label": "Query Hook Extraction Pattern",
-      "file_type": "document",
-      "source_file": "REFACTORING_SUMMARY.md",
-      "source_location": "145-151",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "refactoring_summary_query_extraction",
-      "community": 10,
-      "norm_label": "query hook extraction pattern"
-    },
-    {
-      "label": "Mutation Hook Extraction Pattern",
-      "file_type": "document",
-      "source_file": "REFACTORING_SUMMARY.md",
-      "source_location": "152-157",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "refactoring_summary_mutation_extraction",
-      "community": 10,
-      "norm_label": "mutation hook extraction pattern"
     },
     {
       "label": "fetchAccountsQuery Hook",
       "file_type": "document",
       "source_file": "REFACTORING_SUMMARY.md",
-      "source_location": "20-23",
+      "source_location": "19-24",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "id": "refactoring_summary_fetchaccountsquery",
-      "community": 9,
+      "community": 6,
       "norm_label": "fetchaccountsquery hook"
     },
     {
@@ -1551,7 +1596,7 @@
       "author": null,
       "contributor": null,
       "id": "refactoring_summary_createaccountmutation",
-      "community": 9,
+      "community": 6,
       "norm_label": "createaccountmutation hook"
     },
     {
@@ -1564,7 +1609,7 @@
       "author": null,
       "contributor": null,
       "id": "refactoring_summary_updateaccountmutation",
-      "community": 9,
+      "community": 6,
       "norm_label": "updateaccountmutation hook"
     },
     {
@@ -1577,7 +1622,7 @@
       "author": null,
       "contributor": null,
       "id": "refactoring_summary_deleteaccountmutation",
-      "community": 9,
+      "community": 6,
       "norm_label": "deleteaccountmutation hook"
     },
     {
@@ -1590,7 +1635,7 @@
       "author": null,
       "contributor": null,
       "id": "refactoring_summary_updatestatusmutation",
-      "community": 28,
+      "community": 6,
       "norm_label": "updatestatusmutation hook"
     },
     {
@@ -1602,8 +1647,8 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_accountsmanager",
-      "community": 9,
+      "id": "refactoring_summary_accountsmanager_refactoring",
+      "community": 6,
       "norm_label": "accountsmanager component refactoring"
     },
     {
@@ -1615,113 +1660,113 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_contestlist",
-      "community": 28,
+      "id": "refactoring_summary_contestlist_refactoring",
+      "community": 6,
       "norm_label": "contestlist component refactoring"
+    },
+    {
+      "label": "Query Hook Extraction Pattern",
+      "file_type": "document",
+      "source_file": "REFACTORING_SUMMARY.md",
+      "source_location": "146-150",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "refactoring_summary_query_hook_extraction_pattern",
+      "community": 6,
+      "norm_label": "query hook extraction pattern"
+    },
+    {
+      "label": "Mutation Hook Extraction Pattern",
+      "file_type": "document",
+      "source_file": "REFACTORING_SUMMARY.md",
+      "source_location": "152-156",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "refactoring_summary_mutation_hook_extraction_pattern",
+      "community": 6,
+      "norm_label": "mutation hook extraction pattern"
     },
     {
       "label": "Refactoring Benefits Rationale",
       "file_type": "document",
       "source_file": "REFACTORING_SUMMARY.md",
-      "source_location": "135-143",
+      "source_location": "135-142",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "refactoring_summary_benefits",
-      "community": 10,
+      "id": "refactoring_summary_refactoring_benefits",
+      "community": 6,
       "norm_label": "refactoring benefits rationale"
     },
     {
       "label": "IG Giveaway Aggregator Project",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "1-3",
+      "source_location": "1-5",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "id": "readme_ig_giveaway_aggregator",
-      "community": 4,
+      "community": 5,
       "norm_label": "ig giveaway aggregator project"
     },
     {
       "label": "Technology Stack",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "7-14",
+      "source_location": "7-15",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "id": "readme_tech_stack",
-      "community": 4,
+      "community": 5,
       "norm_label": "technology stack"
     },
     {
       "label": "Monorepo Layout",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "18-30",
+      "source_location": "18-31",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "id": "readme_monorepo_layout",
-      "community": 4,
+      "community": 5,
       "norm_label": "monorepo layout"
     },
     {
       "label": "Internationalization (i18n) Quick Guide",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "98-133",
+      "source_location": "98-132",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_i18n_guide",
-      "community": 4,
+      "id": "readme_i18n_quick_guide",
+      "community": 64,
       "norm_label": "internationalization (i18n) quick guide"
     },
     {
-      "label": "Prompt Caching Configuration Rationale",
+      "label": "Known Limitations (v0)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "77-79",
+      "source_location": "134-140",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_prompt_caching_config",
-      "community": 4,
-      "norm_label": "prompt caching configuration rationale"
-    },
-    {
-      "label": "Testing Strategy",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "81-86",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "readme_testing_guide",
-      "community": 4,
-      "norm_label": "testing strategy"
-    },
-    {
-      "label": "Skills (Guardrails for Claude Code)",
-      "file_type": "document",
-      "source_file": "README.md",
-      "source_location": "88-96",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "readme_skills_guardrails",
-      "community": 12,
-      "norm_label": "skills (guardrails for claude code)"
+      "id": "readme_known_limitations",
+      "community": 65,
+      "norm_label": "known limitations (v0)"
     },
     {
       "label": "Instagram Giveaway Aggregator Project Summary",
@@ -1733,7 +1778,7 @@
       "author": null,
       "contributor": null,
       "id": "agents_project_summary",
-      "community": 4,
+      "community": 5,
       "norm_label": "instagram giveaway aggregator project summary"
     },
     {
@@ -1743,22 +1788,23 @@
       "source_location": "9-20",
       "source_url": null,
       "captured_at": null,
+      "author": null,
       "contributor": null,
       "id": "agents_stack",
-      "community": 4,
+      "community": 5,
       "norm_label": "technology stack definition"
     },
     {
       "label": "Repository Layout",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "21-37",
+      "source_location": "22-38",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "id": "agents_repository_layout",
-      "community": 4,
+      "community": 5,
       "norm_label": "repository layout"
     },
     {
@@ -1771,20 +1817,20 @@
       "author": null,
       "contributor": null,
       "id": "agents_tier1_skills",
-      "community": 12,
+      "community": 5,
       "norm_label": "tier 1 required skills matrix"
     },
     {
       "label": "Tier 2 Optional Skills Matrix",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "75-80",
+      "source_location": "75-96",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "id": "agents_tier2_skills",
-      "community": 63,
+      "community": 5,
       "norm_label": "tier 2 optional skills matrix"
     },
     {
@@ -1797,7 +1843,7 @@
       "author": null,
       "contributor": null,
       "id": "agents_coding_conventions",
-      "community": 12,
+      "community": 5,
       "norm_label": "coding conventions"
     },
     {
@@ -1810,34 +1856,814 @@
       "author": null,
       "contributor": null,
       "id": "agents_critical_invariants",
-      "community": 4,
+      "community": 5,
       "norm_label": "critical invariants"
     },
     {
       "label": "Claude API Skill Requirement Rationale",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "109-113",
+      "source_location": "111-112",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_claude_api_skill",
-      "community": 4,
+      "id": "agents_claude_api_skill_requirement",
+      "community": 5,
       "norm_label": "claude api skill requirement rationale"
     },
     {
       "label": "NX Workflow Guidelines",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "143-165",
+      "source_location": "144-165",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "agents_nx_workflows",
-      "community": 4,
+      "id": "agents_nx_workflow_guidelines",
+      "community": 5,
       "norm_label": "nx workflow guidelines"
+    },
+    {
+      "label": "Graphify Integration Configuration",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "1-9",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_md_graphify",
+      "community": 5,
+      "norm_label": "graphify integration configuration"
+    },
+    {
+      "label": "classify() Function",
+      "file_type": "code",
+      "source_file": "libs/ai/src/classifier.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "classify_classify",
+      "community": 4,
+      "norm_label": "classify() function"
+    },
+    {
+      "label": "parseJsonFromText() Function",
+      "file_type": "code",
+      "source_file": "libs/ai/src/classifier.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "classifier_parseJsonFromText",
+      "community": 4,
+      "norm_label": "parsejsonfromtext() function"
+    },
+    {
+      "label": "extractTimelineNodesFromHtml() Function",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/parse.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "parse_extracttimelinenodesFromhtml",
+      "community": 8,
+      "norm_label": "extracttimelinenodesfromhtml() function"
+    },
+    {
+      "label": "InstagramScraper.fetchRecentPosts() Method",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_fetchrecentposts",
+      "community": 14,
+      "norm_label": "instagramscraper.fetchrecentposts() method"
+    },
+    {
+      "label": "InstagramScraper.ensureLoggedIn() Method",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_ensureloggedin",
+      "community": 14,
+      "norm_label": "instagramscraper.ensureloggedin() method"
+    },
+    {
+      "label": "InstagramScraper.close() Method",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_close",
+      "community": 66,
+      "norm_label": "instagramscraper.close() method"
+    },
+    {
+      "label": "InstagramScraper.performLogin() Method",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_performlogin",
+      "community": 14,
+      "norm_label": "instagramscraper.performlogin() method"
+    },
+    {
+      "label": "InstagramScraper.waitBetweenHandles() Method",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_waitbetweenhandles",
+      "community": 67,
+      "norm_label": "instagramscraper.waitbetweenhandles() method"
+    },
+    {
+      "label": "InstagramScraper.newPage() Method",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_newpage",
+      "community": 68,
+      "norm_label": "instagramscraper.newpage() method"
+    },
+    {
+      "label": "InstagramScraper.hasChallenge() Method",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_haschallenge",
+      "community": 14,
+      "norm_label": "instagramscraper.haschallenge() method"
+    },
+    {
+      "label": "InstagramScraper.open() Method",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_open",
+      "community": 69,
+      "norm_label": "instagramscraper.open() method"
+    },
+    {
+      "label": "InstagramScraper.isLoggedIn() Method",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_isloggedin",
+      "community": 14,
+      "norm_label": "instagramscraper.isloggedin() method"
+    },
+    {
+      "label": "InstagramScraper.constructor() Method",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_constructor",
+      "community": 70,
+      "norm_label": "instagramscraper.constructor() method"
+    },
+    {
+      "label": "Instagram Giveaway Aggregator Project Summary",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/Instagram_Giveaway_Aggregator_Project_Summary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_giveaway_aggregator_project_summary",
+      "community": 15,
+      "norm_label": "instagram giveaway aggregator project summary"
+    },
+    {
+      "label": "Critical Invariants",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/Instagram_Giveaway_Aggregator_Project_Summary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "critical_invariants",
+      "community": 15,
+      "norm_label": "critical invariants"
+    },
+    {
+      "label": "Repository Layout",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/Instagram_Giveaway_Aggregator_Project_Summary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "repository_layout",
+      "community": 15,
+      "norm_label": "repository layout"
+    },
+    {
+      "label": "Technology Stack Definition",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/Instagram_Giveaway_Aggregator_Project_Summary.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "technology_stack_definition",
+      "community": 15,
+      "norm_label": "technology stack definition"
+    },
+    {
+      "label": "Claude API Skill Requirement Rationale",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/Claude_API_Skill_Requirement_Rationale.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_api_skill_requirement_rationale",
+      "community": 71,
+      "norm_label": "claude api skill requirement rationale"
+    },
+    {
+      "label": "AccountsManager Component Refactoring",
+      "file_type": "document",
+      "source_file": "graphify-out/wiki/AccountsManager_Component_Refactoring.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "accountsmanager_component_refactoring",
+      "community": 10,
+      "norm_label": "accountsmanager component refactoring"
+    },
+    {
+      "label": "AccountsManager()",
+      "file_type": "code",
+      "source_file": "apps/web/src/components/AccountsManager.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "accountsmanager",
+      "community": 10,
+      "norm_label": "accountsmanager()"
+    },
+    {
+      "label": "fetchAccountsQuery Hook",
+      "file_type": "code",
+      "source_file": "apps/web/src/components/AccountsManager.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fetch_accounts_query_hook",
+      "community": 10,
+      "norm_label": "fetchaccountsquery hook"
+    },
+    {
+      "label": "createAccountMutation Hook",
+      "file_type": "code",
+      "source_file": "apps/web/src/components/AccountsManager.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "create_account_mutation_hook",
+      "community": 10,
+      "norm_label": "createaccountmutation hook"
+    },
+    {
+      "label": "updateAccountMutation Hook",
+      "file_type": "code",
+      "source_file": "apps/web/src/components/AccountsManager.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "update_account_mutation_hook",
+      "community": 10,
+      "norm_label": "updateaccountmutation hook"
+    },
+    {
+      "label": "deleteAccountMutation Hook",
+      "file_type": "code",
+      "source_file": "apps/web/src/components/AccountsManager.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "delete_account_mutation_hook",
+      "community": 10,
+      "norm_label": "deleteaccountmutation hook"
+    },
+    {
+      "label": "formatRelative()",
+      "file_type": "code",
+      "source_file": "apps/web/src/components/AccountsManager.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "format_relative_function",
+      "community": 10,
+      "norm_label": "formatrelative()"
+    },
+    {
+      "label": "handleRouteError()",
+      "file_type": "code",
+      "source_file": "apps/web/src/lib/apiErrors.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "handleroute_error",
+      "community": 12,
+      "norm_label": "handlerouteerror()"
+    },
+    {
+      "label": "zodErrorResponse()",
+      "file_type": "code",
+      "source_file": "apps/web/src/lib/apiErrors.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "zod_error_response",
+      "community": 12,
+      "norm_label": "zoderrorresponse()"
+    },
+    {
+      "label": "PATCH()",
+      "file_type": "code",
+      "source_file": "apps/web/src/lib/apiErrors.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "patch_http_handler",
+      "community": 12,
+      "norm_label": "patch()"
+    },
+    {
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "apps/web/src/lib/apiErrors.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "get_http_handler",
+      "community": 12,
+      "norm_label": "get()"
+    },
+    {
+      "label": "POST()",
+      "file_type": "code",
+      "source_file": "apps/web/src/lib/apiErrors.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "post_http_handler",
+      "community": 12,
+      "norm_label": "post()"
+    },
+    {
+      "label": "DELETE()",
+      "file_type": "code",
+      "source_file": "apps/web/src/lib/apiErrors.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "delete_http_handler",
+      "community": 12,
+      "norm_label": "delete()"
+    },
+    {
+      "label": "InstagramScraper",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "instagram_scraper",
+      "community": 0,
+      "norm_label": "instagramscraper"
+    },
+    {
+      "label": ".fetchRecentPosts()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "fetchrecent_posts",
+      "community": 0,
+      "norm_label": ".fetchrecentposts()"
+    },
+    {
+      "label": ".ensureLoggedIn()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "ensurelogged_in",
+      "community": 0,
+      "norm_label": ".ensureloggedin()"
+    },
+    {
+      "label": ".performLogin()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "performlogin",
+      "community": 0,
+      "norm_label": ".performlogin()"
+    },
+    {
+      "label": ".close()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "close_method",
+      "community": 0,
+      "norm_label": ".close()"
+    },
+    {
+      "label": ".hasChallenge()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "haschal_lenge",
+      "community": 0,
+      "norm_label": ".haschallenge()"
+    },
+    {
+      "label": ".newPage()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "newpage",
+      "community": 0,
+      "norm_label": ".newpage()"
+    },
+    {
+      "label": ".waitBetweenHandles()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "waitbetween_handles",
+      "community": 0,
+      "norm_label": ".waitbetweenhandles()"
+    },
+    {
+      "label": ".isLoggedIn()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "isloggedin",
+      "community": 0,
+      "norm_label": ".isloggedin()"
+    },
+    {
+      "label": ".open()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "open_method",
+      "community": 0,
+      "norm_label": ".open()"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "constructor_method",
+      "community": 0,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": "jitter()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/jitter.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "jitter_function",
+      "community": 0,
+      "norm_label": "jitter()"
+    },
+    {
+      "label": "sleep()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/jitter.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sleep_function",
+      "community": 0,
+      "norm_label": "sleep()"
+    },
+    {
+      "label": "randomJitter()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/jitter.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "randomjitter_function",
+      "community": 0,
+      "norm_label": "randomjitter()"
+    },
+    {
+      "label": "loadScraperConfigFromEnv()",
+      "file_type": "code",
+      "source_file": "libs/scraper/src/config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "load_scraper_config_from_env",
+      "community": 0,
+      "norm_label": "loadscraperconfigfromenv()"
+    },
+    {
+      "label": "runPipeline()",
+      "file_type": "code",
+      "source_file": "apps/worker/src/pipeline.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "run_pipeline",
+      "community": 0,
+      "norm_label": "runpipeline()"
+    },
+    {
+      "label": "loadWorkerEnv()",
+      "file_type": "code",
+      "source_file": "apps/worker/src/config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "load_worker_env",
+      "community": 0,
+      "norm_label": "loadworkerenv()"
+    },
+    {
+      "label": "classifyBatch()",
+      "file_type": "code",
+      "source_file": "apps/worker/src/pipeline.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "classifybatch",
+      "community": 0,
+      "norm_label": "classifybatch()"
+    },
+    {
+      "label": "classifyAndStore()",
+      "file_type": "code",
+      "source_file": "apps/worker/src/pipeline.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "classifyand_store",
+      "community": 0,
+      "norm_label": "classifyandstore()"
+    },
+    {
+      "label": "scrapeAndStore()",
+      "file_type": "code",
+      "source_file": "apps/worker/src/pipeline.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "scrapeand_store",
+      "community": 0,
+      "norm_label": "scrapeandstore()"
+    },
+    {
+      "label": "finishRun()",
+      "file_type": "code",
+      "source_file": "apps/worker/src/pipeline.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "finishrun",
+      "community": 0,
+      "norm_label": "finishrun()"
+    },
+    {
+      "label": "translator.ts",
+      "file_type": "code",
+      "source_file": "libs/internationalization/src/lib/translator.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "translator_ts",
+      "community": 16,
+      "norm_label": "translator.ts"
+    },
+    {
+      "label": "getTranslator()",
+      "file_type": "code",
+      "source_file": "libs/internationalization/src/lib/translator.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "get_translator",
+      "community": 16,
+      "norm_label": "gettranslator()"
+    },
+    {
+      "label": "warnMissingTranslation()",
+      "file_type": "code",
+      "source_file": "libs/internationalization/src/lib/translator.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "warn_missing_translation",
+      "community": 16,
+      "norm_label": "warnmissingtranslation()"
+    },
+    {
+      "label": "ThemeProvider()",
+      "file_type": "code",
+      "source_file": "libs/ui/src/ThemeProvider.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "theme_provider",
+      "community": 72,
+      "norm_label": "themeprovider()"
+    },
+    {
+      "label": "InternationalizationProvider()",
+      "file_type": "code",
+      "source_file": "libs/internationalization/src/lib/InternationalizationProvider.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "internationalization_provider",
+      "community": 16,
+      "norm_label": "internationalizationprovider()"
+    },
+    {
+      "label": "formatMessage()",
+      "file_type": "code",
+      "source_file": "libs/internationalization/src/lib/format.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "format_message",
+      "community": 73,
+      "norm_label": "formatmessage()"
+    },
+    {
+      "label": "AppShell()",
+      "file_type": "code",
+      "source_file": "apps/web/src/components/AppShell.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "appshell",
+      "community": 74,
+      "norm_label": "appshell()"
     }
   ],
   "links": [
@@ -1926,6 +2752,18 @@
       "target": "instagram_instagramscraper_fetchrecentposts"
     },
     {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "libs/scraper/src/parse.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "parse_extractpostsfromnodes",
+      "_tgt": "parse_istimelinenode",
+      "source": "parse_extractpostsfromnodes",
+      "target": "parse_istimelinenode"
+    },
+    {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "libs/scraper/src/parse.ts",
@@ -1960,6 +2798,30 @@
       "source": "parse_findtimelineedges",
       "target": "parse_istimelinenode",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "libs/scraper/src/parse.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "parse_findtimelineedges",
+      "_tgt": "parse_extracttimelinenodesFromhtml",
+      "source": "parse_findtimelineedges",
+      "target": "parse_extracttimelinenodesFromhtml"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "libs/scraper/src/parse.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "parse_extracttimelinenodesFromhtml",
+      "_tgt": "parse_istimelinenode",
+      "source": "parse_istimelinenode",
+      "target": "parse_extracttimelinenodesFromhtml"
     },
     {
       "relation": "imports_from",
@@ -2454,6 +3316,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "libs/form/src/FormTextarea.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "formtextarea_formtextarea",
+      "_tgt": "uselocalizedtext_uselocalizedtext",
+      "source": "formtextarea_formtextarea",
+      "target": "uselocalizedtext_uselocalizedtext"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "libs/form/src/FormInput.tsx",
@@ -2464,6 +3338,18 @@
       "source": "libs_form_src_forminput_tsx",
       "target": "forminput_forminput",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "libs/form/src/FormInput.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "forminput_forminput",
+      "_tgt": "uselocalizedtext_uselocalizedtext",
+      "source": "forminput_forminput",
+      "target": "uselocalizedtext_uselocalizedtext"
     },
     {
       "relation": "contains",
@@ -2622,6 +3508,18 @@
       "target": "config_loadworkerenv"
     },
     {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "libs/ai/src/classifier.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "classify_classify",
+      "_tgt": "config_loadclassifierconfigfromenv",
+      "source": "config_loadclassifierconfigfromenv",
+      "target": "classify_classify"
+    },
+    {
       "relation": "imports_from",
       "confidence": "EXTRACTED",
       "source_file": "libs/ai/src/classifier.ts",
@@ -2721,25 +3619,25 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "libs/ai/src/classifier.ts",
-      "source_location": "L78",
+      "source_location": null,
       "weight": 1.0,
       "_src": "classifier_classifybatch",
       "_tgt": "classifier_renderbatchusermessage",
+      "confidence_score": 1.0,
       "source": "classifier_classifybatch",
-      "target": "classifier_renderbatchusermessage",
-      "confidence_score": 1.0
+      "target": "classifier_renderbatchusermessage"
     },
     {
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "libs/ai/src/classifier.ts",
-      "source_location": "L83",
+      "source_location": null,
       "weight": 1.0,
       "_src": "classifier_classifybatch",
       "_tgt": "classifier_extracttext",
+      "confidence_score": 1.0,
       "source": "classifier_classifybatch",
-      "target": "classifier_extracttext",
-      "confidence_score": 1.0
+      "target": "classifier_extracttext"
     },
     {
       "relation": "calls",
@@ -2752,6 +3650,30 @@
       "source": "classifier_classifybatch",
       "target": "classifier_parsejsonfromtext",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "libs/ai/src/classifier.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "classifier_classifybatch",
+      "_tgt": "classify_classify",
+      "source": "classifier_classifybatch",
+      "target": "classify_classify"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "libs/ai/src/classifier.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "classifier_classifybatch",
+      "_tgt": "classifier_parseJsonFromText",
+      "source": "classifier_classifybatch",
+      "target": "classifier_parseJsonFromText"
     },
     {
       "relation": "contains",
@@ -3606,106 +4528,190 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "conceptually_related_to",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "REFACTORING_SUMMARY.md",
-      "source_location": "19-23",
+      "source_location": "19-24",
       "weight": 1.0,
       "_src": "refactoring_summary_tanstack_query_refactoring",
-      "_tgt": "refactoring_summary_query_extraction",
+      "_tgt": "refactoring_summary_fetchaccountsquery",
       "source": "refactoring_summary_tanstack_query_refactoring",
-      "target": "refactoring_summary_query_extraction"
+      "target": "refactoring_summary_fetchaccountsquery"
     },
     {
-      "relation": "conceptually_related_to",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "REFACTORING_SUMMARY.md",
-      "source_location": "25-45",
+      "source_location": "26-29",
       "weight": 1.0,
       "_src": "refactoring_summary_tanstack_query_refactoring",
-      "_tgt": "refactoring_summary_mutation_extraction",
+      "_tgt": "refactoring_summary_createaccountmutation",
       "source": "refactoring_summary_tanstack_query_refactoring",
-      "target": "refactoring_summary_mutation_extraction"
+      "target": "refactoring_summary_createaccountmutation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REFACTORING_SUMMARY.md",
+      "source_location": "31-34",
+      "weight": 1.0,
+      "_src": "refactoring_summary_tanstack_query_refactoring",
+      "_tgt": "refactoring_summary_updateaccountmutation",
+      "source": "refactoring_summary_tanstack_query_refactoring",
+      "target": "refactoring_summary_updateaccountmutation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REFACTORING_SUMMARY.md",
+      "source_location": "36-39",
+      "weight": 1.0,
+      "_src": "refactoring_summary_tanstack_query_refactoring",
+      "_tgt": "refactoring_summary_deleteaccountmutation",
+      "source": "refactoring_summary_tanstack_query_refactoring",
+      "target": "refactoring_summary_deleteaccountmutation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REFACTORING_SUMMARY.md",
+      "source_location": "41-44",
+      "weight": 1.0,
+      "_src": "refactoring_summary_tanstack_query_refactoring",
+      "_tgt": "refactoring_summary_updatestatusmutation",
+      "source": "refactoring_summary_tanstack_query_refactoring",
+      "target": "refactoring_summary_updatestatusmutation"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "REFACTORING_SUMMARY.md",
-      "source_location": "135-143",
+      "source_location": "135-142",
       "weight": 1.0,
-      "_src": "refactoring_summary_benefits",
-      "_tgt": "refactoring_summary_tanstack_query_refactoring",
+      "_src": "refactoring_summary_tanstack_query_refactoring",
+      "_tgt": "refactoring_summary_refactoring_benefits",
       "source": "refactoring_summary_tanstack_query_refactoring",
-      "target": "refactoring_summary_benefits"
+      "target": "refactoring_summary_refactoring_benefits"
     },
     {
-      "relation": "references",
+      "relation": "calls",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "47-52",
       "weight": 1.0,
-      "_src": "refactoring_summary_accountsmanager",
+      "_src": "refactoring_summary_accountsmanager_refactoring",
       "_tgt": "refactoring_summary_fetchaccountsquery",
       "source": "refactoring_summary_fetchaccountsquery",
-      "target": "refactoring_summary_accountsmanager"
+      "target": "refactoring_summary_accountsmanager_refactoring"
     },
     {
-      "relation": "references",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REFACTORING_SUMMARY.md",
+      "source_location": "146-150",
+      "weight": 1.0,
+      "_src": "refactoring_summary_query_hook_extraction_pattern",
+      "_tgt": "refactoring_summary_fetchaccountsquery",
+      "source": "refactoring_summary_fetchaccountsquery",
+      "target": "refactoring_summary_query_hook_extraction_pattern"
+    },
+    {
+      "relation": "calls",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "47-52",
       "weight": 1.0,
-      "_src": "refactoring_summary_accountsmanager",
+      "_src": "refactoring_summary_accountsmanager_refactoring",
       "_tgt": "refactoring_summary_createaccountmutation",
       "source": "refactoring_summary_createaccountmutation",
-      "target": "refactoring_summary_accountsmanager"
+      "target": "refactoring_summary_accountsmanager_refactoring"
     },
     {
-      "relation": "references",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "REFACTORING_SUMMARY.md",
+      "source_location": "152-156",
+      "weight": 1.0,
+      "_src": "refactoring_summary_mutation_hook_extraction_pattern",
+      "_tgt": "refactoring_summary_createaccountmutation",
+      "source": "refactoring_summary_createaccountmutation",
+      "target": "refactoring_summary_mutation_hook_extraction_pattern"
+    },
+    {
+      "relation": "calls",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "47-52",
       "weight": 1.0,
-      "_src": "refactoring_summary_accountsmanager",
+      "_src": "refactoring_summary_accountsmanager_refactoring",
       "_tgt": "refactoring_summary_updateaccountmutation",
       "source": "refactoring_summary_updateaccountmutation",
-      "target": "refactoring_summary_accountsmanager"
+      "target": "refactoring_summary_accountsmanager_refactoring"
     },
     {
-      "relation": "references",
+      "relation": "calls",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "47-52",
       "weight": 1.0,
-      "_src": "refactoring_summary_accountsmanager",
+      "_src": "refactoring_summary_accountsmanager_refactoring",
       "_tgt": "refactoring_summary_deleteaccountmutation",
       "source": "refactoring_summary_deleteaccountmutation",
-      "target": "refactoring_summary_accountsmanager"
+      "target": "refactoring_summary_accountsmanager_refactoring"
     },
     {
-      "relation": "references",
+      "relation": "calls",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "REFACTORING_SUMMARY.md",
       "source_location": "54-58",
       "weight": 1.0,
-      "_src": "refactoring_summary_contestlist",
+      "_src": "refactoring_summary_contestlist_refactoring",
       "_tgt": "refactoring_summary_updatestatusmutation",
       "source": "refactoring_summary_updatestatusmutation",
-      "target": "refactoring_summary_contestlist"
+      "target": "refactoring_summary_contestlist_refactoring"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "7-15",
+      "weight": 1.0,
+      "_src": "readme_ig_giveaway_aggregator",
+      "_tgt": "readme_tech_stack",
+      "source": "readme_ig_giveaway_aggregator",
+      "target": "readme_tech_stack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "18-31",
+      "weight": 1.0,
+      "_src": "readme_ig_giveaway_aggregator",
+      "_tgt": "readme_monorepo_layout",
+      "source": "readme_ig_giveaway_aggregator",
+      "target": "readme_monorepo_layout"
     },
     {
       "relation": "semantically_similar_to",
       "confidence": "INFERRED",
-      "confidence_score": 0.92,
-      "source_file": null,
+      "confidence_score": 0.9,
+      "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
       "_src": "readme_ig_giveaway_aggregator",
@@ -3714,58 +4720,22 @@
       "target": "agents_project_summary"
     },
     {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "readme_tech_stack",
-      "_tgt": "readme_i18n_guide",
-      "source": "readme_tech_stack",
-      "target": "readme_i18n_guide"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "readme_tech_stack",
-      "_tgt": "readme_prompt_caching_config",
-      "source": "readme_tech_stack",
-      "target": "readme_prompt_caching_config"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.88,
-      "source_file": null,
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "readme_tech_stack",
-      "_tgt": "agents_stack",
-      "source": "readme_tech_stack",
-      "target": "agents_stack"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.65,
-      "source_file": "README.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "readme_monorepo_layout",
-      "_tgt": "readme_testing_guide",
-      "source": "readme_monorepo_layout",
-      "target": "readme_testing_guide"
-    },
-    {
       "relation": "semantically_similar_to",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
-      "source_file": null,
+      "source_file": "README.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "readme_tech_stack",
+      "_tgt": "agents_stack",
+      "source": "readme_tech_stack",
+      "target": "agents_stack"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
       "_src": "readme_monorepo_layout",
@@ -3774,35 +4744,11 @@
       "target": "agents_repository_layout"
     },
     {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "77-86",
-      "weight": 1.0,
-      "_src": "readme_prompt_caching_config",
-      "_tgt": "readme_testing_guide",
-      "source": "readme_prompt_caching_config",
-      "target": "readme_testing_guide"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": null,
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "readme_skills_guardrails",
-      "_tgt": "agents_tier1_skills",
-      "source": "readme_skills_guardrails",
-      "target": "agents_tier1_skills"
-    },
-    {
-      "relation": "conceptually_related_to",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": "5-20",
+      "source_location": "9-20",
       "weight": 1.0,
       "_src": "agents_project_summary",
       "_tgt": "agents_stack",
@@ -3810,11 +4756,11 @@
       "target": "agents_stack"
     },
     {
-      "relation": "conceptually_related_to",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": "5-37",
+      "source_location": "22-38",
       "weight": 1.0,
       "_src": "agents_project_summary",
       "_tgt": "agents_repository_layout",
@@ -3823,34 +4769,46 @@
     },
     {
       "relation": "rationale_for",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": null,
+      "source_location": "123-129",
       "weight": 1.0,
-      "_src": "agents_stack",
+      "_src": "agents_project_summary",
       "_tgt": "agents_critical_invariants",
-      "source": "agents_stack",
+      "source": "agents_project_summary",
       "target": "agents_critical_invariants"
     },
     {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": "AGENTS.md",
-      "source_location": null,
-      "weight": 1.0,
-      "_src": "agents_repository_layout",
-      "_tgt": "agents_nx_workflows",
-      "source": "agents_repository_layout",
-      "target": "agents_nx_workflows"
-    },
-    {
-      "relation": "conceptually_related_to",
+      "relation": "references",
       "confidence": "INFERRED",
       "confidence_score": 0.75,
-      "source_file": "AGENTS.md",
+      "source_file": "CLAUDE.md",
       "source_location": null,
+      "weight": 1.0,
+      "_src": "claude_md_graphify",
+      "_tgt": "agents_project_summary",
+      "source": "agents_project_summary",
+      "target": "claude_md_graphify"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "144-165",
+      "weight": 1.0,
+      "_src": "agents_nx_workflow_guidelines",
+      "_tgt": "agents_repository_layout",
+      "source": "agents_repository_layout",
+      "target": "agents_nx_workflow_guidelines"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "64-73",
       "weight": 1.0,
       "_src": "agents_tier1_skills",
       "_tgt": "agents_coding_conventions",
@@ -3858,21 +4816,585 @@
       "target": "agents_coding_conventions"
     },
     {
-      "relation": "rationale_for",
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "AGENTS.md",
-      "source_location": "109-129",
+      "source_location": "71",
       "weight": 1.0,
-      "_src": "agents_critical_invariants",
-      "_tgt": "agents_claude_api_skill",
-      "source": "agents_critical_invariants",
-      "target": "agents_claude_api_skill"
+      "_src": "agents_tier1_skills",
+      "_tgt": "agents_claude_api_skill_requirement",
+      "source": "agents_tier1_skills",
+      "target": "agents_claude_api_skill_requirement"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "60-96",
+      "weight": 1.0,
+      "_src": "agents_tier1_skills",
+      "_tgt": "agents_tier2_skills",
+      "source": "agents_tier1_skills",
+      "target": "agents_tier2_skills"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": "115-129",
+      "weight": 1.0,
+      "_src": "agents_coding_conventions",
+      "_tgt": "agents_critical_invariants",
+      "source": "agents_coding_conventions",
+      "target": "agents_critical_invariants"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_fetchrecentposts",
+      "_tgt": "instagram_ensureloggedin",
+      "source": "instagram_fetchrecentposts",
+      "target": "instagram_ensureloggedin"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_ensureloggedin",
+      "_tgt": "instagram_isloggedin",
+      "source": "instagram_ensureloggedin",
+      "target": "instagram_isloggedin"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_ensureloggedin",
+      "_tgt": "instagram_performlogin",
+      "source": "instagram_ensureloggedin",
+      "target": "instagram_performlogin"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "libs/scraper/src/instagram.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_performlogin",
+      "_tgt": "instagram_haschallenge",
+      "source": "instagram_performlogin",
+      "target": "instagram_haschallenge"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/Instagram_Giveaway_Aggregator_Project_Summary.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_giveaway_aggregator_project_summary",
+      "_tgt": "critical_invariants",
+      "source": "instagram_giveaway_aggregator_project_summary",
+      "target": "critical_invariants"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/Instagram_Giveaway_Aggregator_Project_Summary.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_giveaway_aggregator_project_summary",
+      "_tgt": "repository_layout",
+      "source": "instagram_giveaway_aggregator_project_summary",
+      "target": "repository_layout"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/Instagram_Giveaway_Aggregator_Project_Summary.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_giveaway_aggregator_project_summary",
+      "_tgt": "technology_stack_definition",
+      "source": "instagram_giveaway_aggregator_project_summary",
+      "target": "technology_stack_definition"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/AccountsManager_Component_Refactoring.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "accountsmanager_component_refactoring",
+      "_tgt": "fetch_accounts_query_hook",
+      "source": "accountsmanager_component_refactoring",
+      "target": "fetch_accounts_query_hook"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/AccountsManager_Component_Refactoring.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "accountsmanager_component_refactoring",
+      "_tgt": "create_account_mutation_hook",
+      "source": "accountsmanager_component_refactoring",
+      "target": "create_account_mutation_hook"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/AccountsManager_Component_Refactoring.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "accountsmanager_component_refactoring",
+      "_tgt": "update_account_mutation_hook",
+      "source": "accountsmanager_component_refactoring",
+      "target": "update_account_mutation_hook"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/AccountsManager_Component_Refactoring.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "accountsmanager_component_refactoring",
+      "_tgt": "delete_account_mutation_hook",
+      "source": "accountsmanager_component_refactoring",
+      "target": "delete_account_mutation_hook"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "graphify-out/wiki/AccountsManager().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "accountsmanager",
+      "_tgt": "format_relative_function",
+      "source": "accountsmanager",
+      "target": "format_relative_function"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "graphify-out/wiki/AccountsManager().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "accountsmanager",
+      "_tgt": "fetch_accounts_query_hook",
+      "source": "accountsmanager",
+      "target": "fetch_accounts_query_hook"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "graphify-out/wiki/AccountsManager().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "accountsmanager",
+      "_tgt": "create_account_mutation_hook",
+      "source": "accountsmanager",
+      "target": "create_account_mutation_hook"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "graphify-out/wiki/AccountsManager().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "accountsmanager",
+      "_tgt": "update_account_mutation_hook",
+      "source": "accountsmanager",
+      "target": "update_account_mutation_hook"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "graphify-out/wiki/AccountsManager().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "accountsmanager",
+      "_tgt": "delete_account_mutation_hook",
+      "source": "accountsmanager",
+      "target": "delete_account_mutation_hook"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/handleRouteError().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "handleroute_error",
+      "_tgt": "zod_error_response",
+      "source": "handleroute_error",
+      "target": "zod_error_response"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "graphify-out/wiki/handleRouteError().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "handleroute_error",
+      "_tgt": "patch_http_handler",
+      "source": "handleroute_error",
+      "target": "patch_http_handler"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "graphify-out/wiki/handleRouteError().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "handleroute_error",
+      "_tgt": "get_http_handler",
+      "source": "handleroute_error",
+      "target": "get_http_handler"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "graphify-out/wiki/handleRouteError().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "handleroute_error",
+      "_tgt": "post_http_handler",
+      "source": "handleroute_error",
+      "target": "post_http_handler"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "graphify-out/wiki/handleRouteError().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "handleroute_error",
+      "_tgt": "delete_http_handler",
+      "source": "handleroute_error",
+      "target": "delete_http_handler"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_scraper",
+      "_tgt": "fetchrecent_posts",
+      "source": "instagram_scraper",
+      "target": "fetchrecent_posts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_scraper",
+      "_tgt": "ensurelogged_in",
+      "source": "instagram_scraper",
+      "target": "ensurelogged_in"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_scraper",
+      "_tgt": "performlogin",
+      "source": "instagram_scraper",
+      "target": "performlogin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_scraper",
+      "_tgt": "close_method",
+      "source": "instagram_scraper",
+      "target": "close_method"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_scraper",
+      "_tgt": "haschal_lenge",
+      "source": "instagram_scraper",
+      "target": "haschal_lenge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_scraper",
+      "_tgt": "newpage",
+      "source": "instagram_scraper",
+      "target": "newpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_scraper",
+      "_tgt": "waitbetween_handles",
+      "source": "instagram_scraper",
+      "target": "waitbetween_handles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_scraper",
+      "_tgt": "isloggedin",
+      "source": "instagram_scraper",
+      "target": "isloggedin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_scraper",
+      "_tgt": "open_method",
+      "source": "instagram_scraper",
+      "target": "open_method"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "instagram_scraper",
+      "_tgt": "constructor_method",
+      "source": "instagram_scraper",
+      "target": "constructor_method"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "load_scraper_config_from_env",
+      "_tgt": "instagram_scraper",
+      "source": "instagram_scraper",
+      "target": "load_scraper_config_from_env"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "graphify-out/wiki/config.ts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "scrapeand_store",
+      "_tgt": "instagram_scraper",
+      "source": "instagram_scraper",
+      "target": "scrapeand_store"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "fetchrecent_posts",
+      "_tgt": "jitter_function",
+      "source": "fetchrecent_posts",
+      "target": "jitter_function"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "ensurelogged_in",
+      "_tgt": "jitter_function",
+      "source": "ensurelogged_in",
+      "target": "jitter_function"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "jitter_function",
+      "_tgt": "sleep_function",
+      "source": "jitter_function",
+      "target": "sleep_function"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "jitter_function",
+      "_tgt": "randomjitter_function",
+      "source": "jitter_function",
+      "target": "randomjitter_function"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "graphify-out/wiki/config.ts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "run_pipeline",
+      "_tgt": "load_worker_env",
+      "source": "run_pipeline",
+      "target": "load_worker_env"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "graphify-out/wiki/config.ts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "run_pipeline",
+      "_tgt": "classifyand_store",
+      "source": "run_pipeline",
+      "target": "classifyand_store"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "graphify-out/wiki/config.ts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "run_pipeline",
+      "_tgt": "scrapeand_store",
+      "source": "run_pipeline",
+      "target": "scrapeand_store"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "graphify-out/wiki/config.ts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "run_pipeline",
+      "_tgt": "finishrun",
+      "source": "run_pipeline",
+      "target": "finishrun"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "graphify-out/wiki/config.ts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "classifyand_store",
+      "_tgt": "classifybatch",
+      "source": "classifybatch",
+      "target": "classifyand_store"
+    },
+    {
+      "relation": "exports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/translator.ts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "translator_ts",
+      "_tgt": "get_translator",
+      "source": "translator_ts",
+      "target": "get_translator"
+    },
+    {
+      "relation": "exports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "graphify-out/wiki/translator.ts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "translator_ts",
+      "_tgt": "warn_missing_translation",
+      "source": "translator_ts",
+      "target": "warn_missing_translation"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "graphify-out/wiki/InternationalizationProvider().md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "internationalization_provider",
+      "_tgt": "translator_ts",
+      "source": "translator_ts",
+      "target": "internationalization_provider"
     }
   ],
   "hyperedges": [
     {
-      "id": "refactoring_extracted_hooks",
+      "id": "extracted_tanstack_query_hooks_set",
       "label": "Extracted TanStack Query Hooks Set",
       "nodes": [
         "refactoring_summary_fetchaccountsquery",
@@ -3887,7 +5409,7 @@
       "source_file": "REFACTORING_SUMMARY.md"
     },
     {
-      "id": "agents_skill_governance",
+      "id": "ai_agent_skill_governance_framework",
       "label": "AI Agent Skill Governance Framework",
       "nodes": [
         "agents_tier1_skills",
@@ -3901,7 +5423,7 @@
       "source_file": "AGENTS.md"
     },
     {
-      "id": "project_documentation_coherence",
+      "id": "project_documentation_config",
       "label": "Project Documentation & Configuration",
       "nodes": [
         "readme_ig_giveaway_aggregator",
@@ -3909,10 +5431,81 @@
         "agents_project_summary",
         "agents_stack"
       ],
-      "relation": "form",
+      "relation": "participate_in",
       "confidence": "INFERRED",
       "confidence_score": 0.82,
-      "source_file": null
+      "source_file": "README.md"
+    },
+    {
+      "id": "instagram_scraper_lifecycle",
+      "label": "InstagramScraper Lifecycle",
+      "nodes": [
+        "instagram_instagramscraper",
+        "instagram_constructor",
+        "instagram_open",
+        "instagram_ensureloggedin",
+        "instagram_close"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "libs/scraper/src/instagram.ts"
+    },
+    {
+      "id": "classifier_pipeline",
+      "label": "Classifier Processing Pipeline",
+      "nodes": [
+        "classifier_classifybatch",
+        "classify_classify",
+        "classifier_extracttext",
+        "classifier_parseJsonFromText",
+        "classifier_renderbatchusermessage"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "libs/ai/src/classifier.ts"
+    },
+    {
+      "id": "form_components",
+      "label": "Form Components",
+      "nodes": [
+        "forminput_forminput",
+        "formtextarea_formtextarea",
+        "uselocalizedtext_uselocalizedtext"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "libs/form/src/FormInput.tsx"
+    },
+    {
+      "id": "instagram_scraper_login_flow",
+      "label": "Instagram Scraper Login Flow",
+      "nodes": [
+        "instagram_scraper",
+        "performlogin",
+        "ensurelogged_in",
+        "isloggedin"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "graphify-out/wiki/loadScraperConfigFromEnv().md"
+    },
+    {
+      "id": "data_pipeline_flow",
+      "label": "Data Pipeline Flow",
+      "nodes": [
+        "run_pipeline",
+        "scrapeand_store",
+        "classifyand_store",
+        "finishrun"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "graphify-out/wiki/config.ts.md"
     }
   ]
 }

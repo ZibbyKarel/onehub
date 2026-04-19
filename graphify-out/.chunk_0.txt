@@ -1,0 +1,6 @@
+REFACTORING_SUMMARY.md
+README.md
+AGENTS.md
+CLAUDE.md
+graphify-out/graph.html
+graphify-out/GRAPH_REPORT.md
