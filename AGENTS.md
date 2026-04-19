@@ -6,12 +6,10 @@ Guidelines for AI coding agents (Claude Code, Cursor, Copilot) working in this r
 
 Self-hosted aggregator of Instagram giveaways. A Node.js worker runs once per day, logs in to Instagram via Playwright (persistent session), pulls new posts from a configured list of accounts, classifies them with the Claude API, extracts the giveaway tasks + generates a ready-to-paste comment, and stores everything in Postgres. A Next.js dashboard lets the user browse detected giveaways and copy the generated comment.
 
-See `/Users/zibby/.claude/plans/twinkly-sparking-crab.md` for the full plan.
-
 ## Stack
 
 - **Language**: TypeScript (strict) everywhere
-- **Runtime**: Node.js 20
+- **Runtime**: Node.js `>=20.11.0`
 - **Monorepo**: NX + pnpm workspaces
 - **Web**: Next.js 15 (App Router) + Tanstack Query + Styled-Components
 - **Background worker**: plain Node.js with `node-cron` + Playwright
@@ -30,11 +28,12 @@ libs/
   db/            Prisma client + schema re-exports
   ai/            Claude classifier
   scraper/       Playwright Instagram helpers
-  uiTokens/      design tokens
   ui/            Styled-Components design system
   form/          react-hook-form wrappers (FormInput, FormSelect, …)
+  internationalization/ React i18n provider/hooks
   sharedTypes/  Zod schemas shared between apps
-prisma/          schema.prisma (source of truth for libs/db)
+  uiTokens/      reserved token workspace directory (not currently an Nx project/package)
+libs/db/prisma/  schema.prisma + migrations/seed source of truth
 ```
 
 ## Local skills in use
@@ -46,30 +45,43 @@ Installed under `.claude/skills/` from `vercel-labs/agent-skills`:
 - **`web-design-guidelines`** — audit dashboard UI for accessibility and UX consistency; run before finishing any `apps/web` screen.
 - **`react-view-transitions`** — nice-to-have for screen transitions in the dashboard (list → detail).
 
+Repository policy also references these non-mirrored skills:
+
+- **`claude-api`** — required workflow for `libs/ai`, but not synced under `.claude/skills/` at the pinned upstream commit.
+- **`superpowers:test-driven-development`** — required workflow for behavior changes in `libs/ai`, `libs/form`, and `libs/scraper`, but not synced under `.claude/skills/`.
+- **`superpowers:systematic-debugging`** — required workflow for worker/scraper/classifier debugging, but not synced under `.claude/skills/`.
+
+Upstream pinning and sync procedure:
+
+- Pinned upstream repository: `https://github.com/vercel-labs/agent-skills`
+- Pinned commit for the current local sync: `ce3e64e468f8fa09a2d075d102771838061fdac0`
+- Reproducible sync/update notes live in `.claude/skills/INSTALLATION.md`
+
 ## Skill adoption matrix (Tier 1 required vs Tier 2 optional)
 
 Use this matrix to decide which skill to activate before making changes.
 
 ### Tier 1 (required)
 
-| Skill | Target paths | Trigger scenarios |
-| --- | --- | --- |
-| `react-best-practices` | `apps/web`, `libs/ui` | Building or refactoring Next.js pages, hooks, data-fetching boundaries, rendering patterns, or component performance-sensitive UIs. **Invariant reminders:** keep TypeScript strict (no unjustified `any`), use `libs/form` wrappers instead of raw inputs in app code, and keep styling token-based via `@app/ui` (no hardcoded hex/px). |
-| `composition-patterns` | `libs/form`, `libs/ui`, `apps/web` | Designing/reworking component APIs, especially when props are growing; prefer compound components and slots over boolean-prop expansion. **Invariant reminders:** preserve form-wrapper usage in `apps/web`, and ensure public cross-boundary APIs still map to Zod schemas in `libs/sharedTypes`. |
-| `web-design-guidelines` | `apps/web`, `libs/ui` | Final pass on dashboard screens for accessibility, hierarchy, interaction clarity, and visual consistency before merge. **Invariant reminders:** maintain design-token usage and avoid introducing UX shortcuts that bypass established form/UI conventions. |
-| `claude-api` | `libs/ai` | Any Anthropic client/prompt/model/cache-control changes; must preserve ephemeral prompt caching behavior and model configuration discipline. **Invariant reminders:** always keep `cache_control: { type: "ephemeral" }` on system prompts, keep secrets in `process.env` only, and do not hardcode keys/model credentials. |
-| `superpowers:test-driven-development` | `libs/ai`, `libs/form`, `libs/scraper`, related app consumers | New behavior or bug fixes where tests can be written first; required for classifier logic, form wrapper behavior, and scraper parsing/fixtures. **Invariant reminders:** include tests for scraper pacing limits (10s between handles, 25 posts max), Claude cache-control behavior, and schema/form constraints when behavior changes. |
-| `superpowers:systematic-debugging` | `apps/worker`, `libs/scraper`, `libs/ai` | Worker pipeline failures, flaky scraping sessions, classifier misclassification, cron/runtime failures, and reproduction/isolation workflows. **Invariant reminders:** debug without bypassing scraper rate limits, never expose secrets in logs, and if debugging touches Prisma schema assumptions, ensure `prisma migrate dev` is run before commit. |
+| Skill                                 | Target paths                                                  | Trigger scenarios                                                                                                                                                                                                                                                                                                                                       |
+| ------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `react-best-practices`                | `apps/web`, `libs/ui`                                         | Building or refactoring Next.js pages, hooks, data-fetching boundaries, rendering patterns, or component performance-sensitive UIs. **Invariant reminders:** keep TypeScript strict (no unjustified `any`), use `libs/form` wrappers instead of raw inputs in app code, and keep styling token-based via `@app/ui` (no hardcoded hex/px).               |
+| `composition-patterns`                | `libs/form`, `libs/ui`, `apps/web`                            | Designing/reworking component APIs, especially when props are growing; prefer compound components and slots over boolean-prop expansion. **Invariant reminders:** preserve form-wrapper usage in `apps/web`, and ensure public cross-boundary APIs still map to Zod schemas in `libs/sharedTypes`.                                                      |
+| `web-design-guidelines`               | `apps/web`, `libs/ui`                                         | Final pass on dashboard screens for accessibility, hierarchy, interaction clarity, and visual consistency before merge. **Invariant reminders:** maintain design-token usage and avoid introducing UX shortcuts that bypass established form/UI conventions.                                                                                            |
+| `claude-api`                          | `libs/ai`                                                     | Any Anthropic client/prompt/model/cache-control changes; must preserve ephemeral prompt caching behavior and model configuration discipline. **Invariant reminders:** always keep `cache_control: { type: "ephemeral" }` on system prompts, keep secrets in `process.env` only, and do not hardcode keys/model credentials.                             |
+| `superpowers:test-driven-development` | `libs/ai`, `libs/form`, `libs/scraper`, related app consumers | New behavior or bug fixes where tests can be written first; required for classifier logic, form wrapper behavior, and scraper parsing/fixtures. **Invariant reminders:** include tests for scraper pacing limits (10s between handles, 25 posts max), Claude cache-control behavior, and schema/form constraints when behavior changes.                 |
+| `superpowers:systematic-debugging`    | `apps/worker`, `libs/scraper`, `libs/ai`                      | Worker pipeline failures, flaky scraping sessions, classifier misclassification, cron/runtime failures, and reproduction/isolation workflows. **Invariant reminders:** debug without bypassing scraper rate limits, never expose secrets in logs, and if debugging touches Prisma schema assumptions, ensure `prisma migrate dev` is run before commit. |
 
 ### Tier 2 (optional / situational)
 
-| Skill | Target paths | Trigger scenarios | Decision |
-| --- | --- | --- | --- |
-| `react-view-transitions` | `apps/web` | Nice-to-have list → detail and similar navigational transitions when UX polish is explicitly in scope. | **Install now (optional use):** lightweight UX enhancement skill for dashboard polish work; not required for routine feature delivery. |
-| `nx-workspace` | whole repo | Repository exploration, dependency/task discovery, and determining the right project/target before running commands. | **Defer local install:** use built-in Nx guidance/MCP workflow for now; revisit local mirror only if repeated discovery friction appears. |
-| `nx-generate` | whole repo | Any scaffolding/generator workflow (new app/lib/config structure) before using Nx generator commands. | **Defer local install:** current repo has stable structure and low scaffolding frequency; add local mirror when generator-heavy work begins. |
+| Skill                    | Target paths | Trigger scenarios                                                                                                    | Decision                                                                                                                                     |
+| ------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `react-view-transitions` | `apps/web`   | Nice-to-have list → detail and similar navigational transitions when UX polish is explicitly in scope.               | **Install now (optional use):** lightweight UX enhancement skill for dashboard polish work; not required for routine feature delivery.       |
+| `nx-workspace`           | whole repo   | Repository exploration, dependency/task discovery, and determining the right project/target before running commands. | **Defer local install:** use built-in Nx guidance/MCP workflow for now; revisit local mirror only if repeated discovery friction appears.    |
+| `nx-generate`            | whole repo   | Any scaffolding/generator workflow (new app/lib/config structure) before using Nx generator commands.                | **Defer local install:** current repo has stable structure and low scaffolding frequency; add local mirror when generator-heavy work begins. |
 
 Tier 2 handling rationale:
+
 - We keep optional skills intentionally lean to reduce maintenance/sync overhead.
 - `react-view-transitions` is worth keeping locally because it directly benefits `apps/web` polish tasks.
 - `nx-workspace` and `nx-generate` remain documented and available conceptually through project Nx guidance, but are deferred from local `.claude/skills` sync until demand justifies ongoing upkeep.
@@ -113,7 +125,7 @@ Built-in skills to use:
 1. **Never commit real Instagram credentials or Anthropic keys.** `.env` is gitignored; `.env.example` is the template.
 2. **Never bypass rate limits** in `libs/scraper` — minimum 10s between handles, 25 posts max per handle per run.
 3. **Never call Claude without `cache_control: { type: "ephemeral" }`** on the system prompt in `libs/ai`.
-4. **Never mutate `schema.prisma` without running `prisma migrate dev`** — migrations are part of the commit.
+4. **Never mutate `libs/db/prisma/schema.prisma` without running `prisma migrate dev`** — migrations are part of the commit.
 
 ## Running locally
 
@@ -122,8 +134,8 @@ cp .env.example .env                     # fill IG_USERNAME / IG_PASSWORD / ANTH
 docker compose up -d postgres
 pnpm install                              # postinstall runs `prisma generate`
 pnpm prisma:migrate                       # apply migrations
-pnpm --filter @app/worker dev:run-once    # one worker pass
-pnpm --filter @app/web dev                # dashboard on :3000
+pnpm worker:once                          # one worker pass
+pnpm dev:web                              # dashboard on :3000
 ```
 
 <!-- nx configuration start-->
@@ -140,9 +152,11 @@ pnpm --filter @app/web dev                # dashboard on :3000
 
 ### Nx-first workflow examples by common task
 
-- **Run web lint/tests/build** (`apps/web`): use `pnpm nx run web:lint`, `pnpm nx run web:test`, `pnpm nx run web:build` rather than calling underlying tools directly.
-- **Run worker checks** (`apps/worker`): use `pnpm nx run worker:test` / `pnpm nx run worker:build` as available in project targets.
-- **Run many projects after shared library changes** (`libs/ui`, `libs/form`, `libs/ai`): use `pnpm nx run-many -t lint,test --projects=ui,form,ai` (or equivalent project names in workspace config).
+- **Run web checks** (`apps/web`): use `pnpm nx run @app/web:lint`, `pnpm nx run @app/web:typecheck`, `pnpm nx run @app/web:build`.
+- **Run worker checks** (`apps/worker`): use `pnpm nx run @app/worker:test`, `pnpm nx run @app/worker:typecheck`, `pnpm nx run @app/worker:build`.
+- **Run the worker ad hoc / seed accounts**: use `pnpm nx run @app/worker:dev:run-once`, `pnpm nx run @app/worker:dev`, or `pnpm nx run @app/worker:seed:accounts`.
+- **Run DB maintenance via Nx** (`libs/db`): use `pnpm nx run @app/db:generate`, `pnpm nx run @app/db:migrate:dev`, `pnpm nx run @app/db:studio`, `pnpm nx run @app/db:seed`.
+- **Run many projects after shared library changes**: prefer the targets those projects actually expose, for example `pnpm nx run-many -t typecheck --projects=@app/ui,@app/form,@app/shared-types,@app/internationalization` or `pnpm nx run-many -t test --projects=@app/ai,@app/scraper,@app/worker`.
 - **Run only changed projects before merge**: use `pnpm nx affected -t lint,test,build`.
 - **Explore before acting**: invoke `nx-workspace` to inspect projects/targets/dependencies first, then execute the minimal `nx run`/`run-many`/`affected` command set.
 - **Scaffold safely**: invoke `nx-generate` before any generator command, then run the generated command via `pnpm nx ...`.
@@ -163,6 +177,7 @@ These examples apply even when `nx-workspace`/`nx-generate` are deferred from lo
 - Also use `nx_docs` (or `--help`) before trying less-common `run-many`/`affected` selector combinations to avoid guessed flags.
 
 <!-- nx configuration end-->
+
 ## Validation checklist for skill adoption and documentation
 
 Use this checklist after skill sync/docs updates to confirm structure and guidance are complete.
@@ -172,10 +187,8 @@ Use this checklist after skill sync/docs updates to confirm structure and guidan
 - [ ] `.claude/skills/react-best-practices/` exists with expected skill artifacts (instructions/rules/prompts as provided by upstream).
 - [ ] `.claude/skills/composition-patterns/` exists with expected skill artifacts.
 - [ ] `.claude/skills/web-design-guidelines/` exists with expected skill artifacts.
-- [ ] `.claude/skills/claude-api/` exists with expected skill artifacts.
-- [ ] `.claude/skills/superpowers/test-driven-development/` exists with expected skill artifacts.
-- [ ] `.claude/skills/superpowers/systematic-debugging/` exists with expected skill artifacts.
 - [ ] Optional installed skill `.claude/skills/react-view-transitions/` exists (if still in install-now state).
+- [ ] Policy-required but non-mirrored skills (`claude-api`, `superpowers:test-driven-development`, `superpowers:systematic-debugging`) are explicitly documented as workflow requirements rather than local `.claude/skills` directories.
 - [ ] Deferred optional skills (`nx-workspace`, `nx-generate`) are documented as deferred (not silently omitted).
 - [ ] `AGENTS.md` includes Tier 1 vs Tier 2 mapping and concrete trigger scenarios for `apps/web`, `apps/worker`, `libs/ai`, `libs/form`, and `libs/ui`.
 - [ ] `AGENTS.md` includes reproducible upstream source pinning details and sync/update procedure reference.
