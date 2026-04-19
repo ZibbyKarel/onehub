@@ -38,5 +38,16 @@
       "@app/internationalization/*": ["libs/internationalization/src/*"]
     }
   },
-  "exclude": ["node_modules", "tmp", "dist", ".next"]
+  "exclude": [
+    "node_modules",
+    "tmp",
+    "dist",
+    ".next",
+    ".claude",
+    ".opencode",
+    ".cursor",
+    ".codex",
+    ".agents",
+    ".auto-claude"
+  ]
 }
